@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://zyglz.github.io</id>
     <title>资源管理站</title>
-    <updated>2020-02-29T14:13:51.903Z</updated>
+    <updated>2020-02-29T14:26:44.404Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://zyglz.github.io"/>
+    <link rel="self" href="https://zyglz.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://zyglz.github.io/images/avatar.png</logo>
+    <icon>https://zyglz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 资源管理站</rights>
     <entry>
         <title type="html"><![CDATA[旧电脑安装黑群晖5.1完美升级5.2]]></title>
-        <id>http://localhost:4000/post/jiu-dian-nao-an-zhuang-hei-qun-hui-51-wan-mei-sheng-ji-52/</id>
-        <link href="http://localhost:4000/post/jiu-dian-nao-an-zhuang-hei-qun-hui-51-wan-mei-sheng-ji-52/">
+        <id>https://zyglz.github.io/post/jiu-dian-nao-an-zhuang-hei-qun-hui-51-wan-mei-sheng-ji-52/</id>
+        <link href="https://zyglz.github.io/post/jiu-dian-nao-an-zhuang-hei-qun-hui-51-wan-mei-sheng-ji-52/">
         </link>
         <updated>2020-02-29T13:57:22.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="旧电脑安装黑群晖51完美升级52">旧电脑安装黑群晖5.1完美升级5.2</h1>
@@ -51,8 +51,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[家里旧电脑闲来没用，安装家庭NAS黑群晖]]></title>
-        <id>http://localhost:4000/post/jia-li-jiu-dian-nao-xian-lai-mei-yong-an-zhuang-jia-ting-nas-hei-qun-hui/</id>
-        <link href="http://localhost:4000/post/jia-li-jiu-dian-nao-xian-lai-mei-yong-an-zhuang-jia-ting-nas-hei-qun-hui/">
+        <id>https://zyglz.github.io/post/jia-li-jiu-dian-nao-xian-lai-mei-yong-an-zhuang-jia-ting-nas-hei-qun-hui/</id>
+        <link href="https://zyglz.github.io/post/jia-li-jiu-dian-nao-xian-lai-mei-yong-an-zhuang-jia-ting-nas-hei-qun-hui/">
         </link>
         <updated>2020-02-29T13:00:25.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
