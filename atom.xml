@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:4000</id>
     <title>资源管理站</title>
-    <updated>2020-02-29T13:41:46.257Z</updated>
+    <updated>2020-02-29T14:04:54.330Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:4000"/>
     <link rel="self" href="http://localhost:4000/atom.xml"/>
@@ -11,35 +11,101 @@
     <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2020, 资源管理站</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://localhost:4000/post/hello-gridea/</id>
-        <link href="http://localhost:4000/post/hello-gridea/">
+        <title type="html"><![CDATA[旧电脑安装黑群晖5.1完美升级5.2]]></title>
+        <id>http://localhost:4000/post/jiu-dian-nao-an-zhuang-hei-qun-hui-51-wan-mei-sheng-ji-52/</id>
+        <link href="http://localhost:4000/post/jiu-dian-nao-an-zhuang-hei-qun-hui-51-wan-mei-sheng-ji-52/">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <updated>2020-02-29T13:57:22.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="旧电脑安装黑群晖51完美升级52">旧电脑安装黑群晖5.1完美升级5.2</h1>
+<p>因之前家里旧电脑安装的黑群晖，是5.1版本，套件中心好多套件都没有，最关键的是需要的HSK套件都没有，网上查找了一下，因为版本问题，只能升级5.2版本。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<h1 id="旧电脑安装黑群晖51完美升级52">旧电脑安装黑群晖5.1完美升级5.2</h1>
+<p>因之前家里旧电脑安装的黑群晖，是5.1版本，套件中心好多套件都没有，最关键的是需要的HSK套件都没有，网上查找了一下，因为版本问题，只能升级5.2版本。</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<ol>
+<li>下载XPEnoboot_DS3615xs_5.2-5967.1.img文件</li>
+<li>使用WinImage软件，修改镜像文件中“syslinux.cfg”文将syslinux.cfg鼠标拖到桌面上即可：<br>
+<img src="https://img-blog.csdnimg.cn/20190912175651716.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+用sublime或记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID（查找方法看上一篇文章）<br>
+<img src="https://img-blog.csdnimg.cn/20190912184546297.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+修改完毕后，在载入镜像文件中，保存一下。<br>
+将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.2-5967.1.img</li>
+<li>在u盘中写入镜像文件：将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.2-5967.1.img烧录到U盘里：<br>
+<img src="https://img-blog.csdnimg.cn/20190912180420785.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
+<li>将U盘插入老的主机，设置为U盘启动。</li>
+<li>开机后蓝色界面选择XPEnology DSM 5.2-5967 Install/Upgrade，到此U盘系统安装结束。<br>
+<img src="https://img-blog.csdnimg.cn/20190912180539103.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+<img src="https://img-blog.csdnimg.cn/20190912180558484.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
+<li>使用Synology Assistant软件，并打开就会发现黑群晖，此时状态为可转移状态，需要手动安装升级。<br>
+<img src="https://img-blog.csdnimg.cn/20190912180639226.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
+<li>打开192.168.1.31，选择安装，手工安装，然后等待升级即可<br>
+<img src="https://img-blog.csdnimg.cn/20190912180811147.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
+<li>安装完毕后，自动进行重启，到此黑群晖5.1完美升级至5.2版本<br>
+<img src="https://img-blog.csdnimg.cn/20190912180857527.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+<img src="https://img-blog.csdnimg.cn/20190912180909955.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
+<li>黑群晖5.2版本套件中心就能搜索并安装HSK！<br>
+<img src="https://img-blog.csdnimg.cn/20190912180948371.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+<img src="https://img-blog.csdnimg.cn/20190912180959585.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[家里旧电脑闲来没用，安装家庭NAS黑群晖]]></title>
+        <id>http://localhost:4000/post/jia-li-jiu-dian-nao-xian-lai-mei-yong-an-zhuang-jia-ting-nas-hei-qun-hui/</id>
+        <link href="http://localhost:4000/post/jia-li-jiu-dian-nao-xian-lai-mei-yong-an-zhuang-jia-ting-nas-hei-qun-hui/">
+        </link>
+        <updated>2020-02-29T13:00:25.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
+<!-- more -->
+<p>1.下载黑群晖安装工具包：https://pan.baidu.com/s/12CeLJmc5iC4XdRdzzqMGoQ</p>
+<p>2.使用ChipEasy检查并记录U盘的VID PID对应文件目录为：\黑群晖\相关软件\1)ChipEasy芯片无忧_V1.6_Beta3\ChipEasy芯片无忧V1.6 Beta3.exe。选中U盘后查看下方列表中的VID和PID的值</p>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20190912173744717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<pre><code>逻辑盘符  :  F:\                      此分区容量:  30.0G
+设备ID    :  VID = 23A9     PID = EF18
+设备序列号:  0EE8DB7E292A347B
+设备版本  :  
+
+设备制造商:  Newsmy
+设备型号  :  V21
+当前协议  :  USB2.0
+输入电流  :  100mA
+
+分区系统  :  FAT32                    是否激活  :  是
+是否对齐  :  32 KB 已扇区对齐
+
+网络异常,查询主控信息失败!
+系统版本  :  Windows 7 Professional Service Pack 1
+</code></pre>
+<p>3.使用WinImage对应文件目录：\黑群晖\相关软件\2)WinImage_9.0中文专业版<br>
+WinImage 9.0<br>
+把\黑群晖\相关软件\3)XPEnoboot_5.1-5022.3\XPEnoboot_DS3615xs_5.1-5022.3.img里的syslinux.cfg提取到桌面</p>
+<p><img src="https://img-blog.csdnimg.cn/20190912173850529.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+4.用记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID<br>
+注意：这里更改不止1处，一定要全部替换。<br>
+<img src="https://img-blog.csdnimg.cn/20190912173858972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+vid=0x23A9 pid=0xEF18</p>
+<p>5.将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.1-5022.3.img</p>
+<p>6.将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.1-5022.3.img烧录到U盘里<br>
+对应软件目录为：<br>
+XPEnoboot：\黑群晖\相关软件\3)XPEnoboot_5.1-5022.3\XPEnoboot_DS3615xs_5.1-5022.3.img<br>
+Win32DiskImager_V0.8_Binary: \黑群晖\相关软件\4)Win32DiskImager_V0.8_Binary\Win32DiskImager.exe<br>
+<img src="https://img-blog.csdnimg.cn/20190912173930403.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+7.将U盘插入老的主机，设置为U盘启动。<br>
+8.开机后蓝色界面选择XPEnology DSM 5.1-5022 Install/Upgrade，到此U盘系统安装结束。<br>
+<img src="https://img-blog.csdnimg.cn/20190912174837994.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+9.安装Synology Assistant，并打开就会发现黑群晖<br>
+对应文件录为：\相关软件\5)SynologyAssistant_5.2-5005\SynologyAssistantSetup-5.2-5005.exe<br>
+<img src="https://img-blog.csdnimg.cn/20190912175022690.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></p>
+<p>10.右键黑群晖安装DSM操作系统。<br>
+选择黑群晖固件DSM_DS3615xs_5022.pat<br>
+对应文件目录为：\相关软件\6)DSM_DS3615xs_5022\ DSM_DS3615xs_5022.pat<br>
+按步骤设置即可进入DSM操作界面</p>
+<p><img src="https://img-blog.csdnimg.cn/20190912173959324.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+11、安装完毕，在浏览器中输入192.168.1.31打开即可。<br>
+<img src="https://img-blog.csdnimg.cn/20190912174056326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</p>
 ]]></content>
     </entry>
 </feed>
