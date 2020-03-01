@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>http://zyglz.github.io</id>
     <title>资源管理站</title>
-    <updated>2020-03-01T04:05:56.037Z</updated>
+    <updated>2020-03-01T04:07:43.379Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="http://zyglz.github.io"/>
+    <link rel="self" href="http://zyglz.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>http://zyglz.github.io/images/avatar.png</logo>
+    <icon>http://zyglz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 资源管理站</rights>
     <entry>
         <title type="html"><![CDATA[git 增加origin报错："fatal: remote origin already exists"]]></title>
-        <id>http://localhost:4000/post/202003014da1c908794c6cd4/</id>
-        <link href="http://localhost:4000/post/202003014da1c908794c6cd4/">
+        <id>http://zyglz.github.io/post/202003014da1c908794c6cd4/</id>
+        <link href="http://zyglz.github.io/post/202003014da1c908794c6cd4/">
         </link>
         <updated>2020-03-01T03:23:41.000Z</updated>
         <summary type="html"><![CDATA[<p>git 增加origin报错：&quot;fatal: remote origin already exists&quot;，解决办法</p>
@@ -32,8 +32,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[旧电脑安装黑群晖5.1完美升级5.2]]></title>
-        <id>http://localhost:4000/post/2020020904a254969921f344/</id>
-        <link href="http://localhost:4000/post/2020020904a254969921f344/">
+        <id>http://zyglz.github.io/post/2020020904a254969921f344/</id>
+        <link href="http://zyglz.github.io/post/2020020904a254969921f344/">
         </link>
         <updated>2020-02-29T13:57:22.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="旧电脑安装黑群晖51完美升级52">旧电脑安装黑群晖5.1完美升级5.2</h1>
@@ -66,8 +66,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[家里旧电脑闲来没用，安装家庭NAS黑群晖]]></title>
-        <id>http://localhost:4000/post/20200209245218510a5abc1d/</id>
-        <link href="http://localhost:4000/post/20200209245218510a5abc1d/">
+        <id>http://zyglz.github.io/post/20200209245218510a5abc1d/</id>
+        <link href="http://zyglz.github.io/post/20200209245218510a5abc1d/">
         </link>
         <updated>2020-02-29T13:00:25.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
