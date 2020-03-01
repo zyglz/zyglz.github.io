@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="温故而知新">
+<meta name="theme-color" content="#000">
+<title>家里旧电脑闲来没用，安装家庭NAS黑群晖 | 资源管理站</title>
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1583035202866">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css" rel="stylesheet">  
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <meta name="description" content="家里旧电脑闲来没用，安装家庭NAS黑群晖" />
+    <meta name="keywords" content="群晖" />
+  </head>
+  <body>
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      
+<div class=" gemini">
+  <header class="header bg-color ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>资源管理站</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">精于心，简于形</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            <li class="nav-item ">
+              
+                <a href="/">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/archives">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/tags">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/post/about">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          <li class="nav-item">
+            <a>
+              <i class="fa fa-search"></i> 搜索
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      
+      <div class="section-layout gemini ">
+        <div class="section-layout-wrapper">
+          
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="http://localhost:4000/images/avatar.png"/>
+    <p class="site-author-name">资源管理站</p>
+    <p class="site-description right-motion">这个人很懒，什么都不想写...</p>
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
+      </div>
+    
+  
+  
+
+
+</div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#%E5%AE%B6%E9%87%8C%E6%97%A7%E7%94%B5%E8%84%91%E9%97%B2%E6%9D%A5%E6%B2%A1%E7%94%A8%E5%AE%89%E8%A3%85%E5%AE%B6%E5%BA%ADnas%E9%BB%91%E7%BE%A4%E6%99%96%E4%B8%8B%E9%9D%A2%E4%B8%BB%E8%A6%81%E8%AE%B2%E8%BF%B0%E4%B8%BB%E8%A6%81%E7%9A%84%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</a>
+<ul>
+<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作</a>
+<ul>
+<li><a href="#%E7%A1%AC%E4%BB%B6%E9%83%A8%E5%88%86">硬件部分</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E9%83%A8%E5%88%86">软件部分</a></li>
+<li><a href="#%E7%B3%BB%E7%BB%9F">系统</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B">安装过程</a>
+<ul>
+<li><a href="#1-%E4%BD%BF%E7%94%A8chipeasy%E6%A3%80%E6%9F%A5%E5%B9%B6%E8%AE%B0%E5%BD%95u%E7%9B%98%E7%9A%84vid-pid%E9%80%89%E4%B8%ADu%E7%9B%98%E5%90%8E%E6%9F%A5%E7%9C%8B%E4%B8%8B%E6%96%B9%E5%88%97%E8%A1%A8%E4%B8%AD%E7%9A%84vid%E5%92%8Cpid%E7%9A%84%E5%80%BC">1、使用ChipEasy检查并记录U盘的VID PID，选中U盘后查看下方列表中的VID和PID的值</a></li>
+<li><a href="#2-%E4%BD%BF%E7%94%A8winimage%E6%8A%8Axpenoboot_ds3615xs_51-50223img%E9%87%8C%E7%9A%84syslinuxcfg%E6%8F%90%E5%8F%96%E5%88%B0%E6%A1%8C%E9%9D%A2">2、使用WinImage把XPEnoboot_DS3615xs_5.1-5022.3.img里的syslinux.cfg提取到桌面</a></li>
+<li><a href="#3-%E7%94%A8%E8%AE%B0%E4%BA%8B%E6%9C%AC%E6%89%93%E5%BC%80syslinuxcfg%E4%BD%BF%E7%94%A8%E6%9B%BF%E6%8D%A2%E5%8A%9F%E8%83%BD%E5%B0%86vid0x0ea0-pid0x2168%E6%9B%BF%E6%8D%A2%E4%B8%BAvid0x%E4%BD%A0u%E7%9B%98%E7%9A%84vid-pid0x%E4%BD%A0u%E7%9B%98%E7%9A%84pid">3、用记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID</a></li>
+<li><a href="#4-%E5%B0%86%E6%A1%8C%E9%9D%A2%E7%9A%84syslinuxcfg%E7%B2%98%E8%B4%B4%E5%88%B0winimage%E7%9A%84xpenoboot_ds3615xs_51-50223img">4、将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.1-5022.3.img</a></li>
+<li><a href="#5-%E5%B0%86u%E7%9B%98%E6%8F%92%E5%85%A5%E7%94%B5%E8%84%91%E4%BD%BF%E7%94%A8win32diskimager%E5%B0%86xpenoboot_ds3615xs_51-50223img%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6%E7%83%A7%E5%BD%95%E5%88%B0u%E7%9B%98%E9%87%8C">5、将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.1-5022.3.img镜像文件烧录到U盘里</a></li>
+<li><a href="#6-%E5%B0%86u%E7%9B%98%E6%8F%92%E5%85%A5%E8%80%81%E7%9A%84%E4%B8%BB%E6%9C%BA%E8%AE%BE%E7%BD%AE%E4%B8%BAu%E7%9B%98%E5%90%AF%E5%8A%A8">6、将U盘插入老的主机，设置为U盘启动。</a></li>
+<li><a href="#7-%E5%BC%80%E6%9C%BA%E5%90%8E%E8%93%9D%E8%89%B2%E7%95%8C%E9%9D%A2%E9%80%89%E6%8B%A9xpenology-dsm-51-5022-installupgrade%E5%88%B0%E6%AD%A4u%E7%9B%98%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E7%BB%93%E6%9D%9F">7、开机后蓝色界面选择XPEnology DSM 5.1-5022 Install/Upgrade，到此U盘系统安装结束。</a></li>
+<li><a href="#8-%E4%BD%BF%E7%94%A8%E5%9C%A8%E5%90%8C%E4%B8%80%E5%B1%80%E5%9F%9F%E7%BD%91%E5%86%85%E7%9A%84%E5%8F%A6%E5%A4%96%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E5%AE%89%E8%A3%85synology-assistant%E5%B9%B6%E6%89%93%E5%BC%80%E6%90%9C%E7%B4%A2%E5%B0%B1%E4%BC%9A%E5%8F%91%E7%8E%B0%E9%BB%91%E7%BE%A4%E6%99%96">8、使用在同一局域网内的另外一台电脑，安装Synology Assistant，并打开，搜索就会发现黑群晖</a></li>
+<li><a href="#9-%E5%8F%B3%E9%94%AE%E9%BB%91%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85dsm%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E9%80%89%E6%8B%A9%E9%BB%91%E7%BE%A4%E6%99%96%E5%9B%BA%E4%BB%B6dsm_ds3615xs_5022pat%E6%8C%89%E6%AD%A5%E9%AA%A4%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E5%92%8C%E8%AE%BE%E7%BD%AE%E5%8D%B3%E5%8F%AF%E8%BF%9B%E5%85%A5dsm%E6%93%8D%E4%BD%9C%E7%95%8C%E9%9D%A2">9、右键黑群晖安装DSM操作系统。选择黑群晖固件DSM_DS3615xs_5022.pat，按步骤进行安装和设置即可进入DSM操作界面</a></li>
+<li><a href="#10-%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E8%BE%93%E5%85%A5%E5%AF%B9%E5%BA%94%E7%9A%84ip%E5%9C%B0%E5%9D%80%E5%B0%B1%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E4%BA%86%E5%BC%80%E5%A7%8B%E4%BD%A0%E7%9A%84%E6%8E%A2%E7%B4%A2%E6%97%85%E7%A8%8B%E5%90%A7">10、安装完成，在浏览器中输入对应的ip地址就可以访问了，开始你的探索旅程吧！</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E4%B8%AD51%E7%89%88%E6%9C%AC%E7%9A%84%E9%BB%91%E7%BE%A4%E6%99%96%E5%A5%97%E4%BB%B6%E4%B8%AD%E5%BF%83%E5%A5%97%E4%BB%B6%E4%B8%8D%E5%85%A8%E6%B2%A1%E6%9C%89%E8%8A%B1%E7%94%9F%E5%A3%B3%E6%97%A0%E6%B3%95%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E5%8F%AA%E8%83%BD%E5%AE%B6%E9%87%8C%E4%BD%BF%E7%94%A8%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%8552%E7%89%88%E6%9C%AC%E5%90%8E%E9%9D%A2%E8%BF%9B%E8%A1%8C%E5%8D%87%E7%BA%A7">使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    lList.push(elem);
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+addTocNumber(tocContent, '');
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+            </div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+          <div class="section-box box-shadow-wrapper">
+            <div class="section bg-color post post-page">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="http://localhost:4000/post/20200209245218510a5abc1d/">
+      家里旧电脑闲来没用，安装家庭NAS黑群晖
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-02-29</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="http://localhost:4000/tag/-5sxk1P-b/">
+              <span>群晖</span>
+            </a>
+          
+        
+      </span>
+      <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>3分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>553<span class="pc-show">字数</span></span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
+<p>家里有台闲置的旧电脑，前几日将其安装了黑群晖，作为家庭NAS使用，已经使用了一个月了，目前运行稳定正常。</p>
+<!--more-->
+<h2 id="准备工作">准备工作</h2>
+<h3 id="硬件部分">硬件部分</h3>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>8G U盘一个</td>
+<td>用来做nas的启动盘</td>
+</tr>
+<tr>
+<td>2</td>
+<td>旧电脑一台</td>
+<td>用来安装NAS系统</td>
+</tr>
+<tr>
+<td>3</td>
+<td>电脑或笔记本电脑</td>
+<td>局域网内引导和设置NAS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="软件部分">软件部分</h3>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>功能作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ChipEasy芯片无忧</td>
+<td>查询引导u盘的PID,VID</td>
+</tr>
+<tr>
+<td>2</td>
+<td>WinImage</td>
+<td>修改镜像文件</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Win32DiskImager</td>
+<td>向引导U盘中写入镜像</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Synology Assistant</td>
+<td>调试NAS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="系统">系统</h3>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>XPEnoboot_5.1-5022.3</td>
+<td>NAS引导镜像</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DSM_DS3615xs_5022.pat</td>
+<td>NAS系统文件</td>
+</tr>
+</tbody>
+</table>
+<h2 id="安装过程">安装过程</h2>
+<h3 id="1-使用chipeasy检查并记录u盘的vid-pid选中u盘后查看下方列表中的vid和pid的值">1、使用ChipEasy检查并记录U盘的VID PID，选中U盘后查看下方列表中的VID和PID的值</h3>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/images/2019/09/163236495592.png-watermark" alt="NAS0.png" loading="lazy"></figure>
+<h3 id="2-使用winimage把xpenoboot_ds3615xs_51-50223img里的syslinuxcfg提取到桌面">2、使用WinImage把XPEnoboot_DS3615xs_5.1-5022.3.img里的syslinux.cfg提取到桌面</h3>
+<figure data-type="image" tabindex="2"><img src="http://images.zyglz.com/blog/images/2019/09/163739607714.png-watermark" alt="NAS2.png" loading="lazy"></figure>
+<h3 id="3-用记事本打开syslinuxcfg使用替换功能将vid0x0ea0-pid0x2168替换为vid0x你u盘的vid-pid0x你u盘的pid">3、用记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID</h3>
+<p><strong>注意：这里更改不止1处，一定要全部替换。</strong></p>
+<figure data-type="image" tabindex="3"><img src="http://images.zyglz.com/blog/images/2019/09/163877651849.png-watermark" alt="NAS3.png" loading="lazy"></figure>
+<h3 id="4-将桌面的syslinuxcfg粘贴到winimage的xpenoboot_ds3615xs_51-50223img">4、将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.1-5022.3.img</h3>
+<h3 id="5-将u盘插入电脑使用win32diskimager将xpenoboot_ds3615xs_51-50223img镜像文件烧录到u盘里">5、将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.1-5022.3.img镜像文件烧录到U盘里</h3>
+<figure data-type="image" tabindex="4"><img src="http://images.zyglz.com/blog/images/2019/09/161601906753.png-watermark" alt="NAS4.png" loading="lazy"></figure>
+<h3 id="6-将u盘插入老的主机设置为u盘启动">6、将U盘插入老的主机，设置为U盘启动。</h3>
+<h3 id="7-开机后蓝色界面选择xpenology-dsm-51-5022-installupgrade到此u盘系统安装结束">7、开机后蓝色界面选择XPEnology DSM 5.1-5022 Install/Upgrade，到此U盘系统安装结束。</h3>
+<figure data-type="image" tabindex="5"><img src="http://images.zyglz.com/blog/images/2019/09/164284542838.jpg-watermark" alt="2019-09-12_174730.jpg" loading="lazy"></figure>
+<h3 id="8-使用在同一局域网内的另外一台电脑安装synology-assistant并打开搜索就会发现黑群晖">8、使用在同一局域网内的另外一台电脑，安装Synology Assistant，并打开，搜索就会发现黑群晖</h3>
+<figure data-type="image" tabindex="6"><img src="http://images.zyglz.com/blog/images/2019/09/16236823609.png-watermark" alt="NAS5.png" loading="lazy"></figure>
+<h3 id="9-右键黑群晖安装dsm操作系统-选择黑群晖固件dsm_ds3615xs_5022pat按步骤进行安装和设置即可进入dsm操作界面">9、右键黑群晖安装DSM操作系统。选择黑群晖固件DSM_DS3615xs_5022.pat，按步骤进行安装和设置即可进入DSM操作界面</h3>
+<figure data-type="image" tabindex="7"><img src="http://images.zyglz.com/blog/images/2019/09/162492169144.png-watermark" alt="NAS16.png" loading="lazy"></figure>
+<h3 id="10-安装完成在浏览器中输入对应的ip地址就可以访问了开始你的探索旅程吧">10、安装完成，在浏览器中输入对应的ip地址就可以访问了，开始你的探索旅程吧！</h3>
+<figure data-type="image" tabindex="8"><img src="http://images.zyglz.com/blog/images/2019/09/163399022856.png-watermark" alt="NAS1.png" loading="lazy"></figure>
+<h3 id="使用中51版本的黑群晖套件中心套件不全没有花生壳无法进行内网穿透只能家里使用需要安装52版本后面进行升级">使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</h3>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      资源管理站
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://localhost:4000/post/20200209245218510a5abc1d/" title="家里旧电脑闲来没用，安装家庭NAS黑群晖">家里旧电脑闲来没用，安装家庭NAS黑群晖</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="http://localhost:4000/tag/-5sxk1P-b/"># 群晖</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="旧电脑安装黑群晖5.1完美升级5.2" href="http://localhost:4000/post/2020020904a254969921f344/">旧电脑安装黑群晖5.1完美升级5.2</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="旧电脑安装黑群晖5.1完美升级5.2" href="http://localhost:4000/post/2020020904a254969921f344/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By HsxyHao
+    </div>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+    </div>
+  </body>
+  <script src="/media/js/motion.js"></script>
+</html>

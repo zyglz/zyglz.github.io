@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:4000</id>
     <title>资源管理站</title>
-    <updated>2020-03-01T03:12:50.591Z</updated>
+    <updated>2020-03-01T04:00:09.349Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:4000"/>
     <link rel="self" href="http://localhost:4000/atom.xml"/>
@@ -11,101 +11,174 @@
     <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2020, 资源管理站</rights>
     <entry>
+        <title type="html"><![CDATA[git 增加origin报错："fatal: remote origin already exists"]]></title>
+        <id>http://localhost:4000/post/202003014da1c908794c6cd4/</id>
+        <link href="http://localhost:4000/post/202003014da1c908794c6cd4/">
+        </link>
+        <updated>2020-03-01T03:23:41.000Z</updated>
+        <summary type="html"><![CDATA[<p>git 增加origin报错：&quot;fatal: remote origin already exists&quot;，解决办法</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>git 增加origin报错：&quot;fatal: remote origin already exists&quot;，解决办法</p>
+<!-- more -->
+<p>git 增加origin报错,提示：&quot;fatal: remote origin already exists&quot;</p>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/images/2020/03/012837746789.jpg" alt="2020-02-29_230849.jpg" loading="lazy"></figure>
+<h2 id="解决办法如下">解决办法如下：</h2>
+<pre><code>1、先输入 git remote rm origin
+2、再输入 git remote add origin  **************
+</code></pre>
+<hr>
+<figure data-type="image" tabindex="2"><img src="http://images.zyglz.com/blog/images/2020/03/013457512344.jpg" alt="2020-02-29_230916.jpg" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[旧电脑安装黑群晖5.1完美升级5.2]]></title>
-        <id>http://localhost:4000/post/jiu-dian-nao-an-zhuang-hei-qun-hui-51-wan-mei-sheng-ji-52/</id>
-        <link href="http://localhost:4000/post/jiu-dian-nao-an-zhuang-hei-qun-hui-51-wan-mei-sheng-ji-52/">
+        <id>http://localhost:4000/post/2020020904a254969921f344/</id>
+        <link href="http://localhost:4000/post/2020020904a254969921f344/">
         </link>
         <updated>2020-02-29T13:57:22.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="旧电脑安装黑群晖51完美升级52">旧电脑安装黑群晖5.1完美升级5.2</h1>
-<p>因之前家里旧电脑安装的黑群晖，是5.1版本，套件中心好多套件都没有，最关键的是需要的HSK套件都没有，网上查找了一下，因为版本问题，只能升级5.2版本。</p>
+<p><strong>因之前家里旧电脑安装的黑群晖，是5.1版本，套件中心好多套件都没有，最关键的是需要的花生壳套件都没有，网上查找了一下，因为版本问题，只能升级5.2版本。</strong></p>
 ]]></summary>
         <content type="html"><![CDATA[<h1 id="旧电脑安装黑群晖51完美升级52">旧电脑安装黑群晖5.1完美升级5.2</h1>
-<p>因之前家里旧电脑安装的黑群晖，是5.1版本，套件中心好多套件都没有，最关键的是需要的HSK套件都没有，网上查找了一下，因为版本问题，只能升级5.2版本。</p>
+<p><strong>因之前家里旧电脑安装的黑群晖，是5.1版本，套件中心好多套件都没有，最关键的是需要的花生壳套件都没有，网上查找了一下，因为版本问题，只能升级5.2版本。</strong></p>
 <!-- more -->
-<ol>
-<li>下载XPEnoboot_DS3615xs_5.2-5967.1.img文件</li>
-<li>使用WinImage软件，修改镜像文件中“syslinux.cfg”文将syslinux.cfg鼠标拖到桌面上即可：<br>
-<img src="https://img-blog.csdnimg.cn/20190912175651716.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-用sublime或记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID（查找方法看上一篇文章）<br>
-<img src="https://img-blog.csdnimg.cn/20190912184546297.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-修改完毕后，在载入镜像文件中，保存一下。<br>
-将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.2-5967.1.img</li>
-<li>在u盘中写入镜像文件：将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.2-5967.1.img烧录到U盘里：<br>
-<img src="https://img-blog.csdnimg.cn/20190912180420785.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
-<li>将U盘插入老的主机，设置为U盘启动。</li>
-<li>开机后蓝色界面选择XPEnology DSM 5.2-5967 Install/Upgrade，到此U盘系统安装结束。<br>
-<img src="https://img-blog.csdnimg.cn/20190912180539103.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-<img src="https://img-blog.csdnimg.cn/20190912180558484.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
-<li>使用Synology Assistant软件，并打开就会发现黑群晖，此时状态为可转移状态，需要手动安装升级。<br>
-<img src="https://img-blog.csdnimg.cn/20190912180639226.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
-<li>打开192.168.1.31，选择安装，手工安装，然后等待升级即可<br>
-<img src="https://img-blog.csdnimg.cn/20190912180811147.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
-<li>安装完毕后，自动进行重启，到此黑群晖5.1完美升级至5.2版本<br>
-<img src="https://img-blog.csdnimg.cn/20190912180857527.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-<img src="https://img-blog.csdnimg.cn/20190912180909955.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
-<li>黑群晖5.2版本套件中心就能搜索并安装HSK！<br>
-<img src="https://img-blog.csdnimg.cn/20190912180948371.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-<img src="https://img-blog.csdnimg.cn/20190912180959585.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
-</ol>
+<p>##1、下载XPEnoboot_DS3615xs_5.2-5967.1.img文件<br>
+##2、使用WinImage软件，修改镜像文件中“syslinux.cfg”文将syslinux.cfg鼠标拖到桌面上即可：<br>
+<img src="http://images.zyglz.com/blog/images/2019/09/162016621031.jpg-watermark?imageView2/0/w/400/h/300" alt="11.jpg" loading="lazy"><br>
+##3、用sublime或记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID（查找方法看上一篇文章）<br>
+<img src="http://images.zyglz.com/blog/images/2019/09/162447969814.jpg-watermark?imageView2/0/w/400/h/300" alt="22.jpg" loading="lazy"><br>
+##4、修改完毕后，在载入镜像文件中，保存一下。将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.2-5967.1.img</p>
+<p>##5、在u盘中写入镜像文件：将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.2-5967.1.img烧录到U盘里：<img src="http://images.zyglz.com/blog/images/2019/09/171876768955.jpg?imageView2/0/w/400/h/300" alt="333.jpg" loading="lazy"><br>
+##6、将U盘插入老的主机，设置为U盘启动。</p>
+<p>##7、开机后蓝色界面选择XPEnology DSM 5.2-5967 Install/Upgrade，到此U盘系统安装结束。<br>
+<img src="http://images.zyglz.com/blog/images/2019/09/17274155339.jpg?imageView2/0/w/400/h/300" alt="33.jpg" loading="lazy"><br>
+启动完成：<br>
+<img src="http://images.zyglz.com/blog/images/2019/09/17551625313.jpg?imageView2/0/w/400/h/300" alt="44.jpg" loading="lazy"><br>
+##使用Synology Assistant软件，并打开就会发现黑群晖，此时状态为可转移状态，需要手动安装升级。<br>
+<img src="http://images.zyglz.com/blog/images/2019/09/173288024943.jpg?imageView2/0/w/400/h/300" alt="2019-09-12_172227.jpg" loading="lazy"><br>
+##打开ip地址，选择安装，手工安装，然后等待升级即可<br>
+<img src="http://images.zyglz.com/blog/images/2019/09/172211708669.jpg?imageView2/0/w/400/h/300" alt="2019-09-12_172307.jpg" loading="lazy"><br>
+##安装完毕后，自动进行重启，到此黑群晖5.1完美升级至5.2版本<br>
+<img src="http://images.zyglz.com/blog/images/2019/09/173092863816.jpg?imageView2/0/w/400/h/300" alt="2019-09-12_172916.jpg" loading="lazy"><br>
+###黑群晖5.2版本套件中心就能搜索并安装花生壳套件了！<br>
+<img src="http://images.zyglz.com/blog/images/2019/09/171502406365.jpg?imageView2/0/w/400/h/300" alt="2019-09-12_173207.jpg" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[家里旧电脑闲来没用，安装家庭NAS黑群晖]]></title>
-        <id>http://localhost:4000/post/jia-li-jiu-dian-nao-xian-lai-mei-yong-an-zhuang-jia-ting-nas-hei-qun-hui/</id>
-        <link href="http://localhost:4000/post/jia-li-jiu-dian-nao-xian-lai-mei-yong-an-zhuang-jia-ting-nas-hei-qun-hui/">
+        <id>http://localhost:4000/post/20200209245218510a5abc1d/</id>
+        <link href="http://localhost:4000/post/20200209245218510a5abc1d/">
         </link>
         <updated>2020-02-29T13:00:25.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
+<p>家里有台闲置的旧电脑，前几日将其安装了黑群晖，作为家庭NAS使用，已经使用了一个月了，目前运行稳定正常。</p>
 ]]></summary>
         <content type="html"><![CDATA[<h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
-<!-- more -->
-<p>1.下载黑群晖安装工具包：https://pan.baidu.com/s/12CeLJmc5iC4XdRdzzqMGoQ</p>
-<p>2.使用ChipEasy检查并记录U盘的VID PID对应文件目录为：\黑群晖\相关软件\1)ChipEasy芯片无忧_V1.6_Beta3\ChipEasy芯片无忧V1.6 Beta3.exe。选中U盘后查看下方列表中的VID和PID的值</p>
-<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20190912173744717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
-<pre><code>逻辑盘符  :  F:\                      此分区容量:  30.0G
-设备ID    :  VID = 23A9     PID = EF18
-设备序列号:  0EE8DB7E292A347B
-设备版本  :  
-
-设备制造商:  Newsmy
-设备型号  :  V21
-当前协议  :  USB2.0
-输入电流  :  100mA
-
-分区系统  :  FAT32                    是否激活  :  是
-是否对齐  :  32 KB 已扇区对齐
-
-网络异常,查询主控信息失败!
-系统版本  :  Windows 7 Professional Service Pack 1
-</code></pre>
-<p>3.使用WinImage对应文件目录：\黑群晖\相关软件\2)WinImage_9.0中文专业版<br>
-WinImage 9.0<br>
-把\黑群晖\相关软件\3)XPEnoboot_5.1-5022.3\XPEnoboot_DS3615xs_5.1-5022.3.img里的syslinux.cfg提取到桌面</p>
-<p><img src="https://img-blog.csdnimg.cn/20190912173850529.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-4.用记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID<br>
-注意：这里更改不止1处，一定要全部替换。<br>
-<img src="https://img-blog.csdnimg.cn/20190912173858972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-vid=0x23A9 pid=0xEF18</p>
-<p>5.将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.1-5022.3.img</p>
-<p>6.将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.1-5022.3.img烧录到U盘里<br>
-对应软件目录为：<br>
-XPEnoboot：\黑群晖\相关软件\3)XPEnoboot_5.1-5022.3\XPEnoboot_DS3615xs_5.1-5022.3.img<br>
-Win32DiskImager_V0.8_Binary: \黑群晖\相关软件\4)Win32DiskImager_V0.8_Binary\Win32DiskImager.exe<br>
-<img src="https://img-blog.csdnimg.cn/20190912173930403.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-7.将U盘插入老的主机，设置为U盘启动。<br>
-8.开机后蓝色界面选择XPEnology DSM 5.1-5022 Install/Upgrade，到此U盘系统安装结束。<br>
-<img src="https://img-blog.csdnimg.cn/20190912174837994.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-9.安装Synology Assistant，并打开就会发现黑群晖<br>
-对应文件录为：\相关软件\5)SynologyAssistant_5.2-5005\SynologyAssistantSetup-5.2-5005.exe<br>
-<img src="https://img-blog.csdnimg.cn/20190912175022690.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></p>
-<p>10.右键黑群晖安装DSM操作系统。<br>
-选择黑群晖固件DSM_DS3615xs_5022.pat<br>
-对应文件目录为：\相关软件\6)DSM_DS3615xs_5022\ DSM_DS3615xs_5022.pat<br>
-按步骤设置即可进入DSM操作界面</p>
-<p><img src="https://img-blog.csdnimg.cn/20190912173959324.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-11、安装完毕，在浏览器中输入192.168.1.31打开即可。<br>
-<img src="https://img-blog.csdnimg.cn/20190912174056326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvb2Nob24=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
-使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</p>
+<p>家里有台闲置的旧电脑，前几日将其安装了黑群晖，作为家庭NAS使用，已经使用了一个月了，目前运行稳定正常。</p>
+<!--more-->
+<h2 id="准备工作">准备工作</h2>
+<h3 id="硬件部分">硬件部分</h3>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>8G U盘一个</td>
+<td>用来做nas的启动盘</td>
+</tr>
+<tr>
+<td>2</td>
+<td>旧电脑一台</td>
+<td>用来安装NAS系统</td>
+</tr>
+<tr>
+<td>3</td>
+<td>电脑或笔记本电脑</td>
+<td>局域网内引导和设置NAS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="软件部分">软件部分</h3>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>功能作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ChipEasy芯片无忧</td>
+<td>查询引导u盘的PID,VID</td>
+</tr>
+<tr>
+<td>2</td>
+<td>WinImage</td>
+<td>修改镜像文件</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Win32DiskImager</td>
+<td>向引导U盘中写入镜像</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Synology Assistant</td>
+<td>调试NAS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="系统">系统</h3>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>XPEnoboot_5.1-5022.3</td>
+<td>NAS引导镜像</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DSM_DS3615xs_5022.pat</td>
+<td>NAS系统文件</td>
+</tr>
+</tbody>
+</table>
+<h2 id="安装过程">安装过程</h2>
+<h3 id="1-使用chipeasy检查并记录u盘的vid-pid选中u盘后查看下方列表中的vid和pid的值">1、使用ChipEasy检查并记录U盘的VID PID，选中U盘后查看下方列表中的VID和PID的值</h3>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/images/2019/09/163236495592.png-watermark" alt="NAS0.png" loading="lazy"></figure>
+<h3 id="2-使用winimage把xpenoboot_ds3615xs_51-50223img里的syslinuxcfg提取到桌面">2、使用WinImage把XPEnoboot_DS3615xs_5.1-5022.3.img里的syslinux.cfg提取到桌面</h3>
+<figure data-type="image" tabindex="2"><img src="http://images.zyglz.com/blog/images/2019/09/163739607714.png-watermark" alt="NAS2.png" loading="lazy"></figure>
+<h3 id="3-用记事本打开syslinuxcfg使用替换功能将vid0x0ea0-pid0x2168替换为vid0x你u盘的vid-pid0x你u盘的pid">3、用记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID</h3>
+<p><strong>注意：这里更改不止1处，一定要全部替换。</strong></p>
+<figure data-type="image" tabindex="3"><img src="http://images.zyglz.com/blog/images/2019/09/163877651849.png-watermark" alt="NAS3.png" loading="lazy"></figure>
+<h3 id="4-将桌面的syslinuxcfg粘贴到winimage的xpenoboot_ds3615xs_51-50223img">4、将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.1-5022.3.img</h3>
+<h3 id="5-将u盘插入电脑使用win32diskimager将xpenoboot_ds3615xs_51-50223img镜像文件烧录到u盘里">5、将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.1-5022.3.img镜像文件烧录到U盘里</h3>
+<figure data-type="image" tabindex="4"><img src="http://images.zyglz.com/blog/images/2019/09/161601906753.png-watermark" alt="NAS4.png" loading="lazy"></figure>
+<h3 id="6-将u盘插入老的主机设置为u盘启动">6、将U盘插入老的主机，设置为U盘启动。</h3>
+<h3 id="7-开机后蓝色界面选择xpenology-dsm-51-5022-installupgrade到此u盘系统安装结束">7、开机后蓝色界面选择XPEnology DSM 5.1-5022 Install/Upgrade，到此U盘系统安装结束。</h3>
+<figure data-type="image" tabindex="5"><img src="http://images.zyglz.com/blog/images/2019/09/164284542838.jpg-watermark" alt="2019-09-12_174730.jpg" loading="lazy"></figure>
+<h3 id="8-使用在同一局域网内的另外一台电脑安装synology-assistant并打开搜索就会发现黑群晖">8、使用在同一局域网内的另外一台电脑，安装Synology Assistant，并打开，搜索就会发现黑群晖</h3>
+<figure data-type="image" tabindex="6"><img src="http://images.zyglz.com/blog/images/2019/09/16236823609.png-watermark" alt="NAS5.png" loading="lazy"></figure>
+<h3 id="9-右键黑群晖安装dsm操作系统-选择黑群晖固件dsm_ds3615xs_5022pat按步骤进行安装和设置即可进入dsm操作界面">9、右键黑群晖安装DSM操作系统。选择黑群晖固件DSM_DS3615xs_5022.pat，按步骤进行安装和设置即可进入DSM操作界面</h3>
+<figure data-type="image" tabindex="7"><img src="http://images.zyglz.com/blog/images/2019/09/162492169144.png-watermark" alt="NAS16.png" loading="lazy"></figure>
+<h3 id="10-安装完成在浏览器中输入对应的ip地址就可以访问了开始你的探索旅程吧">10、安装完成，在浏览器中输入对应的ip地址就可以访问了，开始你的探索旅程吧！</h3>
+<figure data-type="image" tabindex="8"><img src="http://images.zyglz.com/blog/images/2019/09/163399022856.png-watermark" alt="NAS1.png" loading="lazy"></figure>
+<h3 id="使用中51版本的黑群晖套件中心套件不全没有花生壳无法进行内网穿透只能家里使用需要安装52版本后面进行升级">使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</h3>
 ]]></content>
     </entry>
 </feed>
