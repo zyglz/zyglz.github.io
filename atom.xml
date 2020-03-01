@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id> </id>
     <title>资源管理站</title>
-    <updated>2020-03-01T13:58:08.050Z</updated>
+    <updated>2020-03-01T14:49:12.409Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href=" "/>
     <link rel="self" href=" /atom.xml"/>
@@ -15,53 +15,31 @@
         <id> /post/202003013a91ca0f9abcb51e/</id>
         <link href=" /post/202003013a91ca0f9abcb51e/">
         </link>
-        <updated>2020-03-01T13:15:57.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  想知道如何使用Gridea吗？如何使用Gridea在Github上搭建个人博客吗？<br>
-✍️  <strong>Gridea</strong> 是一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意。</p>
+        <updated>2020-03-01T14:28:13.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏想知道如何使用Gridea吗？如何使用Gridea在Github上搭建个人博客吗？</p>
+<p>✍️<strong>Gridea</strong>是一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  想知道如何使用Gridea吗？如何使用Gridea在Github上搭建个人博客吗？<br>
-✍️  <strong>Gridea</strong> 是一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意。</p>
+        <content type="html"><![CDATA[<p>👏想知道如何使用Gridea吗？如何使用Gridea在Github上搭建个人博客吗？</p>
+<p>✍️<strong>Gridea</strong>是一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意。</p>
 <!-- more -->
-<h2 id="github">🍀Github👇</h2>
-<h3 id="github官网-httpsgithubcom">📝 Github官网 https://github.com</h3>
-<p>⛳️ 如果有账号，直接登录，没有账号注册一个<br>
-<img src="http://images.zyglz.com/blog/uploads/20200301/0T0Rfne89zUu.jpg?imageslim" alt="mark" loading="lazy"><br>
-⛳️ 每个github账号有1个免费的github pages，默认域名即为：<strong>用户名.github.io</strong>,如果免费的已被占用（例如zyglz），得自行注册新的github账号，或者自行买域名，在仓库里的github pages里设置好，做好域名映射即可。</p>
-<h3 id="仓库">🌎仓库</h3>
+<h3 id="github">🍀Github👇</h3>
+<h4 id="github官网httpsgithubcom">📝 Github官网：<a href="https://github.com">https://github.com</a></h4>
+<p>⛳️ 如果有账号，直接登录，没有账号注册一个</p>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200301/0T0Rfne89zUu.jpg?imageslim" alt="mark" loading="lazy"></figure>
+<p>⛳️ 每个github账号有1个免费的github pages，默认域名即为：<strong>用户名.github.io</strong>,如果免费的已被占用（例如zyglz），得自行注册新的github账号，或者自行买域名，在仓库里的github pages里设置好，做好域名映射即可。</p>
+<h4 id="仓库">🌎仓库</h4>
 <ol>
-<li>
-<p>点击create a new repositories</p>
-</li>
-<li>
-<p>输入Repository name：Cyberlisa.github.io。固定格式：.github.io</p>
-</li>
-<li>
-<p>Description可填可不填。</p>
-</li>
-<li>
-<p>勾选Public</p>
-</li>
-<li>
-<p>勾选Intialize this repository with a README(可不勾选)</p>
-</li>
-<li>
-<p>点击Create repository</p>
-</li>
-</ol>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200301/RQlsmSj8dt53.jpg" alt="zyglz" loading="lazy"></figure>
-<ol start="7">
-<li>
-<p>自动跳转到仓库页面，点击Insights后面的Settings</p>
-</li>
-<li>
-<p>拉到下面GitHub Pages，看看有没有显示：Your site is published at https://zyglz.github.io/</p>
-</li>
-<li>
-<p>没有的话稍微等一下再试</p>
-</li>
-<li>
-<p>有的话点击链接跳转，看看能否打开</p>
-</li>
+<li>点击create a new repositories</li>
+<li>输入Repository name：Cyberlisa.github.io。固定格式：.github.io</li>
+<li>Description可填可不填。</li>
+<li>勾选Public</li>
+<li>勾选Intialize this repository with a README(可不勾选)</li>
+<li>点击Create repository<br>
+<img src="http://images.zyglz.com/blog/uploads/20200301/RQlsmSj8dt53.jpg" alt="zyglz" loading="lazy"></li>
+<li>自动跳转到仓库页面，点击Insights后面的Settings</li>
+<li>拉到下面GitHub Pages，看看有没有显示：Your site is published at https://zyglz.github.io/</li>
+<li>没有的话稍微等一下再试</li>
+<li>有的话点击链接跳转，看看能否打开</li>
 </ol>
 <h4 id="token">🖥Token</h4>
 <ol>
@@ -72,12 +50,12 @@
 </ol>
 <h3 id="gridea配置">🌁  Gridea配置</h3>
 <h4 id="下载安装">💻 下载安装</h4>
-<p>🚲在https://gridea.dev下载符合自己系统的客户端，安装。</p>
-<p>🚲安装完之后打开，默认有两篇文章：about 和hello-gridea；如图：<br>
+<p>🚲在https://gridea.dev下载符合自己系统的客户端，安装。<br>
+🚲安装完之后打开，默认有两篇文章：about 和hello-gridea；如图：<br>
 <img src="http://images.zyglz.com/blog/uploads/20200301/qrjhyzPrfvom.jpg" alt="zyglz" loading="lazy"></p>
 <h4 id="配置gridea">🌱配置Gridea</h4>
-<p>✈️打开后，点击【远程】：</p>
-<figure data-type="image" tabindex="2"><img src="http://images.zyglz.com/blog/uploads/20200301/P5ezl2891TM9.jpg" alt="zyglz" loading="lazy"></figure>
+<p>✈️打开后，点击【远程】：<br>
+<img src="http://images.zyglz.com/blog/uploads/20200301/P5ezl2891TM9.jpg" alt="zyglz" loading="lazy"></p>
 <table>
 <thead>
 <tr>
@@ -141,10 +119,10 @@
 <li>有问题点击https://github.com/getgridea/gridea里的【Issues】，在【Open】和【Closed】里看看有没有和你问题相似的issue。</li>
 </ol>
 <h3 id="更换主题">🌉更换主题</h3>
-<p>🗼在https://gridea.dev/themes/，寻找你喜欢主题，然后点击【下载文件】，下载后解压。</p>
-<p>🗼点击客户端里的【配置】，找到【 站点源文件路径 】（我的为：D:/Users/Administrator/Documents/Gridea），打开路径。退出Gridea客户端。</p>
-<p>🗼选择【themes】文件夹，把刚刚解压的主题文件夹复制过来，重新打开Gridea客户端，打开【主题】，选择主题，滚动下鼠标，选中刚刚复制进去的主题名称，保存。</p>
-<p>🗼点击预览，即可看到新的主题页面。</p>
+<p>🗼在https://gridea.dev/themes/，寻找你喜欢主题，然后点击【下载文件】，下载后解压。<br>
+🗼点击客户端里的【配置】，找到【 站点源文件路径 】（我的为：D:/Users/Administrator/Documents/Gridea），打开路径。退出Gridea客户端。<br>
+🗼选择【themes】文件夹，把刚刚解压的主题文件夹复制过来，重新打开Gridea客户端，打开【主题】，选择主题，滚动下鼠标，选中刚刚复制进去的主题名称，保存。<br>
+🗼点击预览，即可看到新的主题页面。</p>
 <h3 id="开启gitalk评论系统">💬 开启Gitalk评论系统</h3>
 <p>🏷️在https://github.com/settings/applications/new注册应用。</p>
 <table>
@@ -169,34 +147,38 @@
 </tr>
 </tbody>
 </table>
-<p>🏷️填写后点击【Register application】，会得到【Client ID】和【Client Secret】。</p>
-<figure data-type="image" tabindex="3"><img src="http://images.zyglz.com/blog/uploads/20200301/Y0atBvWlM8wm.jpg" alt="zyglz" loading="lazy"></figure>
-<p>🏷️打开Gridea客户端——&gt;远程——&gt;评论配置——&gt;平台（选中Gitalk）——&gt;按照下面提示填写——&gt;</p>
+<p>🏷️填写后点击【Register application】，会得到【Client ID】和【Client Secret】。<br>
+<img src="http://images.zyglz.com/blog/uploads/20200301/Y0atBvWlM8wm.jpg" alt="zyglz" loading="lazy"><br>
+🏷️打开Gridea客户端-&gt;远程-&gt;评论配置-&gt;平台（选中Gitalk）-&gt;按照下面提示填写-&gt;</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Client ID</th>
-<th style="text-align:left"></th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">内容</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Client Secret</td>
-<td style="text-align:left"></td>
+<td style="text-align:center">Client ID</td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td style="text-align:left">仓库</td>
-<td style="text-align:left">zyglz.github.io</td>
+<td style="text-align:center">Client Secret</td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td style="text-align:left">Owner</td>
-<td style="text-align:left">zyglz</td>
+<td style="text-align:center">仓库</td>
+<td style="text-align:center">zyglz.github.io</td>
+</tr>
+<tr>
+<td style="text-align:center">Owner</td>
+<td style="text-align:center">zyglz</td>
 </tr>
 </tbody>
 </table>
-<p>🏷️填完后点击【保存】——&gt;【同步】。</p>
-<p>** 📋  稍等一会儿后，在浏览器打开域名，会看到文章底下显示“未找到相关的issues进行评论xxx”，点击【使用GitHub登陆】，进行授权。**</p>
-<h3 id="尽情发挥你的才华吧-enjoy~">🤝尽情发挥你的才华吧！😘 Enjoy~</h3>
+<p>🏷️填完后点击【保存】-&gt;【同步】。</p>
+<p><strong>📋稍等一会儿后，在浏览器打开域名，会看到文章底下显示“未找到相关的issues进行评论xxx”，点击【使用GitHub登陆】，进行授权。</strong></p>
+<p><strong>🤝尽情发挥你的才华吧!😋</strong></p>
 ]]></content>
     </entry>
     <entry>
