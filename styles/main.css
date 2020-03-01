@@ -1889,7 +1889,16 @@ body {
     }
     .nav-toggle .line {
       background-color: #eee !important;
-    }body {
+    }.header {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      .main-continer {
+        width: 1200px;
+        margin: 0 auto;
+      }
+    body {
       color: #555;
     }
     .next-md-body {
