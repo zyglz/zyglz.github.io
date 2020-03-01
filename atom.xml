@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id> </id>
     <title>资源管理站</title>
-    <updated>2020-03-01T05:24:30.709Z</updated>
+    <updated>2020-03-01T05:37:05.216Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href=" "/>
     <link rel="self" href=" /atom.xml"/>
@@ -70,13 +70,11 @@
         <link href=" /post/20200209245218510a5abc1d/">
         </link>
         <updated>2020-02-29T13:00:25.000Z</updated>
-        <summary type="html"><![CDATA[<h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
-<p>家里有台闲置的旧电脑，前几日将其安装了黑群晖，作为家庭NAS使用，已经使用了一个月了，目前运行稳定正常。</p>
+        <summary type="html"><![CDATA[<p><strong>家里有台闲置的旧电脑，前几日将其安装了NAS黑群晖，作为家庭NAS使用，已经使用了一个月了，目前运行稳定正常，下面主要讲述主要的安装过程!</strong></p>
 ]]></summary>
-        <content type="html"><![CDATA[<h1 id="家里旧电脑闲来没用安装家庭nas黑群晖下面主要讲述主要的安装过程">家里旧电脑闲来没用，安装家庭NAS黑群晖，下面主要讲述主要的安装过程!</h1>
-<p>家里有台闲置的旧电脑，前几日将其安装了黑群晖，作为家庭NAS使用，已经使用了一个月了，目前运行稳定正常。</p>
-<!--more-->
-<h2 id="准备工作">准备工作</h2>
+        <content type="html"><![CDATA[<p><strong>家里有台闲置的旧电脑，前几日将其安装了NAS黑群晖，作为家庭NAS使用，已经使用了一个月了，目前运行稳定正常，下面主要讲述主要的安装过程!</strong></p>
+<!-- more -->
+<p>##📣 准备工作</p>
 <h3 id="硬件部分">硬件部分</h3>
 <table>
 <thead>
@@ -158,13 +156,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="安装过程">安装过程</h2>
+<h2 id="安装过程">📢安装过程</h2>
 <h3 id="1-使用chipeasy检查并记录u盘的vid-pid选中u盘后查看下方列表中的vid和pid的值">1、使用ChipEasy检查并记录U盘的VID PID，选中U盘后查看下方列表中的VID和PID的值</h3>
 <figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/images/2019/09/163236495592.png-watermark" alt="NAS0.png" loading="lazy"></figure>
 <h3 id="2-使用winimage把xpenoboot_ds3615xs_51-50223img里的syslinuxcfg提取到桌面">2、使用WinImage把XPEnoboot_DS3615xs_5.1-5022.3.img里的syslinux.cfg提取到桌面</h3>
 <figure data-type="image" tabindex="2"><img src="http://images.zyglz.com/blog/images/2019/09/163739607714.png-watermark" alt="NAS2.png" loading="lazy"></figure>
 <h3 id="3-用记事本打开syslinuxcfg使用替换功能将vid0x0ea0-pid0x2168替换为vid0x你u盘的vid-pid0x你u盘的pid">3、用记事本打开syslinux.cfg使用替换功能将vid=0x0EA0 pid=0x2168替换为vid=0x你U盘的vid pid=0x你U盘的PID</h3>
-<p><strong>注意：这里更改不止1处，一定要全部替换。</strong></p>
+<p><strong>🔺注意：这里更改不止1处，一定要全部替换。</strong></p>
 <figure data-type="image" tabindex="3"><img src="http://images.zyglz.com/blog/images/2019/09/163877651849.png-watermark" alt="NAS3.png" loading="lazy"></figure>
 <h3 id="4-将桌面的syslinuxcfg粘贴到winimage的xpenoboot_ds3615xs_51-50223img">4、将桌面的syslinux.cfg粘贴到WinImage的XPEnoboot_DS3615xs_5.1-5022.3.img</h3>
 <h3 id="5-将u盘插入电脑使用win32diskimager将xpenoboot_ds3615xs_51-50223img镜像文件烧录到u盘里">5、将U盘插入电脑，使用Win32DiskImager将XPEnoboot_DS3615xs_5.1-5022.3.img镜像文件烧录到U盘里</h3>
@@ -178,7 +176,7 @@
 <figure data-type="image" tabindex="7"><img src="http://images.zyglz.com/blog/images/2019/09/162492169144.png-watermark" alt="NAS16.png" loading="lazy"></figure>
 <h3 id="10-安装完成在浏览器中输入对应的ip地址就可以访问了开始你的探索旅程吧">10、安装完成，在浏览器中输入对应的ip地址就可以访问了，开始你的探索旅程吧！</h3>
 <figure data-type="image" tabindex="8"><img src="http://images.zyglz.com/blog/images/2019/09/163399022856.png-watermark" alt="NAS1.png" loading="lazy"></figure>
-<h3 id="使用中51版本的黑群晖套件中心套件不全没有花生壳无法进行内网穿透只能家里使用需要安装52版本后面进行升级">使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</h3>
+<p>###🔊 使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</p>
 ]]></content>
     </entry>
 </feed>
