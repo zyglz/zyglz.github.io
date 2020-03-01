@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id> </id>
     <title>资源管理站</title>
-    <updated>2020-03-01T05:37:05.216Z</updated>
+    <updated>2020-03-01T08:02:24.358Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href=" "/>
     <link rel="self" href=" /atom.xml"/>
@@ -74,8 +74,8 @@
 ]]></summary>
         <content type="html"><![CDATA[<p><strong>家里有台闲置的旧电脑，前几日将其安装了NAS黑群晖，作为家庭NAS使用，已经使用了一个月了，目前运行稳定正常，下面主要讲述主要的安装过程!</strong></p>
 <!-- more -->
-<p>##📣 准备工作</p>
-<h3 id="硬件部分">硬件部分</h3>
+<h2 id="准备工作">📣 准备工作</h2>
+<h3 id="1-硬件部分">1、硬件部分</h3>
 <table>
 <thead>
 <tr>
@@ -102,7 +102,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="软件部分">软件部分</h3>
+<h3 id="2-软件部分">2、软件部分</h3>
 <table>
 <thead>
 <tr>
@@ -134,7 +134,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="系统">系统</h3>
+<h3 id="3-系统">3、系统</h3>
 <table>
 <thead>
 <tr>
@@ -176,7 +176,7 @@
 <figure data-type="image" tabindex="7"><img src="http://images.zyglz.com/blog/images/2019/09/162492169144.png-watermark" alt="NAS16.png" loading="lazy"></figure>
 <h3 id="10-安装完成在浏览器中输入对应的ip地址就可以访问了开始你的探索旅程吧">10、安装完成，在浏览器中输入对应的ip地址就可以访问了，开始你的探索旅程吧！</h3>
 <figure data-type="image" tabindex="8"><img src="http://images.zyglz.com/blog/images/2019/09/163399022856.png-watermark" alt="NAS1.png" loading="lazy"></figure>
-<p>###🔊 使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</p>
+<h2 id="使用中51版本的黑群晖套件中心套件不全没有花生壳无法进行内网穿透只能家里使用需要安装52版本后面进行升级">🔊 使用中，5.1版本的黑群晖，套件中心套件不全，没有花生壳，无法进行内网穿透，只能家里使用，需要安装5.2版本，后面进行升级。</h2>
 ]]></content>
     </entry>
 </feed>
