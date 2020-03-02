@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>资源管理站</title>
-    <updated>2020-03-02T09:31:40.351Z</updated>
+    <updated>2020-03-02T13:02:14.153Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href=""/>
     <link rel="self" href="/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>/images/avatar.png</logo>
     <icon>/favicon.ico</icon>
     <rights>All rights reserved 2020, 资源管理站</rights>
+    <entry>
+        <title type="html"><![CDATA[Gridea文章页面出现内嵌式滚动条，如何取消？]]></title>
+        <id>/post/20200302953307c04d0487c9/</id>
+        <link href="/post/20200302953307c04d0487c9/">
+        </link>
+        <updated>2020-03-02T12:40:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>✍️<strong>Gridea</strong>在发表文章后，文章页面里出现嵌套的滚动条，无用且十分影响美观，找原因，取消它。</p>
+<p>📝这是我碰到的一个小问题，现在已经解决，现将原因及解决办法分享出来 💬 。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>✍️<strong>Gridea</strong>在发表文章后，文章页面里出现嵌套的滚动条，无用且十分影响美观，找原因，取消它。</p>
+<p>📝这是我碰到的一个小问题，现在已经解决，现将原因及解决办法分享出来 💬 。</p>
+<!-- more -->
+<h2 id="问题描述">🍀问题描述：👇</h2>
+<p>⛳️文章页面里出现嵌套的滚动条，问题页面如下图：</p>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200302/YE7j6I1YiJ6U.jpg" alt="mark" loading="lazy"></figure>
+<h2 id="病症所在">🌁  病症所在：👇</h2>
+<p>🏷️因为文章最后一行文字为标题行。</p>
+<h2 id="️解决方法">⛳️解决方法：👇</h2>
+<p>💻 去除文章最后一样的标题行即可，📋完美🌱。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea+Github快速搭建个人博客教程]]></title>
         <id>/post/202003013a91ca0f9abcb51e/</id>
