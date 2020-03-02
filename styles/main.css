@@ -1961,29 +1961,29 @@ body {
       background: #f9f9f9;
       color: rgba(0, 0, 0, 0.98);
     }.markdownIt-TOC a {
-      color: #eee;
-      border-bottom-color: #eee;
+      color: #3bc9db;
+      border-bottom-color: #3bc9db;
     }.markdownIt-TOC a:hover {
-      color: #fff;
-      border-bottom-color: #fff;
+      color: #364fc7;
+      border-bottom-color: #364fc7;
     }.active-current > a {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #a61e4d !important;
+      border-bottom-color: #a61e4d !important;
     }
     .sidebar-title-active {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #a61e4d;
+      border-bottom-color: #a61e4d;
     }
     .sidebar-title-item:hover {
-      color: #fc6423 !important;
+      color: #a61e4d !important;
     }
     .active-show > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #a61e4d;
+      border-bottom-color: #a61e4d;
     }
     .active-hidden > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #a61e4d;
+      border-bottom-color: #a61e4d;
     }
       .site-meta {
         background: #000 !important;

@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="Gridea静态个人博客">
+<meta name="keywords" content="zyglz静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
 <title>关于 | 资源管理站</title>
-<link rel="shortcut icon" href="http://zyglz.github.io/favicon.ico?v=1583108730997">
-<link rel="stylesheet" href="http://zyglz.github.io/styles/main.css">
+<link rel="shortcut icon" href="/favicon.ico?v=1583141471414">
+<link rel="stylesheet" href="/styles/main.css">
 
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -146,7 +146,7 @@
               
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="http://zyglz.github.io/images/avatar.png"/>
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
     <p class="site-author-name">资源管理站</p>
     <p class="site-description right-motion">这个人很懒，什么都不想写...</p>
   </div>
@@ -462,7 +462,7 @@ window.addEventListener('load', function() {
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="http://zyglz.github.io/post/about/">
+    <a class="post-title-link" href="/post/about/">
       关于
     </a>
   </h1>
@@ -511,7 +511,7 @@ Email：admin@zyglz.com</p>
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://zyglz.github.io/post/about/" title="关于">关于</a>
+      <a href="/post/about/" title="关于">关于</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -532,22 +532,17 @@ Email：admin@zyglz.com</p>
 </div>
               
                 
-                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-  var gitalk = new Gitalk({
-    clientID: 'c34dcc76e4aef9973e0c',
-    clientSecret: 'bfa5175600d5ee72b68d7833019222cd87c5101e',
-    repo: 'zyglz.github.io',
-    owner: 'zyglz',
-    admin: ['zyglz'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-  gitalk.render('gitalk-container')
+                  <!--PC版-->
+<script language="javascript" type="text/javascript">
+	var sid=(location.pathname).substring(6, 30);
+	document.write('<div id="SOHUCS" sid="'+sid+'"></div>');
+</script>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cyusRC00s',
+conf: 'prod_13cc5d2d1db7afbf1159361267080ecc'
+});
 </script>
                 
                 
