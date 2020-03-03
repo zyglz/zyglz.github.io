@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>资源管理站</title>
-    <updated>2020-03-02T13:27:16.402Z</updated>
+    <updated>2020-03-03T08:18:46.342Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href=""/>
     <link rel="self" href="/atom.xml"/>
@@ -10,6 +10,101 @@
     <logo>/images/avatar.png</logo>
     <icon>/favicon.ico</icon>
     <rights>All rights reserved 2020, 资源管理站</rights>
+    <entry>
+        <title type="html"><![CDATA[Gridea静态博客添加部署畅言云评论功能]]></title>
+        <id>/post/202003037f0328492b56f46f/</id>
+        <link href="/post/202003037f0328492b56f46f/">
+        </link>
+        <updated>2020-03-03T04:59:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>👔Gridea默认的两款留言评论平台一个是Gitalk,一个是Disqus,这两款评论平台使用起来网络连接不好，也不稳定，就想把畅言云评论加到Gridea中使用！</p>
+<p>💎因为Gridea默认部署的两款评论平台，自己无法添加，最后只能用偷梁换柱的方法，将Gitalk换成畅言，先将方法介绍如下▽</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👔Gridea默认的两款留言评论平台一个是Gitalk,一个是Disqus,这两款评论平台使用起来网络连接不好，也不稳定，就想把畅言云评论加到Gridea中使用！</p>
+<p>💎因为Gridea默认部署的两款评论平台，自己无法添加，最后只能用偷梁换柱的方法，将Gitalk换成畅言，先将方法介绍如下▽</p>
+<!-- more -->
+<p><mark><strong>⛔️注意:因为畅言云现在需要域名备案，没有域名备案的请跳过。</strong></mark></p>
+<h1 id="获取代码">🌄获取代码</h1>
+<ul>
+<li>首先畅言云平台登录自己的账号，没有账号的请注册一下，新注册的用户需要完成域名备案，否则无法使用。</li>
+<li>在个人后台☞找到安装畅言☞通用代码安装☞找到自己的通用代码。<br>
+<img src="http://images.zyglz.com/blog/uploads/20200303/KcgeI9Olvzle.jpg?imageslim" alt="mark" loading="lazy"></li>
+<li>复制此处的安装代码。</li>
+</ul>
+<h1 id="设置方法">🎀设置方法</h1>
+<h2 id="替换gitalk配置文件">🏓替换Gitalk配置文件</h2>
+<ul>
+<li>打开Gridea,系统配置里面找到[站点源文件路径]，打开文件夹的路径，依次打开（Gridea--&gt;themes--&gt;【当前主题文件夹】--&gt;emplates--&gt;_blocks）文件夹，找到名为“gitalk.ejs”的文件</li>
+<li>复制一份备份（注意，必须复制备份一个原文件）</li>
+<li>打开gitalk.ejs文件，删除原有的代码，粘贴上一步获取的畅言通用安装代码。<br>
+gitalk.ejs原有代码如下：</li>
+</ul>
+<pre><code class="language-HTML">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gitalk/dist/gitalk.css&quot;&gt;
+&lt;script src=&quot;https://unpkg.com/gitalk/dist/gitalk.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;gitalk-container&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  var gitalk = new Gitalk({
+    clientID: '&lt;%= commentSetting.gitalkSetting.clientId %&gt;',
+    clientSecret: '&lt;%= commentSetting.gitalkSetting.clientSecret %&gt;',
+    repo: '&lt;%= commentSetting.gitalkSetting.repository %&gt;',
+    owner: '&lt;%= commentSetting.gitalkSetting.owner %&gt;',
+    admin: ['&lt;%= commentSetting.gitalkSetting.owner %&gt;'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
+&lt;/script&gt;
+
+</code></pre>
+<p>替换为畅言通用安装代码：</p>
+<pre><code>&lt;!--PC版--&gt;
+&lt;div id=&quot;SOHUCS&quot; sid=&quot;请将此处替换为配置SourceID的语句&quot;&gt;&lt;/div&gt;
+&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+window.changyan.api.config({
+appid: 'c*******',
+conf: 'prod_13**************************'
+});
+&lt;/script&gt;
+
+</code></pre>
+<ul>
+<li>到这里基本已完成畅言评论的安装，你打开gridea,在线预览观看成效。</li>
+</ul>
+<hr>
+<p>下面这一步可以忽略，可配置也可以不用配置。</p>
+<h2 id="配置sid">🌳配置sid</h2>
+<p>将通用安装代码的第一行:</p>
+<pre><code>&lt;!--PC版--&gt;
+&lt;div id=&quot;SOHUCS&quot; sid=&quot;请将此处替换为配置SourceID的语句&quot;&gt;&lt;/div&gt;
+&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+window.changyan.api.config({
+appid: 'c*******',
+conf: 'prod_13**************************'
+});
+&lt;/script&gt;
+</code></pre>
+<p>换成一下代码即可:</p>
+<pre><code>&lt;!--PC版--&gt;
+&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+	var sid=(location.pathname).substring(6, 30);
+	document.write('&lt;div id=&quot;SOHUCS&quot; sid=&quot;'+sid+'&quot;&gt;&lt;/div&gt;');
+&lt;/script&gt;
+&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+window.changyan.api.config({
+appid: 'c*******',
+conf: 'prod_13**************************'
+});
+&lt;/script&gt;
+</code></pre>
+<h2 id="见成效">💐见成效：</h2>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/0qOmkWHif1f2.jpg?imageslim" alt="mark" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea文章页面出现内嵌式滚动条，如何取消？]]></title>
         <id>/post/20200302953307c04d0487c9/</id>
