@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
     <title>资源管理站</title>
-    <updated>2020-03-03T08:18:46.342Z</updated>
+    <updated>2020-03-03T14:00:12.427Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href=""/>
     <link rel="self" href="/atom.xml"/>
@@ -10,6 +10,79 @@
     <logo>/images/avatar.png</logo>
     <icon>/favicon.ico</icon>
     <rights>All rights reserved 2020, 资源管理站</rights>
+    <entry>
+        <title type="html"><![CDATA[Internet Download Manager (IDM下载器v6.32.6)中文注册版]]></title>
+        <id>/post/20200303eba65bbbac0ddc02/</id>
+        <link href="/post/20200303eba65bbbac0ddc02/">
+        </link>
+        <updated>2020-03-03T13:48:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
+<!-- more -->
+<p><strong>Internet Download Manager (IDM下载器v6.32.6)中文注册版</strong></p>
+<h2 id="idm简介">IDM简介</h2>
+<ul>
+<li>Internet Download Manager软件提升你的下载速度最多达5倍，安排下载时程，或续传一半的软件。Internet Download Manager的续传功能可以恢复因为断线、网络问题、计算机宕机甚至无预警的停电导致下传到一半的软件。此程序具有动态档案分割、多重下载点技术，而且它会重复使用现有的联机，而不需再重新联机登入一遍。聪明的in-speed技术会动态地将所有设定应用到某种联机类型，以充分利用下载速度。</li>
+<li>Internet Download Manager支持下载队列、防火墙、代理服务器和映射服务器、重新导向、cookies、需要验证的目录，以及各种不同的服务器平台。此程序紧密地与Internet Explorer和NetscapeCommunicator结合，自动地处理你的下载需求。此程序还具有下载逻辑最佳化功能、检查病毒，以及多种偏好设定。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/VS6jbBvkr3Tl.jpg?imageslim" alt="运行界面" loading="lazy"></figure>
+<h2 id="下载地址">下载地址：</h2>
+<p>网盘下载：<a href="https://www.lanzous.com/i9wvtcd" title="https://www.lanzous.com/i9wvtcd">网盘下载一</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MarkdownPad 2 绿色中文汉化版]]></title>
+        <id>/post/20200303c4af925d1c128406/</id>
+        <link href="/post/20200303c4af925d1c128406/">
+        </link>
+        <updated>2020-03-03T13:36:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>MarkdownPad2 绿色中文汉化版简介<br>
+MarkdownPad是一款免费的将文本转换成HTML/XHTML的网页格式的小软件，操作简单容易，上手很快，可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>MarkdownPad2 绿色中文汉化版简介<br>
+MarkdownPad是一款免费的将文本转换成HTML/XHTML的网页格式的小软件，操作简单容易，上手很快，可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
+<!-- more -->
+<h1 id="markdownpad-2-绿色中文汉化版">MarkdownPad 2 绿色中文汉化版</h1>
+<ul>
+<li>MarkdownPad是一个网络作家的文本到HTML转换工具。</li>
+<li>MarkdownPad允许您编写使用易于阅读，易于编写纯文本格式，然后将其转换为结构有效的XHTML(或HTML)。</li>
+</ul>
+<p><img src="http://images.zyglz.com/blog/uploads/20200303/4D7nbQYbEeoe.jpg?imageslim" alt="运行界面" title="运行界面" loading="lazy"><br>
+##下载地址：<br>
+网盘下载：<a href="https://www.lanzous.com/i9wusih" title="https://www.lanzous.com/i9wusih">网盘下载一</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MarkdownPad 2 win10安装报错“Awesomium v1.6.5停止工作”]]></title>
+        <id>/post/2020030342cd61348801e2dd/</id>
+        <link href="/post/2020030342cd61348801e2dd/">
+        </link>
+        <updated>2020-03-03T12:45:52.000Z</updated>
+        <summary type="html"><![CDATA[<p>MarkdownPad 2 在win10电脑上安装，运行时报错“awesomium v1.6.5停止工作”，显示awesomium<strong>This view has crashed</strong>错误提示，以下方法完美解决MarkdownPad2 html渲染错误问题 ，亲测十分有效：</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>MarkdownPad 2 在win10电脑上安装，运行时报错“awesomium v1.6.5停止工作”，显示awesomium<strong>This view has crashed</strong>错误提示，以下方法完美解决MarkdownPad2 html渲染错误问题 ，亲测十分有效：</p>
+<!-- more -->
+<h1 id="报错内容">报错内容：</h1>
+<h2 id="错误警告">错误警告：</h2>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/4tkGbfXVge9q.jpg?imageslim" alt="mark" loading="lazy"></figure>
+<h2 id="错误提示">错误提示：</h2>
+<figure data-type="image" tabindex="2"><img src="http://images.zyglz.com/blog/uploads/20200303/QYuywzHFxH2Q.jpg?imageslim" alt="mark" loading="lazy"></figure>
+<h1 id="解决方法">解决方法：</h1>
+<h2 id="下载软件">下载软件</h2>
+<ul>
+<li>安装Awesomium 1.6.6 SDK</li>
+<li>下载地址:<a href="https://www.lanzous.com/i9wtj9i">https://www.lanzous.com/i9wtj9i<br>
+</a></li>
+</ul>
+<h2 id="重启程序">重启程序</h2>
+<ul>
+<li>安装后，重启markdown就解决问题了</li>
+</ul>
+<h2 id="效果展示">效果展示</h2>
+<figure data-type="image" tabindex="3"><img src="http://images.zyglz.com/blog/uploads/20200303/4D7nbQYbEeoe.jpg?imageslim" alt="mark" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea静态博客添加部署畅言云评论功能]]></title>
         <id>/post/202003037f0328492b56f46f/</id>
