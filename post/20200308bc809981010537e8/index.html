@@ -6,7 +6,7 @@
 <meta name="keywords" content="zyglz静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>Gridea静态博客添加部署畅言云评论功能 | 资源管理站</title>
+<title>完美解决Github访问缓慢问题 | 资源管理站</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1584680894856">
 <link rel="stylesheet" href="/styles/main.css">
 
@@ -25,8 +25,8 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
-    <meta name="description" content="Gridea静态博客添加部署畅言云评论功能" />
-    <meta name="keywords" content="个人博客,Gridea" />
+    <meta name="description" content="完美解决Github访问缓慢问题" />
+    <meta name="keywords" content="git" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -225,12 +225,14 @@
               <div class="toc-box right-motion">
   <div class="toc-wrapper auto-number auto" id="toc_wrapper">
     <ul class="markdownIt-TOC">
-<li><a href="#%E8%8E%B7%E5%8F%96%E4%BB%A3%E7%A0%81">🌄获取代码</a></li>
-<li><a href="#%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95">🎀设置方法</a>
+<li><a href="#%E4%B8%80%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0">一.问题原因</a></li>
+<li><a href="#%E4%BA%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95">二.解决办法</a></li>
+<li><a href="#%E4%B8%89%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4">三.具体步骤</a>
 <ul>
-<li><a href="#%E6%9B%BF%E6%8D%A2gitalk%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">🏓替换Gitalk配置文件</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AEsid">🌳配置sid</a></li>
-<li><a href="#%E8%A7%81%E6%88%90%E6%95%88">💐见成效：</a></li>
+<li><a href="#1%E8%8E%B7%E5%8F%96github%E7%9A%84ip%E5%9C%B0%E5%9D%80">1.获取Github的ip地址</a></li>
+<li><a href="#2%E4%BF%AE%E6%94%B9%E6%9C%AC%E5%9C%B0host%E6%96%87%E4%BB%B6">2.修改本地host文件</a></li>
+<li><a href="#3%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0dns%E7%BC%93%E5%AD%98">3.更新本地dns缓存</a></li>
+<li><a href="#4ping%E6%95%88%E6%9E%9C">4.ping效果</a></li>
 </ul>
 </li>
 </ul>
@@ -486,8 +488,8 @@ window.addEventListener('load', function() {
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="/post/202003037f0328492b56f46f/">
-      Gridea静态博客添加部署畅言云评论功能
+    <a class="post-title-link" href="/post/20200308bc809981010537e8/">
+      完美解决Github访问缓慢问题
     </a>
   </h1>
   <div class="post-meta">
@@ -495,7 +497,7 @@ window.addEventListener('load', function() {
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-03-03</span>
+      <span>2020-03-08</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -504,14 +506,8 @@ window.addEventListener('load', function() {
         <span class="pc-show">分类于</span>
         
           
-            <a href="/tag/I-zUJKeiG/">
-              <span>个人博客</span>
-            </a>、
-          
-        
-          
-            <a href="/tag/_Gx4VuEvp/">
-              <span>Gridea</span>
+            <a href="/tag/yolYvKb5r/">
+              <span>git</span>
             </a>
           
         
@@ -520,101 +516,42 @@ window.addEventListener('load', function() {
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>4分钟</span>
+      <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>763<span class="pc-show">字数</span></span>
+      <span>242<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
 </div>
               <div class="post-body next-md-body" id="post_body">
-                <p>👔Gridea默认的两款留言评论平台一个是Gitalk,一个是Disqus,这两款评论平台使用起来网络连接不好，也不稳定，就想把畅言云评论加到Gridea中使用！</p>
-<p>💎因为Gridea默认部署的两款评论平台，自己无法添加，最后只能用偷梁换柱的方法，将Gitalk换成畅言，先将方法介绍如下▽</p>
+                <p>国内访问github网站非常慢，有时候根本无法连接使用github,如何解决或缓解这个问题呢？</p>
 <!-- more -->
-<p><mark><strong>⛔️注意:因为畅言云现在需要域名备案，没有域名备案的请跳过。</strong></mark></p>
-<h1 id="获取代码">🌄获取代码</h1>
-<ul>
-<li>首先畅言云平台登录自己的账号，没有账号的请注册一下，新注册的用户需要完成域名备案，否则无法使用。</li>
-<li>在个人后台☞找到安装畅言☞通用代码安装☞找到自己的通用代码。<br>
-<img src="http://images.zyglz.com/blog/uploads/20200303/KcgeI9Olvzle.jpg!watermark" alt="mark" loading="lazy"></li>
-<li>复制此处的安装代码。</li>
-</ul>
-<h1 id="设置方法">🎀设置方法</h1>
-<h2 id="替换gitalk配置文件">🏓替换Gitalk配置文件</h2>
-<ul>
-<li>打开Gridea,系统配置里面找到[站点源文件路径]，打开文件夹的路径，依次打开（Gridea--&gt;themes--&gt;【当前主题文件夹】--&gt;emplates--&gt;_blocks）文件夹，找到名为“gitalk.ejs”的文件</li>
-<li>复制一份备份（注意，必须复制备份一个原文件）</li>
-<li>打开gitalk.ejs文件，删除原有的代码，粘贴上一步获取的畅言通用安装代码。<br>
-gitalk.ejs原有代码如下：</li>
-</ul>
-<pre><code class="language-HTML">
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gitalk/dist/gitalk.css&quot;&gt;
-&lt;script src=&quot;https://unpkg.com/gitalk/dist/gitalk.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;div id=&quot;gitalk-container&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-  var gitalk = new Gitalk({
-    clientID: '&lt;%= commentSetting.gitalkSetting.clientId %&gt;',
-    clientSecret: '&lt;%= commentSetting.gitalkSetting.clientSecret %&gt;',
-    repo: '&lt;%= commentSetting.gitalkSetting.repository %&gt;',
-    owner: '&lt;%= commentSetting.gitalkSetting.owner %&gt;',
-    admin: ['&lt;%= commentSetting.gitalkSetting.owner %&gt;'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-  gitalk.render('gitalk-container')
-&lt;/script&gt;
-
+<h1 id="一问题原因">一.问题原因</h1>
+<p>GitHub的CDN域名遭到DNS污染，导致无法连接使用GitHub的加速分发服务器，才使得国内访问速度很慢。</p>
+<h1 id="二解决办法">二.解决办法</h1>
+<p>通过修改 Hosts文件，将域名解析直接指向github服务器的IP地址，来绕过DNS的解析，以此解决污染问题。</p>
+<h1 id="三具体步骤">三.具体步骤</h1>
+<h2 id="1获取github的ip地址">1.获取Github的ip地址</h2>
+<p>通过访问 https://www.ipaddress.com/<br>
+这个网站来获取当前网络github最新的ip地址。<br>
+我的就为:192.30.253.113<br>
+<img src="http://images.zyglz.com/blog/uploads/20200308/jbGYGC6I1JiG.jpg!watermark" alt="mark" loading="lazy"></p>
+<h2 id="2修改本地host文件">2.修改本地host文件</h2>
+<p>1.文件路径：C:\Windows\System32\drivers\etc\host</p>
+<p>2.复制host文件另存为host.bak,备份一份</p>
+<p>3.在原有的host文件中添加一下代码:</p>
+<pre><code>192.30.253.113      github.com
+192.30.253.113      www.github.com
 </code></pre>
-<p>替换为畅言通用安装代码：</p>
-<pre><code>&lt;!--PC版--&gt;
-&lt;div id=&quot;SOHUCS&quot; sid=&quot;请将此处替换为配置SourceID的语句&quot;&gt;&lt;/div&gt;
-&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-window.changyan.api.config({
-appid: 'c*******',
-conf: 'prod_13**************************'
-});
-&lt;/script&gt;
-
+<h2 id="3更新本地dns缓存">3.更新本地dns缓存</h2>
+<pre><code>ipconfig /flushdns
 </code></pre>
-<ul>
-<li>到这里基本已完成畅言评论的安装，你打开gridea,在线预览观看成效。</li>
-</ul>
-<hr>
-<p>下面这一步可以忽略，可配置也可以不用配置。</p>
-<h2 id="配置sid">🌳配置sid</h2>
-<p>将通用安装代码的第一行:</p>
-<pre><code>&lt;!--PC版--&gt;
-&lt;div id=&quot;SOHUCS&quot; sid=&quot;请将此处替换为配置SourceID的语句&quot;&gt;&lt;/div&gt;
-&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-window.changyan.api.config({
-appid: 'c*******',
-conf: 'prod_13**************************'
-});
-&lt;/script&gt;
-</code></pre>
-<p>换成一下代码即可:</p>
-<pre><code>&lt;!--PC版--&gt;
-&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
-	var sid=(location.pathname).substring(6, 30);
-	document.write('&lt;div id=&quot;SOHUCS&quot; sid=&quot;'+sid+'&quot;&gt;&lt;/div&gt;');
-&lt;/script&gt;
-&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-window.changyan.api.config({
-appid: 'c*******',
-conf: 'prod_13**************************'
-});
-&lt;/script&gt;
-</code></pre>
-<h2 id="见成效">💐见成效：</h2>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/0qOmkWHif1f2.jpg!watermark" alt="mark" loading="lazy"></figure>
+<h2 id="4ping效果">4.ping效果</h2>
+<p>如图所示:<br>
+<img src="http://images.zyglz.com/blog/uploads/20200308/7hXbkCK7uOt9.jpg!watermark" alt="mark" loading="lazy"></p>
 
               </div>
               <div class="post-footer">
@@ -625,7 +562,7 @@ conf: 'prod_13**************************'
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="/post/202003037f0328492b56f46f/" title="Gridea静态博客添加部署畅言云评论功能">Gridea静态博客添加部署畅言云评论功能</a>
+      <a href="/post/20200308bc809981010537e8/" title="完美解决Github访问缓慢问题">完美解决Github访问缓慢问题</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -634,23 +571,21 @@ conf: 'prod_13**************************'
   </ul>
   <div class="tags">
     
-      <a href="/tag/I-zUJKeiG/"># 个人博客</a>
-    
-      <a href="/tag/_Gx4VuEvp/"># Gridea</a>
+      <a href="/tag/yolYvKb5r/"># git</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
       
         <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="MarkdownPad 2 win10安装报错“Awesomium v1.6.5停止工作”" href="/post/2020030342cd61348801e2dd/">MarkdownPad 2 win10安装报错“Awesomium v1.6.5停止工作”</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="MarkdownPad 2 win10安装报错“Awesomium v1.6.5停止工作”" href="/post/2020030342cd61348801e2dd/">上一篇</a>
+        <a class="nav-pc-next" title="PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版" href="/post/20200316073b17f497d644dc/">PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版" href="/post/20200316073b17f497d644dc/">上一篇</a>
       
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="Gridea文章页面出现内嵌式滚动条，如何取消？" href="/post/20200302953307c04d0487c9/">Gridea文章页面出现内嵌式滚动条，如何取消？</a>
-        <a class="nav-mobile-next" title="Gridea文章页面出现内嵌式滚动条，如何取消？" href="/post/20200302953307c04d0487c9/">下一篇</a>
+        <a class="nav-pc-next" title="EXCEL VBA工程常用代码收藏" href="/post/20200307029ec10fb2ef8f35/">EXCEL VBA工程常用代码收藏</a>
+        <a class="nav-mobile-next" title="EXCEL VBA工程常用代码收藏" href="/post/20200307029ec10fb2ef8f35/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>

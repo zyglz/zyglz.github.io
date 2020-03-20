@@ -6,7 +6,7 @@
 <meta name="keywords" content="zyglz静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>Gridea静态博客添加部署畅言云评论功能 | 资源管理站</title>
+<title>python爬虫学习系列之正则、bs4、xpath、jsonpath | 资源管理站</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1584680894856">
 <link rel="stylesheet" href="/styles/main.css">
 
@@ -25,8 +25,8 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
-    <meta name="description" content="Gridea静态博客添加部署畅言云评论功能" />
-    <meta name="keywords" content="个人博客,Gridea" />
+    <meta name="description" content="python爬虫学习系列之正则、bs4、xpath、jsonpath" />
+    <meta name="keywords" content="python" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -225,12 +225,12 @@
               <div class="toc-box right-motion">
   <div class="toc-wrapper auto-number auto" id="toc_wrapper">
     <ul class="markdownIt-TOC">
-<li><a href="#%E8%8E%B7%E5%8F%96%E4%BB%A3%E7%A0%81">🌄获取代码</a></li>
-<li><a href="#%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95">🎀设置方法</a>
+<li>
 <ul>
-<li><a href="#%E6%9B%BF%E6%8D%A2gitalk%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">🏓替换Gitalk配置文件</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AEsid">🌳配置sid</a></li>
-<li><a href="#%E8%A7%81%E6%88%90%E6%95%88">💐见成效：</a></li>
+<li><a href="#%E6%AD%A3%E5%88%99">正则</a></li>
+<li><a href="#bs4">bs4</a></li>
+<li><a href="#xpath">xpath</a></li>
+<li><a href="#jsonpath">jsonpath</a></li>
 </ul>
 </li>
 </ul>
@@ -486,8 +486,8 @@ window.addEventListener('load', function() {
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="/post/202003037f0328492b56f46f/">
-      Gridea静态博客添加部署畅言云评论功能
+    <a class="post-title-link" href="/post/20200307b765f0870beb2f7d/">
+      python爬虫学习系列之正则、bs4、xpath、jsonpath
     </a>
   </h1>
   <div class="post-meta">
@@ -495,7 +495,7 @@ window.addEventListener('load', function() {
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-03-03</span>
+      <span>2020-03-07</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -504,14 +504,8 @@ window.addEventListener('load', function() {
         <span class="pc-show">分类于</span>
         
           
-            <a href="/tag/I-zUJKeiG/">
-              <span>个人博客</span>
-            </a>、
-          
-        
-          
-            <a href="/tag/_Gx4VuEvp/">
-              <span>Gridea</span>
+            <a href="/tag/Ajh7yZewR/">
+              <span>python</span>
             </a>
           
         
@@ -520,101 +514,456 @@ window.addEventListener('load', function() {
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>4分钟</span>
+      <span>14分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>763<span class="pc-show">字数</span></span>
+      <span>2827<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
 </div>
               <div class="post-body next-md-body" id="post_body">
-                <p>👔Gridea默认的两款留言评论平台一个是Gitalk,一个是Disqus,这两款评论平台使用起来网络连接不好，也不稳定，就想把畅言云评论加到Gridea中使用！</p>
-<p>💎因为Gridea默认部署的两款评论平台，自己无法添加，最后只能用偷梁换柱的方法，将Gitalk换成畅言，先将方法介绍如下▽</p>
+                <p>python爬虫学习系列之正则、bs4、xpath、jsonpath知识要点与对比</p>
 <!-- more -->
-<p><mark><strong>⛔️注意:因为畅言云现在需要域名备案，没有域名备案的请跳过。</strong></mark></p>
-<h1 id="获取代码">🌄获取代码</h1>
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200307/xlMy0huaYjIq.jpg!watermark" alt="mark" loading="lazy"></figure>
+<p><ul class="markdownIt-TOC">
+<li>
 <ul>
-<li>首先畅言云平台登录自己的账号，没有账号的请注册一下，新注册的用户需要完成域名备案，否则无法使用。</li>
-<li>在个人后台☞找到安装畅言☞通用代码安装☞找到自己的通用代码。<br>
-<img src="http://images.zyglz.com/blog/uploads/20200303/KcgeI9Olvzle.jpg!watermark" alt="mark" loading="lazy"></li>
-<li>复制此处的安装代码。</li>
+<li><a href="#%E6%AD%A3%E5%88%99">正则</a></li>
+<li><a href="#bs4">bs4</a></li>
+<li><a href="#xpath">xpath</a></li>
+<li><a href="#jsonpath">jsonpath</a></li>
 </ul>
-<h1 id="设置方法">🎀设置方法</h1>
-<h2 id="替换gitalk配置文件">🏓替换Gitalk配置文件</h2>
-<ul>
-<li>打开Gridea,系统配置里面找到[站点源文件路径]，打开文件夹的路径，依次打开（Gridea--&gt;themes--&gt;【当前主题文件夹】--&gt;emplates--&gt;_blocks）文件夹，找到名为“gitalk.ejs”的文件</li>
-<li>复制一份备份（注意，必须复制备份一个原文件）</li>
-<li>打开gitalk.ejs文件，删除原有的代码，粘贴上一步获取的畅言通用安装代码。<br>
-gitalk.ejs原有代码如下：</li>
+</li>
 </ul>
-<pre><code class="language-HTML">
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gitalk/dist/gitalk.css&quot;&gt;
-&lt;script src=&quot;https://unpkg.com/gitalk/dist/gitalk.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;div id=&quot;gitalk-container&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-  var gitalk = new Gitalk({
-    clientID: '&lt;%= commentSetting.gitalkSetting.clientId %&gt;',
-    clientSecret: '&lt;%= commentSetting.gitalkSetting.clientSecret %&gt;',
-    repo: '&lt;%= commentSetting.gitalkSetting.repository %&gt;',
-    owner: '&lt;%= commentSetting.gitalkSetting.owner %&gt;',
-    admin: ['&lt;%= commentSetting.gitalkSetting.owner %&gt;'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-  gitalk.render('gitalk-container')
-&lt;/script&gt;
-
+</p>
+<h2 id="正则">正则</h2>
+<pre><code class="language-python">正则规则：
+	单字符：
+       .：除换行符外的所有字符
+		[]:[aoe]a,o,e之中的一个；[a-w]a到w之间任意一个字符
+		\d:数字[0-9]
+		\D:非数字
+		\w：数字，字母，下划线，中文
+		\W：非\w
+		\s:所有的空白字符
+		\S：所有的非空白
+	数量修饰：
+		*：任意多次，大于等于0次
+		+：至少一次,&gt;=1
+		？:可有可无，0次或者1次
+		{m}:固定m次
+		{m,}:至少m次
+		{m,ne}:至少m次，最大n次
+	边界
+		\b
+		\B
+		$：以某某开头
+		^:以某某结尾
+	分组：
+		():(ab){4}视为一个整体，
+		():子模式  \组模式  \1,\2
+	贪婪模式：
+		.*？
+		.+？
 </code></pre>
-<p>替换为畅言通用安装代码：</p>
-<pre><code>&lt;!--PC版--&gt;
-&lt;div id=&quot;SOHUCS&quot; sid=&quot;请将此处替换为配置SourceID的语句&quot;&gt;&lt;/div&gt;
-&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-window.changyan.api.config({
-appid: 'c*******',
-conf: 'prod_13**************************'
-});
-&lt;/script&gt;
+<p>match :只从最开始找<br>
+search:从任意位置找<br>
+findall:找所有<br>
+re.sub(正则表达式，替换的内容，查找的字符串)</p>
+<pre><code class="language-python">import re
+string='&lt;p&gt;&lt;div&gt;&lt;span&gt;猪八戒&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;'
+pattern=re.compile(r'&lt;(\w+)&gt;&lt;(\w+)&gt;\w+&lt;/\2&gt;&lt;/\1&gt;')
+ret=pattern.search(string)
+print(ret)
+#输出：&lt;re.Match object; span=(3, 30), match='&lt;div&gt;&lt;span&gt;猪八戒&lt;/span&gt;&lt;/div&gt;'&gt;
 
+string='&lt;p&gt;&lt;div&gt;&lt;div&gt;猪八戒&lt;div&gt;&lt;/div&gt;&lt;/p&gt;'
+pattern=re.compile(r'&lt;div&gt;.*&lt;/div&gt;')
+# pattern=re.compile(r'&lt;div&gt;.*?&lt;/div&gt;')
+ret=pattern.search(string)
+print(ret)
+#输出：&lt;re.Match object; span=(3, 27), match='&lt;div&gt;&lt;div&gt;猪八戒&lt;div&gt;&lt;/div&gt;'&gt;
+
+#	re.I:忽略大小写
+#	re.M:多行匹配
+#	re.S:单行匹配
+string='''hate is a beautiful feel
+love you
+love 
+love '''
+pattern=re.compile(r'^love',re.M)
+ret=pattern.findall(string)
+print(ret)
+#输出：['love', 'love', 'love']
+
+string1='''&lt;div&gt;沁园春-雪
+北国风光
+千里冰封
+万里雪飘
+望长城内外
+惟余莽莽
+大河上下
+顿失滔滔
+山舞银蛇
+原驰蜡象
+欲与天公试比高
+&lt;/div&gt;'''
+pattern=re.compile(r'&lt;div&gt;(.*?)&lt;/div&gt;',re.S)
+ret=pattern.findall(string1)
+print(ret)
+#输出:['沁园春-雪\n北国风光\n千里冰封\n万里雪飘\n望长城内外\n惟余莽莽\n大河上下\n顿失滔滔\n山舞银蛇\n原驰蜡象\n欲与天公试比高\n']
+
+
+# match :只从最开始找
+# search:从任意位置找
+# findall:找所有
+# re.sub(正则表达式，替换的内容，查找的字符串)
+
+string ='i love you,you love me'
+pattern=re.compile(r'love')
+ret=re.sub(pattern,'hate',string)
+print(ret)
+#输出：i hate you,you hate me
+ret=re.sub(r'love','hate',string)
+print(ret)
+#输出：i hate you,you hate me
+ret=pattern.sub('hate',string)
+print(ret)
+#输出：i hate you,you hate me
+print(string)
+#输出：i love you,you love me
+
+# 正则替换
+def fn(a):
+	ret=int(a.group())
+	return str(ret-10)
+string='我喜欢身高为175的女孩'
+pattern=re.compile(r'\d+')
+ret=pattern.sub(fn,string)
+print(ret)
+#输出：我喜欢身高为165的女孩
 </code></pre>
-<ul>
-<li>到这里基本已完成畅言评论的安装，你打开gridea,在线预览观看成效。</li>
-</ul>
-<hr>
-<p>下面这一步可以忽略，可配置也可以不用配置。</p>
-<h2 id="配置sid">🌳配置sid</h2>
-<p>将通用安装代码的第一行:</p>
-<pre><code>&lt;!--PC版--&gt;
-&lt;div id=&quot;SOHUCS&quot; sid=&quot;请将此处替换为配置SourceID的语句&quot;&gt;&lt;/div&gt;
-&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-window.changyan.api.config({
-appid: 'c*******',
-conf: 'prod_13**************************'
-});
-&lt;/script&gt;
+<h2 id="bs4">bs4</h2>
+<p>BeautifulSoup 可以将html文件转换为指定的对象，然后通过对象的方法或属性查找指定的内容<br>
+需要安装pip install bs4<br>
+bs4 在使用的时候需要一个第三方库，也需要安装<br>
+pip install lxml</p>
+<pre><code class="language-python">from bs4 import BeautifulSoup
+#转化网络文件
+soup=BeautifulSoup('字符串类型或字节类型','lxml')
+#转化本地文件
+soup=BeautifulSoup(open('soup_text.html',encoding='utf8'),'lxml')
+
+#根据标签名查找,只能找到第一个符合要求的标签
+print(soup.a)
+#找到标签的属性
+print(soup.a['href'])
+print(soup.a['title'])
+print(soup.a['target'])
+#返回a标签的所有属性，返回一个字典：{'href': 'http://www.zyglz.com', 'title': '资源管理站', 'target': '__self'}
+print(soup.a.attrs)
+#取某一个属性
+print(soup.a.attrs['href'])
+
+#获取标签里面的内容
+print(soup.div.string)#只获取标签里面的文本文字，如果内容里面有其他标签则，为none
+print(soup.div.text)
+print(soup.div.get_text())
+
+#find 找到第一个符合要求的标签
+print(soup.find('a'))
+print(soup.find('a',title=&quot;清&quot;))
+print(soup.find('a',alt=&quot;唐&quot;))
+print(soup.find('a',class_=&quot;明&quot;))#注意class为关键字，需要用class_
+print(soup.find('a',id=&quot;du&quot;))
+print(soup.find('div',class_='tang').find('a',class_='明'))
+
+print(soup.find(name='a')
+print(soup.find(attrs={'class':'title'})#返回class属性为title的第一个标签
+print(soup.find(text='title')
+print(soup.find(
+	name='a',
+	attrs={'class':'title'},
+)
+
+# findall
+print(soup.find_all('a'))
+print('*'*50)
+print(soup.find('div',class_='tang').find_all('a'))
+print('*'*50)
+print(soup.find_all(['b','span']))#查找多个
+print('*'*50)
+print(soup.find_all('a',limit=2))#只要前两个
+
+print(soup.find_all('a'，attrs={'class':'tang'}))
+
+#select根据选择器选择制定的内容,返回的是一个列表，
+#常用的选择器，标签选择器，类选择器，id选择器，并集选择器，层级选择器，伪类选择器，属性选择器，组合选择器
+#a
+#.dudu
+#a,.dudu,#lala
+#div a .dudu #lala .xx
+#div &gt; p &gt; a 只能是次级
+#input[name=&quot;username&quot;]
+print(soup.select('.tang&gt;ul&gt;li&gt;a')[1])
+print(soup.select('#du')[0].text)
+print(soup.select('#du')[0].get_text())
+print(soup.select('#du')[0]['href'])
+print(soup.select('#du')[0]get('href'))
+#select_one
+print(select_one('.tan',limit=1)
 </code></pre>
-<p>换成一下代码即可:</p>
-<pre><code>&lt;!--PC版--&gt;
-&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
-	var sid=(location.pathname).substring(6, 30);
-	document.write('&lt;div id=&quot;SOHUCS&quot; sid=&quot;'+sid+'&quot;&gt;&lt;/div&gt;');
-&lt;/script&gt;
-&lt;script charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://cy-cdn.kuaizhan.com/upload/changyan.js&quot; &gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-window.changyan.api.config({
-appid: 'c*******',
-conf: 'prod_13**************************'
-});
-&lt;/script&gt;
+<h2 id="xpath">xpath</h2>
+<p>xml是用来储存和传输数据的、与html的区别：<br>
+1、html 是用来显示数据，xml是用来传输数据；<br>
+2、html的标签是固定的，xml的标签是自定义的<br>
+xpath是一门在xml文档中查找信息的语言，他是一种路径表达式；需要安装第三方插件，pip install lxml<br>
+常用的路径表达式：<br>
+1、//：不考虑位置的查找<br>
+2、./:从当前节点开始往下查找<br>
+3、..:当前节点的父节点<br>
+4、@：选取属性</p>
+<p>使用：安装谷歌xpath插件：xpath helper 2.0.2<br>
+导入库：from lxml import etree<br>
+使用两种方法:将html文件变成一个对象,然后调用对象的方法去查找指定的节点<br>
+1、本地文件：tree=etree.parse(文件名)<br>
+2、网络文件：tree=etree.HTML(网页字符串)<br>
+ret=tree.xpath(路径表达式)   ret是一个列表</p>
+<pre><code class="language-html">&lt;bookstore&gt;
+	&lt;book category=&quot;COOKING&quot;&gt;
+		&lt;title lang=&quot;en&quot;&gt;Everyday Italian&lt;/title&gt;
+		&lt;author&gt;Giada De Laurentiis&lt;/author&gt;
+		&lt;year&gt;2005&lt;/year&gt;
+		&lt;price&gt;30.00&lt;/price&gt;
+	&lt;/book&gt;
+	&lt;book category=&quot;CHILDREN&quot;&gt;
+		&lt;title lang=&quot;en&quot;&gt;Harry Potter&lt;/title&gt;
+		&lt;author&gt;J K. Rowling&lt;/author&gt;
+		&lt;year&gt;2005&lt;/year&gt;
+		&lt;price&gt;29.99&lt;/price&gt;
+	&lt;/book&gt;
+	&lt;book category=&quot;WEB&quot;&gt;
+		&lt;title lang=&quot;en&quot;&gt;XQuery Kick Start&lt;/title&gt;
+		&lt;author&gt;James McGovern&lt;/author&gt;
+		&lt;author&gt;Per Bothner&lt;/author&gt;
+		&lt;author&gt;Kurt Cagle&lt;/author&gt;
+		&lt;author&gt;James Linn&lt;/author&gt;
+		&lt;author&gt;Vaidyanathan Nagarajan&lt;/author&gt;
+		&lt;year&gt;2003&lt;/year&gt;
+		&lt;price&gt;49.99&lt;/price&gt;
+	&lt;/book&gt;
+	&lt;book category=&quot;WEB&quot;&gt;
+		&lt;title lang=&quot;en&quot;&gt;Learning XML&lt;/title&gt;
+		&lt;author&gt;Erik T. Ray&lt;/author&gt;
+		&lt;year&gt;2003&lt;/year&gt;
+		&lt;price&gt;39.95&lt;/price&gt;
+	&lt;/book&gt;
+&lt;/bookstore&gt;
 </code></pre>
-<h2 id="见成效">💐见成效：</h2>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/0qOmkWHif1f2.jpg!watermark" alt="mark" loading="lazy"></figure>
+<pre><code class="language-python"># 1、/bookstore/book:	选取根节点的bookstore所有的子元素book(直接子节点)
+# 2、//book：			选取所有的book
+# 3、bookstore//book: 选取bookstore元素的后代所有book元素
+# 4、//@lang: 			属性为lang的所有节点
+# 5、/bookstore/book[1]:	选取根节点的bookstore第一个book子元素(直接子节点)
+# 6、/bookstore/book[last()]:	选取根节点的bookstore最后一个book子元素(直接子节点)
+# 7、/bookstore/book[position()&lt;3]:	选取根节点的bookstore前两个book子元素(直接子节点)
+# 8、//title[@lang]	:选取所有带有lang属性的title的元素
+# 9、//title[@lang='eng']	:选取所有lang属性为eng的title的元素
+# 10、/bookstore/book[price&gt;35]:	选取根节点的bookstore的所有book子元素(且其中的price子元素的值大于35)
+# 		*：通配符，任何元素节点
+# 		/bookstore/*：bookstore元素下的所有节点
+# 		//*：文档中所有节点
+# 		//title[@*]:选取所有带有属性的title节点
+</code></pre>
+<pre><code class="language-python"># //input[@id=&quot;kw&quot;] 			
+# //*[@class=&quot;btn self-btn bg s_btn&quot;]
+# //div[@id=&quot;head&quot;]/div/a[1]
+# 逻辑运算://input[@class=&quot;s_ipt&quot; and @name=&quot;wd&quot;]
+# 模糊匹配：
+# 	1、contais：//input[contains(@class,&quot;s_i&quot;)]：所有的input，有class属性，属性中带有s_i的节点
+# 		'//li[contains(text(),&quot;爱&quot;)]/text()'
+# 	2、starts-with：//input[starts-with(@class,&quot;s&quot;)]：所有的input，有class属性，属性以s开头的节点
+# 取文本：
+# 	//div[@id=&quot;u_sp&quot;]/a[5]/text()：取a链接的文本
+# 	//div[@id=&quot;u_sp&quot;]/text()：取div下的文本
+# 	//div[@id=&quot;u_sp&quot;]//text()：取div下所有子节点的文本
+# 	
+# 	//直接将内容拼接，替换换行和制表符	
+# 		ret=tree.xpath('//div[@class=&quot;song&quot;]')
+#		string=ret[0].xpath('string(.)')
+#		pr(string.replace('\n','').replace('\t',''))# 	
+# 	
+# 获取属性：
+# 	//div[@id=&quot;u_sp&quot;]/a[5]/@href：获取a链接的href属性值	
+</code></pre>
+<h2 id="jsonpath">jsonpath</h2>
+<p>jsonpath:用来解析json数据使用<br>
+python处理json格式用到的函数:<br>
+json.dumps():将字典或者列表转换为json格式的字符串<br>
+json.loads():将json格式的字符串转换为python对象<br>
+json.dump():将字典或列表转换为json格式字符串，并且写入到文件中<br>
+json.load():从文件中读取json格式字符串，转换为python对象<br>
+前端处理：<br>
+JSON.parse('json格式字符串')<br>
+eval('('+json格式字符串+')')<br>
+安装:pip install jsonpath</p>
+<p>jsonpath:是xpath在json的应用。<br>
+JSONPath 是参照，xpath表达式来解析xml文档的方式，json数据结构通常是匿名的并且不一定需要有根元素。JSONPaht 用一个抽象的名字$来表示最外层对象。</p>
+<p>JOSNPath 表达式可以使用“.”符号如下：<br>
+$.store.book[0].title</p>
+<p>或者使用[] 符号<br>
+$['store']['book'][0]['title']<br>
+jsonpath 与 xpath的对比</p>
+<table>
+<thead>
+<tr>
+<th>XPath</th>
+<th>JSONPath</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/</td>
+<td>$</td>
+<td>表示根元素</td>
+</tr>
+<tr>
+<td>.</td>
+<td>@</td>
+<td>当前元素</td>
+</tr>
+<tr>
+<td>/</td>
+<td>. or []</td>
+<td>子元素</td>
+</tr>
+<tr>
+<td>..</td>
+<td>n/a</td>
+<td>父元素</td>
+</tr>
+<tr>
+<td>//</td>
+<td>..</td>
+<td>递归下降，JSONPath是从E4X借鉴的。</td>
+</tr>
+<tr>
+<td>*</td>
+<td>*</td>
+<td>通配符，表示所有的元素</td>
+</tr>
+<tr>
+<td>@</td>
+<td>n/a</td>
+<td>属性访问字符</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>[]</td>
+<td>子元素操作符</td>
+</tr>
+<tr>
+<td>|</td>
+<td>[,]</td>
+<td>连接操作符在XPath 结果合并其它结点集合。JSONP允许name或者数组索引。</td>
+</tr>
+<tr>
+<td>n/a</td>
+<td>[start🔚step]</td>
+<td>数组分割操作从ES4借鉴。</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>?()</td>
+<td>应用过滤表示式</td>
+</tr>
+<tr>
+<td>n/a</td>
+<td>()</td>
+<td>脚本表达式，使用在脚本引擎下面。</td>
+</tr>
+<tr>
+<td>()</td>
+<td>n/a</td>
+<td>Xpath分组</td>
+</tr>
+</tbody>
+</table>
+<p>[]在xpath表达式总是从前面的路径来操作数组，索引是从1开始。<br>
+使用JOSNPath的[]操作符操作一个对象或者数组，索引是从0开始。</p>
+<pre><code class="language-html">{ &quot;store&quot;: {
+    &quot;book&quot;: [
+      { &quot;category&quot;: &quot;reference&quot;,
+        &quot;author&quot;: &quot;Nigel Rees&quot;,
+        &quot;title&quot;: &quot;Sayings of the Century&quot;,
+        &quot;price&quot;: 8.95
+      },
+      { &quot;category&quot;: &quot;fiction&quot;,
+        &quot;author&quot;: &quot;Evelyn Waugh&quot;,
+        &quot;title&quot;: &quot;Sword of Honour&quot;,
+        &quot;price&quot;: 12.99
+      },
+      { &quot;category&quot;: &quot;fiction&quot;,
+        &quot;author&quot;: &quot;Herman Melville&quot;,
+        &quot;title&quot;: &quot;Moby Dick&quot;,
+        &quot;isbn&quot;: &quot;0-553-21311-3&quot;,
+        &quot;price&quot;: 8.99
+      },
+      { &quot;category&quot;: &quot;fiction&quot;,
+        &quot;author&quot;: &quot;J. R. R. Tolkien&quot;,
+        &quot;title&quot;: &quot;The Lord of the Rings&quot;,
+        &quot;isbn&quot;: &quot;0-395-19395-8&quot;,
+        &quot;price&quot;: 22.99
+      }
+    ],
+    &quot;bicycle&quot;: {
+      &quot;color&quot;: &quot;red&quot;,
+      &quot;price&quot;: 19.95
+    }
+  }
+}
+</code></pre>
+<pre><code class="language-python">import json
+import jsonpath
+#将json字符串转换为python对象
+obj=json.load(open('bookstore.json','r',encoding='utf8'))
+
+#查找book下所有的author
+#[]里面写0的话，代表查询第一本书的anthor
+ret=jsonpath.jsonpath(obj,'$.store.book[*].author')
+
+#查找所有的author 
+ret=jsonpath.jsonpath(obj,'$..author')
+
+#store的所有元素。所有的bookst和bicycle
+ret=jsonpath.jsonpath(obj,'$.store.*')
+
+#查询store下面所有的price
+ret=jsonpath.jsonpath(obj,'$.store..price')
+
+#查找第三个book节点，返回一个列表
+ret=jsonpath.jsonpath(obj,'$..book[2]')
+
+#查询最后一本book
+ret=jsonpath.jsonpath(obj,'$..book[(@.length-1)]')
+
+#查找前两本book
+# ret=jsonpath.jsonpath(obj,'$..book[0,1]')
+ret=jsonpath.jsonpath(obj,'$..book[:2]')
+
+#过滤出所有的包含isbn的书。
+ret=jsonpath.jsonpath(obj,'$..book[?(@.isbn)]')
+
+#过滤出所有价格低于10的书。
+ret=jsonpath.jsonpath(obj,'$..book[?(@.price&lt;10)]')
+
+#所有元素。
+ret=jsonpath.jsonpath(obj,'$..*')
+</code></pre>
 
               </div>
               <div class="post-footer">
@@ -625,7 +974,7 @@ conf: 'prod_13**************************'
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="/post/202003037f0328492b56f46f/" title="Gridea静态博客添加部署畅言云评论功能">Gridea静态博客添加部署畅言云评论功能</a>
+      <a href="/post/20200307b765f0870beb2f7d/" title="python爬虫学习系列之正则、bs4、xpath、jsonpath">python爬虫学习系列之正则、bs4、xpath、jsonpath</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -634,23 +983,21 @@ conf: 'prod_13**************************'
   </ul>
   <div class="tags">
     
-      <a href="/tag/I-zUJKeiG/"># 个人博客</a>
-    
-      <a href="/tag/_Gx4VuEvp/"># Gridea</a>
+      <a href="/tag/Ajh7yZewR/"># python</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
       
         <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="MarkdownPad 2 win10安装报错“Awesomium v1.6.5停止工作”" href="/post/2020030342cd61348801e2dd/">MarkdownPad 2 win10安装报错“Awesomium v1.6.5停止工作”</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="MarkdownPad 2 win10安装报错“Awesomium v1.6.5停止工作”" href="/post/2020030342cd61348801e2dd/">上一篇</a>
+        <a class="nav-pc-next" title="EXCEL VBA工程常用代码收藏" href="/post/20200307029ec10fb2ef8f35/">EXCEL VBA工程常用代码收藏</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="EXCEL VBA工程常用代码收藏" href="/post/20200307029ec10fb2ef8f35/">上一篇</a>
       
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="Gridea文章页面出现内嵌式滚动条，如何取消？" href="/post/20200302953307c04d0487c9/">Gridea文章页面出现内嵌式滚动条，如何取消？</a>
-        <a class="nav-mobile-next" title="Gridea文章页面出现内嵌式滚动条，如何取消？" href="/post/20200302953307c04d0487c9/">下一篇</a>
+        <a class="nav-pc-next" title="Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件" href="/post/20200304d8ee00ceee3ecca7/">Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件</a>
+        <a class="nav-mobile-next" title="Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件" href="/post/20200304d8ee00ceee3ecca7/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
