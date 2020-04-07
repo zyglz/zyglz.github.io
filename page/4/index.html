@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8"/>
+      <meta charset="UTF-8"/>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="hoochon&#39;s blog,资源管理站,zyglz,个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>无损图片压缩大师去广告破解版-图片无损压缩10倍以上 | hoochon&#39;s blog</title>
+<title>hoochon&#39;s blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1585386899996">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -37,8 +37,6 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-    <meta name="description" content="无损图片压缩大师去广告破解版-图片无损压缩10倍以上" />
-    <meta name="keywords" content="实用软件" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -73,7 +71,7 @@ var _hmt = _hmt || [];
             
               
             
-            <li class="nav-item ">
+            <li class="nav-item nav-item-active">
               
               
                 <a href="/" target="_self">
@@ -177,24 +175,8 @@ var _hmt = _hmt || [];
       
       <div class="section-layout gemini ">
         <div class="section-layout-wrapper">
-          
-
-<div class="sidebar">
-  
-    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
-      
-        <div class="post-list-sidebar">
-          <div class="sidebar-title">
-            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
-            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
-          </div>
-        </div>
-      
-      <div class="sidebar-body gemini" id="sidebar_body">
-        
-          
-            <div class="post-side-meta" id="post_side_meta">
-              
+          <div id="sidebarMeta" class="sidebar">
+    
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -276,280 +258,30 @@ var _hmt = _hmt || [];
 
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li><a href="#%E6%97%A0%E6%8D%9F%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%A4%A7%E5%B8%88%E5%8E%BB%E5%B9%BF%E5%91%8A%E7%A0%B4%E8%A7%A3%E7%89%88">无损图片压缩大师去广告破解版</a>
-<ul>
-<li><a href="#%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA">效果演示</a></li>
-<li><a href="#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80">下载地址：</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
 </div>
-
 <script>
-
-let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
-let active = 'active-show', activeClass = 'active-current';
-let tocWrapper = document.querySelector('#toc_wrapper');
-let tocContent = tocWrapper.children[0];
-let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
-
-function addTocNumber(elem, deep) {
-  if (!elem) {
-    return;
-  }
-  let prop = elem.__proto__;
-
-  if (prop === HTMLUListElement.prototype) {
-    for (let i = 0; i < elem.children.length; i++) {
-      addTocNumber(elem.children[i], deep + (i + 1) + '.');
-    }
-  } else if (prop === HTMLLIElement.prototype) {
-    // 保存li元素
-    if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-      lList.push(elem);
-    }
-    for (let i = 0; i < elem.children.length; i++) {
-      let cur = elem.children[i];
-      if (cur.__proto__ === HTMLAnchorElement.prototype) {
-        if (autoNumber) {
-          cur.text =  deep + ' ' + cur.text;
-        }
-      } else if (cur.__proto__ === HTMLUListElement.prototype) {
-        addTocNumber(cur, deep);
-      }
-    }
-  }
-}
-
-function removeParentActiveClass() {
-  let parents = tocContent.querySelectorAll('.'+active)
-  parents.forEach(function(elem) {
-    elem.classList.remove(active);
-  });
-}
-
-function addActiveClass(index) {
-  if (index >= 0 && index < hList.length) {
-    lList[index].classList.add(activeClass);
-  }
-}
-
-function removeActiveClass(index) {
-  if (index >= 0 && index < hList.length) {
-    lList[index].classList.remove(activeClass);
-  }
-}
-
-function addActiveLiElemment(elem, parent) {
-  if (!elem || elem === parent) {
-    return;
-  } else {
-    if (elem.__proto__ === HTMLLIElement.prototype) {
-      elem.classList.add(active);
-    }
-    addActiveLiElemment(elem.parentElement, parent);
-  }
-}
-
-function showToc() {
-  if (tocWrapper) {
-    postBody = document.querySelector('#post_body');
-    for (let i = 0; i < postBody.children.length; i++) {
-      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-        hList.push(postBody.children[i]);
-      }
-    }
-    if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-    } else if (tocWrapper.classList.contains('no_compress')){
-      tocContent.classList.add('expanded');
-    } else {
-      if (hList.length > 10) {
-        active = 'active-hidden'
-        tocContent.classList.add('closed');
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
       } else {
-        tocContent.classList.add('expanded');
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
       }
-    }
+    });
   }
-}
-
-(function() {
-  // 处理不是从#一级标题开始目录
-  if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-    let con = tocContent.children[0].children[0];
-    tocContent.innerHTML = con.innerHTML;
-  }
-  addTocNumber(tocContent, '');
-})();
-
-document.addEventListener('scroll', function(e) {
-  if (lList.length <= 0) {
-    return;
-  }
-  let scrollTop = document.scrollingElement.scrollTop + 10;
-  let dir;
-
-  if (lastTop - scrollTop > 0) {
-    dir = 'up';
-  } else {
-    dir = 'down';
-  }
-
-  lastTop = scrollTop;
-  if (scrollTop <= 0) {
-    if (lastIndex >= 0 && lastIndex < hList.length) {
-      lList[lastIndex].classList.remove(activeClass);
-    }
-    return;
-  }
-
-  let current = 0, hasFind = false;
-  for (let i = 0; i < hList.length; i++) {
-    if (hList[i].offsetTop > scrollTop) {
-      current = i;
-      hasFind = true;
-      break;
-    }
-  }
-  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-    current = hList.length - 1;
-  } else {
-    current--;
-  }
-  if (dir === 'down') {
-    if (current > lastIndex) {
-      addActiveClass(current);
-      removeActiveClass(lastIndex) 
-      lastIndex = current;
-      removeParentActiveClass();
-      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
-    }
-  } else {
-    if (current < lastIndex) {
-      addActiveClass(current);
-      removeActiveClass(lastIndex);
-      lastIndex = current;
-      removeParentActiveClass();
-      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
-    }
-  }
-});
-
-window.addEventListener('load', function() {
-  showToc();
-  document.querySelector('#sidebar').style='display: block;';
-  tocWrapper.classList.add('toc-active');
-  setTimeout(function() {
-    if ("createEvent" in document) {
-      let evt = document.createEvent("HTMLEvents");
-      evt.initEvent("scroll", false, true);
-      document.dispatchEvent(evt);
-    }
-    else {
-      document.fireEvent("scroll");
-    }
-  }, 500)
-})
-
-</script>
-            </div>
-          
-        
-      </div>
-    </div>
-  
-</div>
-<script>
-  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
-  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
-  const SLIDE_UP_IN = 'slide-up-in';
-
-  let sidebar = document.querySelector('#sidebar'),
-  tocSideBar = document.querySelector('#tocSideBar'),
-  metaSideBar = document.querySelector('#metaSideBar'),
-  postToc = document.querySelector('#post_toc'),
-  postSiteMeta = document.querySelector('#post_side_meta'),
-  sidebarTitle = document.querySelector('.sidebar-title'),
-  sidebarBody = document.querySelector('#sidebar_body');
-
-  tocSideBar && tocSideBar.addEventListener('click', (e) => {
-    toggleSidebar(e);
-  });
-
-  metaSideBar && metaSideBar.addEventListener('click', (e) => {
-    toggleSidebar(e);
-  });
-
-  function toggleSidebar(e) {
-    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
-    if (currentTitle == e.srcElement) {
-      return ;
-    }
-    let current, showElement, hideElement;
-    if (e.srcElement == metaSideBar) {
-      showElement = postSiteMeta;
-      hideElement = postToc;
-    } else if (e.srcElement == tocSideBar){
-      showElement = postToc;
-      hideElement = postSiteMeta;
-    }
-    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
-    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
-
-    window.Velocity(hideElement, 'stop');
-    window.Velocity(hideElement, 'transition.slideUpOut', {
-      display: 'none',
-      duration: 200,
-      complete: function () {
-        window.Velocity(showElement, 'transition.slideDownIn', {
-          duration: 200
-        });
-      }
-    })
-    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
-    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
-  }
-
-  postToc && postToc.addEventListener('transitionend', function() {
-    this.classList.remove(SLIDE_UP_IN);
-  });
-
-  if (sidebarBody) {
-    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
-      let hasFix = false;
-      let scrollEl = document.querySelector('.main-continer');
-      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
-      window.addEventListener('scroll', function(e) {
-        if (document.scrollingElement.scrollTop >= limitTop) {
-          if (!hasFix) {
-            sidebar.classList.add('sidebar-fixed');
-            hasFix = true;
-          }
-        } else {
-          if (hasFix) {
-            sidebar.classList.remove('sidebar-fixed');
-            hasFix = false;
-          }
-        }
-      });
-    }
-  }
-  
-</script>
-          <div class="section-box box-shadow-wrapper">
-            <div class="section bg-color post post-page">
-              <header class="post-header">
+  </script>
+          <div class="section-box gemini">
+            <section class="section  posts-expand slide-down-in">
+              
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="/post/20200304cc69c374d6093804/">
-      无损图片压缩大师去广告破解版-图片无损压缩10倍以上
+    <a class="post-title-link" href="/post/20200303eba65bbbac0ddc02/">
+      Internet Download Manager (IDM下载器v6.32.6)中文注册版
     </a>
   </h1>
   <div class="post-meta">
@@ -557,7 +289,7 @@ window.addEventListener('load', function() {
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-03-04</span>
+      <span>2020-03-03</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -576,88 +308,210 @@ window.addEventListener('load', function() {
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
+      <span>2分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>382<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+          <p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
+
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="/post/20200303eba65bbbac0ddc02/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="/post/20200303c4af925d1c128406/">
+      MarkdownPad 2 绿色中文汉化版
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-03-03</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="/tag/xxlyloB_m/">
+              <span>实用软件</span>
+            </a>、
+          
+        
+          
+            <a href="/tag/3_PT2-mn-/">
+              <span>Markdown</span>
+            </a>
+          
+        
+      </span>
+      <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
       <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>168<span class="pc-show">字数</span></span>
+      <span>158<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
-              <div class="post-body next-md-body" id="post_body">
-                <p>无损图片压缩大师可以压缩市面上大部分图片格式的压缩软件，一个10M的jpg数码照片，可以压缩到100KB左右，压缩后的图片比之前缩小了10倍左右，而且压缩后的图片质量基本没什么变化，实现无损压缩。</p>
-<!-- more -->
-<h1 id="无损图片压缩大师去广告破解版">无损图片压缩大师去广告破解版</h1>
-<h2 id="效果演示">效果演示</h2>
-<p>原图：8236KB(分辨率：5400×3600)<br>
-<img src="https://git.imweb.io/zyglz/my-blog-img/raw/1c07d2ab787b4c3da6e05ee571dd79c484412e98/blog/images/2020/03/37636625b0a97dba4378a121c46c3b46-01.jpg" alt="高清原图" title="高清原图" loading="lazy"></p>
-<p>压缩后：1132KB(分辨率：5400×3600)<br>
-<img src="https://git.imweb.io/zyglz/my-blog-img/raw/b8bdc1629efc784754218239e5a84278719d1b04/blog/images/2020/03/65deb1560cc2abcb0e34dd64dce8a23b-02.jpg" alt="压缩后图片" title="压缩后图片" loading="lazy"></p>
-<p><mark>特别说明：该软件建议只用于压缩jpg的图片，png的压缩后会丢失透明度。</mark></p>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9xpdoj">下载地址一</a><br>
-网盘下载：<a href="https://www.lanzous.com/i9xpdoj">下载地址二</a></p>
+      <div class="post-body">
+        
+          <p>MarkdownPad2 绿色中文汉化版简介<br>
+MarkdownPad是一款免费的将文本转换成HTML/XHTML的网页格式的小软件，操作简单容易，上手很快，可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
 
-              </div>
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      hoochon&#39;s blog
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="/post/20200304cc69c374d6093804/" title="无损图片压缩大师去广告破解版-图片无损压缩10倍以上">无损图片压缩大师去广告破解版-图片无损压缩10倍以上</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外，转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="/tag/xxlyloB_m/"># 实用软件</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件" href="/post/20200304d8ee00ceee3ecca7/">Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件" href="/post/20200304d8ee00ceee3ecca7/">上一篇</a>
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="/post/20200303c4af925d1c128406/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
       
     </div>
-    <div class="nav-next">
-      
-        <a class="nav-pc-next" title="MPic一款七牛云存储智能上传图片的图床工具" href="/post/20200303daedaf5234394507/">MPic一款七牛云存储智能上传图片的图床工具</a>
-        <a class="nav-mobile-next" title="MPic一款七牛云存储智能上传图片的图床工具" href="/post/20200303daedaf5234394507/">下一篇</a>
-        <i class="fa fa-chevron-right"></i>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="/post/2020030342cd61348801e2dd/">
+      MarkdownPad 2 win10安装报错“Awesomium v1.6.5停止工作”
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-03-03</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="/tag/3_PT2-mn-/">
+              <span>Markdown</span>
+            </a>
+          
+        
+      </span>
+      <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>110<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+          <p>MarkdownPad 2 在win10电脑上安装，运行时报错“awesomium v1.6.5停止工作”，显示awesomium<strong>This view has crashed</strong>错误提示，以下方法完美解决MarkdownPad2 html渲染错误问题 ，亲测十分有效：</p>
+
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="/post/2020030342cd61348801e2dd/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
       
     </div>
-  </div>
-</div>
+  </article>
+  
               
-  
+              
+<div class="page bg-color">
+  <ul class="pagination-ul">
     
-      <!--PC版-->
-<script language="javascript" type="text/javascript">
-	var sid=(location.pathname).substring(6, 30);
-	document.write('<div id="SOHUCS" sid="'+sid+'"></div>');
-</script>
-<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-window.changyan.api.config({
-appid: 'cyusRC00s',
-conf: 'prod_13cc5d2d1db7afbf1159361267080ecc'
-});
-</script>
+      <li class="pagination-dir">
+        <a href="/page/3/">
+          <i class="fa fa-angle-left"></i>
+        </a>
+      </li>
     
     
-  
-
-            </div>
+      <!-- 1 2 3 4 ... N -->
+      
+        <!-- 1 ... N-2 N-1 N-->
+        <li class="pagination-li">
+          <a href="/">1</a>
+        </li>
+        <li class="pagination-li">
+          …
+        </li>
+        
+          <li class="pagination-li pagination-active">
+            <a href="#">
+              4
+            </a>
+          </li>
+        
+          <li class="pagination-li ">
+            <a href="/page/5">
+              5
+            </a>
+          </li>
+        
+          <li class="pagination-li ">
+            <a href="/page/6">
+              6
+            </a>
+          </li>
+        
+      
+    
+    
+      <li class="pagination-dir">
+        <a href="/page/5">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+            </section>
           </div>
         </div>
       </div>

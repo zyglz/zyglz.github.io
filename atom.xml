@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
-    <title>资源管理站</title>
-    <updated>2020-03-20T05:08:20.000Z</updated>
+    <title>hoochon&apos;s blog</title>
+    <updated>2020-03-28T09:15:03.796Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href=""/>
     <link rel="self" href="/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>/images/avatar.png</logo>
     <icon>/favicon.ico</icon>
-    <rights>All rights reserved 2020, 资源管理站</rights>
+    <rights>All rights reserved 2020, hoochon&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版]]></title>
         <id>/post/20200316e741fe1698c13339/</id>
@@ -643,191 +643,6 @@ ret=jsonpath.jsonpath(obj,'$..book[?(@.price&lt;10)]')
 #所有元素。
 ret=jsonpath.jsonpath(obj,'$..*')
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件]]></title>
-        <id>/post/20200304d8ee00ceee3ecca7/</id>
-        <link href="/post/20200304d8ee00ceee3ecca7/">
-        </link>
-        <updated>2020-03-04T11:27:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>Adobe Photoshop CC 2020 v21.1 增强版，此版本集成了大量关用的外挂滤镜、插件，由Promise（TEAmo）制作，功能未作任何精简，完整功能仅增强组装而成。</p>
-<p>目前增强版集成了多种增效滤镜，包括Alien Skin 系列滤镜，Camera Raw 11.4滤镜，Topaz Labs 系列滤镜，Flaming Pear 系列滤镜等；其他功能增强包括WebP格式支持，精选优秀字体，解除扩展库限制，支持多国语言界面切换等；还集成了扩展面板，包括Beauty Retouch 3 人像D&amp;B/中性灰磨皮，Coolorus 2.6 色环面板，Blendit 终极修图辅助面板，Double USM2 USM双锐化，美颜润肤等等，可以大幅度提高设计人员的工作效率，欢迎免费下载收藏。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Adobe Photoshop CC 2020 v21.1 增强版，此版本集成了大量关用的外挂滤镜、插件，由Promise（TEAmo）制作，功能未作任何精简，完整功能仅增强组装而成。</p>
-<p>目前增强版集成了多种增效滤镜，包括Alien Skin 系列滤镜，Camera Raw 11.4滤镜，Topaz Labs 系列滤镜，Flaming Pear 系列滤镜等；其他功能增强包括WebP格式支持，精选优秀字体，解除扩展库限制，支持多国语言界面切换等；还集成了扩展面板，包括Beauty Retouch 3 人像D&amp;B/中性灰磨皮，Coolorus 2.6 色环面板，Blendit 终极修图辅助面板，Double USM2 USM双锐化，美颜润肤等等，可以大幅度提高设计人员的工作效率，欢迎免费下载收藏。</p>
-<!-- more -->
-<p>Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件，已经破解激活，并集成了大量插件滤镜，直接安装即可完全免费使用，其详细的安装教程可参考下文。</p>
-<h2 id="集成的外挂滤镜-插件">集成的外挂滤镜、插件</h2>
-<p>by Promise （TEAmo）未作任何精简，完整功能仅增强组装而成。<br>
-<img src="http://images.zyglz.com/blog/uploads/20200304/PCQloFHDnsxp.jpg!watermark" alt="程序界面" loading="lazy"><br>
-<img src="http://images.zyglz.com/blog/uploads/20200304/7uhD5Qk30xsX.jpg!watermark" alt="mark" loading="lazy"><br>
-<img src="http://images.zyglz.com/blog/uploads/20200304/ntS4JlOHBVBg.gif" alt="mark" loading="lazy"></p>
-<h2 id="集成增效滤镜">集成增效滤镜：</h2>
-<p>├—Alien Skin 系列滤镜<br>
-├—Athentech Imaging Perfectly Clear Complete 3.6.3.1401 滤镜<br>
-├—Camera Raw 11.4 滤镜<br>
-├—Flaming Pear 系列滤镜<br>
-├—Frischluft 系列滤镜<br>
-├—Neat Image 7.6 降噪滤镜<br>
-├—Imagenomic 系列滤镜<br>
-├—Redfield 系列滤镜<br>
-├—Richard Rosenman 系列滤镜<br>
-├—Topaz Labs 系列滤镜<br>
-├—Tint 滤镜<br>
-├—Vertus Fluid Mask 3.3.18 抠图滤镜<br>
-├—GreycShop GREYCstoration 手绘滤镜<br>
-├—Knoll Light Factory 3.2 光效滤镜<br>
-├—Nik Collection Software 系列滤镜<br>
-├—Google 系列滤镜</p>
-<h2 id="其他功能增强">其他功能增强：</h2>
-<p>├—ICO&amp;CUR格式支持<br>
-├—WebP格式支持<br>
-├—精选优秀字体<br>
-├—支持多国语言界面切换<br>
-├—想要窗口Dveice Preview 功能需要另外安装Adobe Preview CC安卓版<br>
-├—解除扩展库限制，可自由安装使用第三方插件库。<br>
-├—Required\CEP\CEPHtmlEngine 已解除限制<br>
-├—Required\CEP\extensions 在此添加扩展库即可</p>
-<h2 id="集成扩展面板">集成扩展面板：</h2>
-<p>├—Beauty Retouch 3 人像D&amp;B/中性灰磨皮<br>
-├—Beauty Retouching Kit 影楼皮肤美白磨皮润色降噪<br>
-├—Blendit 终极修图辅助面板<br>
-├—Coolorus 2.6 色环面板<br>
-├—Colors of the Year 年度颜色面板<br>
-├—Creative Retouch 光效叠加合成面板<br>
-├—Delicious Retouch Plus 3 增强版<br>
-├—Double USM2 USM双锐化<br>
-├—Easy Panel 一键亮度遮罩控制面板<br>
-├—Easy Retouch 写真面部调色特效<br>
-├—fonTags 1.3 字体管理器<br>
-├—GuideGuide 参考辅助线面板<br>
-├—ILM 2.1 亮度饱和度蒙版<br>
-├—InstaMask 1.0 全新蒙板生成器<br>
-├—Lumenzia – Luminosity Masking Panel 区域色彩控制<br>
-├—Lumenzia 2.0.8 区域色彩控制<br>
-├—Long Shadow Generator 长阴影生成面板<br>
-├—Magic Retouch Pro 4.0 美白磨皮润色专业版<br>
-├—Overlays Manager Pro 视觉特效叠层纹理管理<br>
-├—Photobacks Cartoon 1.0.5 卡通漫画效<br>
-├—PixelJuggler 人像D&amp;B/中性灰磨皮辅助<br>
-├—Raya Pro 2.0 终极数字混合工作流程<br>
-├—Retouch of Color 颜色修整面板<br>
-├—Retouch Skin 高端商业磨皮美肤<br>
-├—Retouch Tools 终极修图辅助工具<br>
-├—Retouching Panel 高端精修调色风格面板<br>
-├—SMP Pro Workflow 人像精修扩展面版<br>
-├—StarsTail 2017.1 半岛雪人星轨堆栈插件<br>
-├—SuperDetails 超级细节增强<br>
-├—SuperHDR 超级HDR效果<br>
-├—tk_infinity_mask_panel TK辅助面板<br>
-├—TK4V2 亮度蒙版风光利器<br>
-├—TK V5 亮度蒙版风光利器<br>
-├—VSCOcam 扩展面板<br>
-├—Ultimate Retouch 2.0 终极修图<br>
-├—Ultimate Retouch 3.5 终极修图<br>
-├—YYActions 1.0 新疆YY星轨堆栈亮度蒙版<br>
-├—简易抠图<br>
-├—美颜润肤 1.3 标准版<br>
-├—美颜润肤（加强版）</p>
-<h1 id="安装教程">安装教程</h1>
-<p>1、下载解压，得到photoshop2020 64位茶末余香增强直装版，由于是直装版，安装过程中自动激活，无需输入激活码序列号之类的；</p>
-<p>2、双击exe文件安装，点击proceed继续安装；</p>
-<p>3、选择安装目录，默认为【c:\program files\adobe】可以自行更改，再点击install安装；</p>
-<p>4、成功安装后，点击“Finish”完成，软件会强制性重启电脑有配置生效；</p>
-<p>5、以上就是详细的photoshop2020增强版安装教程，希望对用户有帮助。</p>
-<h1 id="特别说明">特别说明</h1>
-<p>1、如果内存低于8G是体验不好的，如果电脑档次不算太低，只是内存容量不到8G，建议你把内存扩充到最低8G（如果主板支持）。</p>
-<p>2、扩展插件：Raya Pro在使用之前要在动作面板里加载相应的动作。</p>
-<p>3、请右键管理员身份允许安装，否则安装过程可能有字体安装错误提示，如果在安装路径页面无法点击安装的，可以直接按回车键进行安装。</p>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9xpdoj" title="提取码: djbi">下载地址一</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[无损图片压缩大师去广告破解版-图片无损压缩10倍以上]]></title>
-        <id>/post/20200304cc69c374d6093804/</id>
-        <link href="/post/20200304cc69c374d6093804/">
-        </link>
-        <updated>2020-03-04T09:22:10.000Z</updated>
-        <summary type="html"><![CDATA[<p>无损图片压缩大师可以压缩市面上大部分图片格式的压缩软件，一个10M的jpg数码照片，可以压缩到100KB左右，压缩后的图片比之前缩小了10倍左右，而且压缩后的图片质量基本没什么变化，实现无损压缩。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>无损图片压缩大师可以压缩市面上大部分图片格式的压缩软件，一个10M的jpg数码照片，可以压缩到100KB左右，压缩后的图片比之前缩小了10倍左右，而且压缩后的图片质量基本没什么变化，实现无损压缩。</p>
-<!-- more -->
-<h1 id="无损图片压缩大师去广告破解版">无损图片压缩大师去广告破解版</h1>
-<h2 id="效果演示">效果演示</h2>
-<p>原图：8236KB(分辨率：5400×3600)<br>
-<img src="https://git.imweb.io/zyglz/my-blog-img/raw/1c07d2ab787b4c3da6e05ee571dd79c484412e98/blog/images/2020/03/37636625b0a97dba4378a121c46c3b46-01.jpg" alt="高清原图" title="高清原图" loading="lazy"></p>
-<p>压缩后：1132KB(分辨率：5400×3600)<br>
-<img src="https://git.imweb.io/zyglz/my-blog-img/raw/b8bdc1629efc784754218239e5a84278719d1b04/blog/images/2020/03/65deb1560cc2abcb0e34dd64dce8a23b-02.jpg" alt="压缩后图片" title="压缩后图片" loading="lazy"></p>
-<p><mark>特别说明：该软件建议只用于压缩jpg的图片，png的压缩后会丢失透明度。</mark></p>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9xpdoj">下载地址一</a><br>
-网盘下载：<a href="https://www.lanzous.com/i9xpdoj">下载地址二</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MPic一款七牛云存储智能上传图片的图床工具]]></title>
-        <id>/post/20200303daedaf5234394507/</id>
-        <link href="/post/20200303daedaf5234394507/">
-        </link>
-        <updated>2020-03-03T14:26:33.000Z</updated>
-        <summary type="html"><![CDATA[<p>MPic是一款针对七牛云存储智能上传图片的图床工具，图片上传,无水印,不压缩图片质量,外链无限制,国内空间绝不会被墙，支持粘贴上传、拖放上传，一键复制 markdown 链接的图床，简单好用，无需注册。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>MPic是一款针对七牛云存储智能上传图片的图床工具，图片上传,无水印,不压缩图片质量,外链无限制,国内空间绝不会被墙，支持粘贴上传、拖放上传，一键复制 markdown 链接的图床，简单好用，无需注册。</p>
-<!-- more -->
-<h1 id="mpic七牛云存储智能上传图片的图床工具">MPic七牛云存储智能上传图片的图床工具</h1>
-<h2 id="mpic简介">Mpic简介</h2>
-<ul>
-<li>MPic是一款针对七牛云存储智能上传图片的图床工具，图片上传,无水印,不压缩图片质量,外链无限制,国内空间绝不会被墙，支持粘贴上传、拖放上传，一键复制 markdown 链接的图床，简单好用，无需注册。</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/rgjuLMWJMDiY.jpg?imageslim" alt="运行界面" loading="lazy"></figure>
-<h2 id="下载地址">下载地址：</h2>
-<p>官网下载：<a href="http://mpic.lzhaofu.cn" title="http://mpic.lzhaofu.cn">下载地址一</a><br>
-网盘下载：<a href="https://www.lanzous.com/i9wxvrc" title="https://www.lanzous.com/i9wxvrc">下载地址一</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Internet Download Manager (IDM下载器v6.32.6)中文注册版]]></title>
-        <id>/post/20200303eba65bbbac0ddc02/</id>
-        <link href="/post/20200303eba65bbbac0ddc02/">
-        </link>
-        <updated>2020-03-03T13:48:31.000Z</updated>
-        <summary type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
-<!-- more -->
-<p>** Internet Download Manager (IDM下载器v6.32.6)中文注册版**</p>
-<h2 id="idm简介">IDM简介</h2>
-<ul>
-<li>Internet Download Manager软件提升你的下载速度最多达5倍，安排下载时程，或续传一半的软件。Internet Download Manager的续传功能可以恢复因为断线、网络问题、计算机宕机甚至无预警的停电导致下传到一半的软件。此程序具有动态档案分割、多重下载点技术，而且它会重复使用现有的联机，而不需再重新联机登入一遍。聪明的in-speed技术会动态地将所有设定应用到某种联机类型，以充分利用下载速度。</li>
-<li>Internet Download Manager支持下载队列、防火墙、代理服务器和映射服务器、重新导向、cookies、需要验证的目录，以及各种不同的服务器平台。此程序紧密地与Internet Explorer和NetscapeCommunicator结合，自动地处理你的下载需求。此程序还具有下载逻辑最佳化功能、检查病毒，以及多种偏好设定。</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/VS6jbBvkr3Tl.jpg!watermark" alt="运行界面" loading="lazy"></figure>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9wvtcd" title="https://www.lanzous.com/i9wvtcd">网盘下载一</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MarkdownPad 2 绿色中文汉化版]]></title>
-        <id>/post/20200303c4af925d1c128406/</id>
-        <link href="/post/20200303c4af925d1c128406/">
-        </link>
-        <updated>2020-03-03T13:36:42.000Z</updated>
-        <summary type="html"><![CDATA[<p>MarkdownPad2 绿色中文汉化版简介<br>
-MarkdownPad是一款免费的将文本转换成HTML/XHTML的网页格式的小软件，操作简单容易，上手很快，可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>MarkdownPad2 绿色中文汉化版简介<br>
-MarkdownPad是一款免费的将文本转换成HTML/XHTML的网页格式的小软件，操作简单容易，上手很快，可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
-<!-- more -->
-<h1 id="markdownpad-2-绿色中文汉化版">MarkdownPad 2 绿色中文汉化版</h1>
-<ul>
-<li>MarkdownPad是一个网络作家的文本到HTML转换工具。</li>
-<li>MarkdownPad允许您编写使用易于阅读，易于编写纯文本格式，然后将其转换为结构有效的XHTML(或HTML)。</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/4D7nbQYbEeoe.jpg?imageslim" alt="运行界面" title="运行界面" loading="lazy"></figure>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9wusih" title="https://www.lanzous.com/i9wusih">网盘下载一</a></p>
 ]]></content>
     </entry>
 </feed>
