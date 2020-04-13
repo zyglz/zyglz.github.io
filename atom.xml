@@ -1,15 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id></id>
-    <title>资源管理站</title>
-    <updated>2020-03-20T05:08:20.000Z</updated>
+    <title>hoochon&apos;s blog</title>
+    <updated>2020-04-13T02:00:19.631Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href=""/>
     <link rel="self" href="/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>/images/avatar.png</logo>
     <icon>/favicon.ico</icon>
-    <rights>All rights reserved 2020, 资源管理站</rights>
+    <rights>All rights reserved 2020, hoochon&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[快速去除桌面快捷方式图标箭头的方法]]></title>
+        <id>/post/202004137d4f15c055eff9c8/</id>
+        <link href="/post/202004137d4f15c055eff9c8/">
+        </link>
+        <updated>2020-04-13T01:54:32.000Z</updated>
+        <summary type="html"><![CDATA[<p>电脑桌面上快捷方式的图标经常带有一个箭头，是不是仔细一看非常难受啊，总是感觉有些怪怪的，那么我们现在就把这些讨厌的箭头去除掉。我们这里介绍一种比较实用的、永不复发的方法来去除箭头。去除方法如下。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>电脑桌面上快捷方式的图标经常带有一个箭头，是不是仔细一看非常难受啊，总是感觉有些怪怪的，那么我们现在就把这些讨厌的箭头去除掉。我们这里介绍一种比较实用的、永不复发的方法来去除箭头。去除方法如下。</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200412/a7mFTWBRDQ9k.jpg!watermark" alt="mark" loading="lazy"></figure>
+<h1 id="工具原料">工具/原料</h1>
+<ul>
+<li>硬件：电脑一台</li>
+<li>操作系统：Windows7/10</li>
+</ul>
+<h1 id="方法步骤">方法/步骤</h1>
+<h2 id="制作批处理文件">制作批处理文件</h2>
+<ol>
+<li>将一下代码复制到记事本文件中：</li>
+</ol>
+<pre><code class="language-html">@echo off
+
+color 2
+
+reg delete HKCR\lnkfile /v IsShortcut /f
+
+reg delete HKCR\piffile /v IsShortcut /f
+
+reg delete HKCR\InternetShortcut /v IsShortcut /f
+
+taskkill /f /im explorer.exe &amp;&amp; explorer
+
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="http://images.zyglz.com/blog/uploads/20200412/aGHP1YXeIvID.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="2">
+<li>点击记事本左上角的【文件】，在下拉菜单中点击【另存为】；</li>
+</ol>
+<figure data-type="image" tabindex="3"><img src="http://images.zyglz.com/blog/uploads/20200412/D5TkU4UnqaTX.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="3">
+<li>我们在新打开的另存为窗口中，先点击窗口左侧的【桌面】，在文件名（N）栏中输入：清除快捷方式箭头.bat，保持类型选择“所有文件(<em>.</em>)”，再点击：保存；</li>
+</ol>
+<figure data-type="image" tabindex="4"><img src="http://images.zyglz.com/blog/uploads/20200412/b0mBSivvQ4rP.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="4">
+<li>在电脑桌面上，找到“清除快捷方式箭头.bat”这个文件，并右键点击去“除快捷方式小箭头.bat”图标，在右键菜单中点击：以管理员身份运行（A）；</li>
+</ol>
+<figure data-type="image" tabindex="5"><img src="http://images.zyglz.com/blog/uploads/20200412/ovbhVzBisYRN.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="5">
+<li>弹出一个C:\WINDOWS\System 32\cmd.exe窗口，待其运行完成，显示：成功：已终止进程 explorer.exe，其 PID 为 ****；<br>
+<img src="http://images.zyglz.com/blog/uploads/20200412/2g8t4kRvSk7I.jpg!watermark" alt="mark" loading="lazy"></li>
+</ol>
+<figure data-type="image" tabindex="6"><img src="http://images.zyglz.com/blog/uploads/20200412/BcPbmX5vlAry.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="6">
+<li>回到电脑桌面上，我们可以看到，快捷方式的小箭头已经全部消失。</li>
+</ol>
+<figure data-type="image" tabindex="7"><img src="http://images.zyglz.com/blog/uploads/20200412/BxspBQDWXl1O.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="7">
+<li>可以直接下载后下面文件，运行即可！</li>
+</ol>
+<h3 id="下载地址">下载地址：</h3>
+<ol>
+<li>
+<p>网盘下载：<a href="https://ww.lanzous.com/ibaypqb">下载地址一</a></p>
+</li>
+<li>
+<p>百度云盘：<a href="https://pan.baidu.com/s/1JyiEDOrCd2heb1-koQ7gog">下载地址二</a>      提取码：fhvx</p>
+</li>
+</ol>
+<h2 id="操作注册表">操作注册表</h2>
+<ol>
+<li>同时按键盘上的WIN+R键,调出运行窗口，在打开框中输入geredit，打开注册表编辑器</li>
+</ol>
+<figure data-type="image" tabindex="8"><img src="http://images.zyglz.com/blog/uploads/20200412/IxgL2k7wyw3I.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="2">
+<li>在注册表编辑器里找到HKEY_CLASSES_ROOT\lnkfile，如果找不到可以按下Ctrl+F快捷键搜索“lnkfile”，找到HKEY_CLASSES_ROOT\lnkfile；在lnkfile中找到IsShortcut键值，右击删除该键值。</li>
+</ol>
+<figure data-type="image" tabindex="9"><img src="http://images.zyglz.com/blog/uploads/20200412/7pXdK889Ampb.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="3">
+<li>重启电脑或注销一下之后，我们可以看到桌面上的图标快捷方式小箭头消失了。</li>
+</ol>
+<figure data-type="image" tabindex="10"><img src="http://images.zyglz.com/blog/uploads/20200412/BxspBQDWXl1O.jpg!watermark" alt="mark" loading="lazy"></figure>
+<ol start="4">
+<li>
+<p>PS：如果想要恢复箭头同样方法进入，在删除的注册表界面右击新建重命名为sShortcut即可恢复。全部搞定后我们保存自己的数据然后重新启动电脑OK！</p>
+</li>
+<li>
+<p>温馨提示：注册表为重要系统文件集中处，请勿乱删除文件。</p>
+</li>
+</ol>
+<p>以上即是快速去除电脑桌面快捷方式图标箭头的两种方法，供需要去除桌面快捷方式图标箭头的朋友们参考和使用。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版]]></title>
         <id>/post/20200316e741fe1698c13339/</id>
@@ -194,640 +286,6 @@ ActiveSheet.Protect '保护工作表
     Application.ScreenUpdating = True '解除冻结屏幕
 End Function
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[python爬虫学习系列之正则、bs4、xpath、jsonpath]]></title>
-        <id>/post/20200307b765f0870beb2f7d/</id>
-        <link href="/post/20200307b765f0870beb2f7d/">
-        </link>
-        <updated>2020-03-07T03:25:31.000Z</updated>
-        <summary type="html"><![CDATA[<p>python爬虫学习系列之正则、bs4、xpath、jsonpath知识要点与对比</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>python爬虫学习系列之正则、bs4、xpath、jsonpath知识要点与对比</p>
-<!-- more -->
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200307/xlMy0huaYjIq.jpg!watermark" alt="mark" loading="lazy"></figure>
-<p><ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E6%AD%A3%E5%88%99">正则</a></li>
-<li><a href="#bs4">bs4</a></li>
-<li><a href="#xpath">xpath</a></li>
-<li><a href="#jsonpath">jsonpath</a></li>
-</ul>
-</li>
-</ul>
-</p>
-<h2 id="正则">正则</h2>
-<pre><code class="language-python">正则规则：
-	单字符：
-       .：除换行符外的所有字符
-		[]:[aoe]a,o,e之中的一个；[a-w]a到w之间任意一个字符
-		\d:数字[0-9]
-		\D:非数字
-		\w：数字，字母，下划线，中文
-		\W：非\w
-		\s:所有的空白字符
-		\S：所有的非空白
-	数量修饰：
-		*：任意多次，大于等于0次
-		+：至少一次,&gt;=1
-		？:可有可无，0次或者1次
-		{m}:固定m次
-		{m,}:至少m次
-		{m,ne}:至少m次，最大n次
-	边界
-		\b
-		\B
-		$：以某某开头
-		^:以某某结尾
-	分组：
-		():(ab){4}视为一个整体，
-		():子模式  \组模式  \1,\2
-	贪婪模式：
-		.*？
-		.+？
-</code></pre>
-<p>match :只从最开始找<br>
-search:从任意位置找<br>
-findall:找所有<br>
-re.sub(正则表达式，替换的内容，查找的字符串)</p>
-<pre><code class="language-python">import re
-string='&lt;p&gt;&lt;div&gt;&lt;span&gt;猪八戒&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;'
-pattern=re.compile(r'&lt;(\w+)&gt;&lt;(\w+)&gt;\w+&lt;/\2&gt;&lt;/\1&gt;')
-ret=pattern.search(string)
-print(ret)
-#输出：&lt;re.Match object; span=(3, 30), match='&lt;div&gt;&lt;span&gt;猪八戒&lt;/span&gt;&lt;/div&gt;'&gt;
-
-string='&lt;p&gt;&lt;div&gt;&lt;div&gt;猪八戒&lt;div&gt;&lt;/div&gt;&lt;/p&gt;'
-pattern=re.compile(r'&lt;div&gt;.*&lt;/div&gt;')
-# pattern=re.compile(r'&lt;div&gt;.*?&lt;/div&gt;')
-ret=pattern.search(string)
-print(ret)
-#输出：&lt;re.Match object; span=(3, 27), match='&lt;div&gt;&lt;div&gt;猪八戒&lt;div&gt;&lt;/div&gt;'&gt;
-
-#	re.I:忽略大小写
-#	re.M:多行匹配
-#	re.S:单行匹配
-string='''hate is a beautiful feel
-love you
-love 
-love '''
-pattern=re.compile(r'^love',re.M)
-ret=pattern.findall(string)
-print(ret)
-#输出：['love', 'love', 'love']
-
-string1='''&lt;div&gt;沁园春-雪
-北国风光
-千里冰封
-万里雪飘
-望长城内外
-惟余莽莽
-大河上下
-顿失滔滔
-山舞银蛇
-原驰蜡象
-欲与天公试比高
-&lt;/div&gt;'''
-pattern=re.compile(r'&lt;div&gt;(.*?)&lt;/div&gt;',re.S)
-ret=pattern.findall(string1)
-print(ret)
-#输出:['沁园春-雪\n北国风光\n千里冰封\n万里雪飘\n望长城内外\n惟余莽莽\n大河上下\n顿失滔滔\n山舞银蛇\n原驰蜡象\n欲与天公试比高\n']
-
-
-# match :只从最开始找
-# search:从任意位置找
-# findall:找所有
-# re.sub(正则表达式，替换的内容，查找的字符串)
-
-string ='i love you,you love me'
-pattern=re.compile(r'love')
-ret=re.sub(pattern,'hate',string)
-print(ret)
-#输出：i hate you,you hate me
-ret=re.sub(r'love','hate',string)
-print(ret)
-#输出：i hate you,you hate me
-ret=pattern.sub('hate',string)
-print(ret)
-#输出：i hate you,you hate me
-print(string)
-#输出：i love you,you love me
-
-# 正则替换
-def fn(a):
-	ret=int(a.group())
-	return str(ret-10)
-string='我喜欢身高为175的女孩'
-pattern=re.compile(r'\d+')
-ret=pattern.sub(fn,string)
-print(ret)
-#输出：我喜欢身高为165的女孩
-</code></pre>
-<h2 id="bs4">bs4</h2>
-<p>BeautifulSoup 可以将html文件转换为指定的对象，然后通过对象的方法或属性查找指定的内容<br>
-需要安装pip install bs4<br>
-bs4 在使用的时候需要一个第三方库，也需要安装<br>
-pip install lxml</p>
-<pre><code class="language-python">from bs4 import BeautifulSoup
-#转化网络文件
-soup=BeautifulSoup('字符串类型或字节类型','lxml')
-#转化本地文件
-soup=BeautifulSoup(open('soup_text.html',encoding='utf8'),'lxml')
-
-#根据标签名查找,只能找到第一个符合要求的标签
-print(soup.a)
-#找到标签的属性
-print(soup.a['href'])
-print(soup.a['title'])
-print(soup.a['target'])
-#返回a标签的所有属性，返回一个字典：{'href': 'http://www.zyglz.com', 'title': '资源管理站', 'target': '__self'}
-print(soup.a.attrs)
-#取某一个属性
-print(soup.a.attrs['href'])
-
-#获取标签里面的内容
-print(soup.div.string)#只获取标签里面的文本文字，如果内容里面有其他标签则，为none
-print(soup.div.text)
-print(soup.div.get_text())
-
-#find 找到第一个符合要求的标签
-print(soup.find('a'))
-print(soup.find('a',title=&quot;清&quot;))
-print(soup.find('a',alt=&quot;唐&quot;))
-print(soup.find('a',class_=&quot;明&quot;))#注意class为关键字，需要用class_
-print(soup.find('a',id=&quot;du&quot;))
-print(soup.find('div',class_='tang').find('a',class_='明'))
-
-print(soup.find(name='a')
-print(soup.find(attrs={'class':'title'})#返回class属性为title的第一个标签
-print(soup.find(text='title')
-print(soup.find(
-	name='a',
-	attrs={'class':'title'},
-)
-
-# findall
-print(soup.find_all('a'))
-print('*'*50)
-print(soup.find('div',class_='tang').find_all('a'))
-print('*'*50)
-print(soup.find_all(['b','span']))#查找多个
-print('*'*50)
-print(soup.find_all('a',limit=2))#只要前两个
-
-print(soup.find_all('a'，attrs={'class':'tang'}))
-
-#select根据选择器选择制定的内容,返回的是一个列表，
-#常用的选择器，标签选择器，类选择器，id选择器，并集选择器，层级选择器，伪类选择器，属性选择器，组合选择器
-#a
-#.dudu
-#a,.dudu,#lala
-#div a .dudu #lala .xx
-#div &gt; p &gt; a 只能是次级
-#input[name=&quot;username&quot;]
-print(soup.select('.tang&gt;ul&gt;li&gt;a')[1])
-print(soup.select('#du')[0].text)
-print(soup.select('#du')[0].get_text())
-print(soup.select('#du')[0]['href'])
-print(soup.select('#du')[0]get('href'))
-#select_one
-print(select_one('.tan',limit=1)
-</code></pre>
-<h2 id="xpath">xpath</h2>
-<p>xml是用来储存和传输数据的、与html的区别：<br>
-1、html 是用来显示数据，xml是用来传输数据；<br>
-2、html的标签是固定的，xml的标签是自定义的<br>
-xpath是一门在xml文档中查找信息的语言，他是一种路径表达式；需要安装第三方插件，pip install lxml<br>
-常用的路径表达式：<br>
-1、//：不考虑位置的查找<br>
-2、./:从当前节点开始往下查找<br>
-3、..:当前节点的父节点<br>
-4、@：选取属性</p>
-<p>使用：安装谷歌xpath插件：xpath helper 2.0.2<br>
-导入库：from lxml import etree<br>
-使用两种方法:将html文件变成一个对象,然后调用对象的方法去查找指定的节点<br>
-1、本地文件：tree=etree.parse(文件名)<br>
-2、网络文件：tree=etree.HTML(网页字符串)<br>
-ret=tree.xpath(路径表达式)   ret是一个列表</p>
-<pre><code class="language-html">&lt;bookstore&gt;
-	&lt;book category=&quot;COOKING&quot;&gt;
-		&lt;title lang=&quot;en&quot;&gt;Everyday Italian&lt;/title&gt;
-		&lt;author&gt;Giada De Laurentiis&lt;/author&gt;
-		&lt;year&gt;2005&lt;/year&gt;
-		&lt;price&gt;30.00&lt;/price&gt;
-	&lt;/book&gt;
-	&lt;book category=&quot;CHILDREN&quot;&gt;
-		&lt;title lang=&quot;en&quot;&gt;Harry Potter&lt;/title&gt;
-		&lt;author&gt;J K. Rowling&lt;/author&gt;
-		&lt;year&gt;2005&lt;/year&gt;
-		&lt;price&gt;29.99&lt;/price&gt;
-	&lt;/book&gt;
-	&lt;book category=&quot;WEB&quot;&gt;
-		&lt;title lang=&quot;en&quot;&gt;XQuery Kick Start&lt;/title&gt;
-		&lt;author&gt;James McGovern&lt;/author&gt;
-		&lt;author&gt;Per Bothner&lt;/author&gt;
-		&lt;author&gt;Kurt Cagle&lt;/author&gt;
-		&lt;author&gt;James Linn&lt;/author&gt;
-		&lt;author&gt;Vaidyanathan Nagarajan&lt;/author&gt;
-		&lt;year&gt;2003&lt;/year&gt;
-		&lt;price&gt;49.99&lt;/price&gt;
-	&lt;/book&gt;
-	&lt;book category=&quot;WEB&quot;&gt;
-		&lt;title lang=&quot;en&quot;&gt;Learning XML&lt;/title&gt;
-		&lt;author&gt;Erik T. Ray&lt;/author&gt;
-		&lt;year&gt;2003&lt;/year&gt;
-		&lt;price&gt;39.95&lt;/price&gt;
-	&lt;/book&gt;
-&lt;/bookstore&gt;
-</code></pre>
-<pre><code class="language-python"># 1、/bookstore/book:	选取根节点的bookstore所有的子元素book(直接子节点)
-# 2、//book：			选取所有的book
-# 3、bookstore//book: 选取bookstore元素的后代所有book元素
-# 4、//@lang: 			属性为lang的所有节点
-# 5、/bookstore/book[1]:	选取根节点的bookstore第一个book子元素(直接子节点)
-# 6、/bookstore/book[last()]:	选取根节点的bookstore最后一个book子元素(直接子节点)
-# 7、/bookstore/book[position()&lt;3]:	选取根节点的bookstore前两个book子元素(直接子节点)
-# 8、//title[@lang]	:选取所有带有lang属性的title的元素
-# 9、//title[@lang='eng']	:选取所有lang属性为eng的title的元素
-# 10、/bookstore/book[price&gt;35]:	选取根节点的bookstore的所有book子元素(且其中的price子元素的值大于35)
-# 		*：通配符，任何元素节点
-# 		/bookstore/*：bookstore元素下的所有节点
-# 		//*：文档中所有节点
-# 		//title[@*]:选取所有带有属性的title节点
-</code></pre>
-<pre><code class="language-python"># //input[@id=&quot;kw&quot;] 			
-# //*[@class=&quot;btn self-btn bg s_btn&quot;]
-# //div[@id=&quot;head&quot;]/div/a[1]
-# 逻辑运算://input[@class=&quot;s_ipt&quot; and @name=&quot;wd&quot;]
-# 模糊匹配：
-# 	1、contais：//input[contains(@class,&quot;s_i&quot;)]：所有的input，有class属性，属性中带有s_i的节点
-# 		'//li[contains(text(),&quot;爱&quot;)]/text()'
-# 	2、starts-with：//input[starts-with(@class,&quot;s&quot;)]：所有的input，有class属性，属性以s开头的节点
-# 取文本：
-# 	//div[@id=&quot;u_sp&quot;]/a[5]/text()：取a链接的文本
-# 	//div[@id=&quot;u_sp&quot;]/text()：取div下的文本
-# 	//div[@id=&quot;u_sp&quot;]//text()：取div下所有子节点的文本
-# 	
-# 	//直接将内容拼接，替换换行和制表符	
-# 		ret=tree.xpath('//div[@class=&quot;song&quot;]')
-#		string=ret[0].xpath('string(.)')
-#		pr(string.replace('\n','').replace('\t',''))# 	
-# 	
-# 获取属性：
-# 	//div[@id=&quot;u_sp&quot;]/a[5]/@href：获取a链接的href属性值	
-</code></pre>
-<h2 id="jsonpath">jsonpath</h2>
-<p>jsonpath:用来解析json数据使用<br>
-python处理json格式用到的函数:<br>
-json.dumps():将字典或者列表转换为json格式的字符串<br>
-json.loads():将json格式的字符串转换为python对象<br>
-json.dump():将字典或列表转换为json格式字符串，并且写入到文件中<br>
-json.load():从文件中读取json格式字符串，转换为python对象<br>
-前端处理：<br>
-JSON.parse('json格式字符串')<br>
-eval('('+json格式字符串+')')<br>
-安装:pip install jsonpath</p>
-<p>jsonpath:是xpath在json的应用。<br>
-JSONPath 是参照，xpath表达式来解析xml文档的方式，json数据结构通常是匿名的并且不一定需要有根元素。JSONPaht 用一个抽象的名字$来表示最外层对象。</p>
-<p>JOSNPath 表达式可以使用“.”符号如下：<br>
-$.store.book[0].title</p>
-<p>或者使用[] 符号<br>
-$['store']['book'][0]['title']<br>
-jsonpath 与 xpath的对比</p>
-<table>
-<thead>
-<tr>
-<th>XPath</th>
-<th>JSONPath</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>/</td>
-<td>$</td>
-<td>表示根元素</td>
-</tr>
-<tr>
-<td>.</td>
-<td>@</td>
-<td>当前元素</td>
-</tr>
-<tr>
-<td>/</td>
-<td>. or []</td>
-<td>子元素</td>
-</tr>
-<tr>
-<td>..</td>
-<td>n/a</td>
-<td>父元素</td>
-</tr>
-<tr>
-<td>//</td>
-<td>..</td>
-<td>递归下降，JSONPath是从E4X借鉴的。</td>
-</tr>
-<tr>
-<td>*</td>
-<td>*</td>
-<td>通配符，表示所有的元素</td>
-</tr>
-<tr>
-<td>@</td>
-<td>n/a</td>
-<td>属性访问字符</td>
-</tr>
-<tr>
-<td>[]</td>
-<td>[]</td>
-<td>子元素操作符</td>
-</tr>
-<tr>
-<td>|</td>
-<td>[,]</td>
-<td>连接操作符在XPath 结果合并其它结点集合。JSONP允许name或者数组索引。</td>
-</tr>
-<tr>
-<td>n/a</td>
-<td>[start🔚step]</td>
-<td>数组分割操作从ES4借鉴。</td>
-</tr>
-<tr>
-<td>[]</td>
-<td>?()</td>
-<td>应用过滤表示式</td>
-</tr>
-<tr>
-<td>n/a</td>
-<td>()</td>
-<td>脚本表达式，使用在脚本引擎下面。</td>
-</tr>
-<tr>
-<td>()</td>
-<td>n/a</td>
-<td>Xpath分组</td>
-</tr>
-</tbody>
-</table>
-<p>[]在xpath表达式总是从前面的路径来操作数组，索引是从1开始。<br>
-使用JOSNPath的[]操作符操作一个对象或者数组，索引是从0开始。</p>
-<pre><code class="language-html">{ &quot;store&quot;: {
-    &quot;book&quot;: [
-      { &quot;category&quot;: &quot;reference&quot;,
-        &quot;author&quot;: &quot;Nigel Rees&quot;,
-        &quot;title&quot;: &quot;Sayings of the Century&quot;,
-        &quot;price&quot;: 8.95
-      },
-      { &quot;category&quot;: &quot;fiction&quot;,
-        &quot;author&quot;: &quot;Evelyn Waugh&quot;,
-        &quot;title&quot;: &quot;Sword of Honour&quot;,
-        &quot;price&quot;: 12.99
-      },
-      { &quot;category&quot;: &quot;fiction&quot;,
-        &quot;author&quot;: &quot;Herman Melville&quot;,
-        &quot;title&quot;: &quot;Moby Dick&quot;,
-        &quot;isbn&quot;: &quot;0-553-21311-3&quot;,
-        &quot;price&quot;: 8.99
-      },
-      { &quot;category&quot;: &quot;fiction&quot;,
-        &quot;author&quot;: &quot;J. R. R. Tolkien&quot;,
-        &quot;title&quot;: &quot;The Lord of the Rings&quot;,
-        &quot;isbn&quot;: &quot;0-395-19395-8&quot;,
-        &quot;price&quot;: 22.99
-      }
-    ],
-    &quot;bicycle&quot;: {
-      &quot;color&quot;: &quot;red&quot;,
-      &quot;price&quot;: 19.95
-    }
-  }
-}
-</code></pre>
-<pre><code class="language-python">import json
-import jsonpath
-#将json字符串转换为python对象
-obj=json.load(open('bookstore.json','r',encoding='utf8'))
-
-#查找book下所有的author
-#[]里面写0的话，代表查询第一本书的anthor
-ret=jsonpath.jsonpath(obj,'$.store.book[*].author')
-
-#查找所有的author 
-ret=jsonpath.jsonpath(obj,'$..author')
-
-#store的所有元素。所有的bookst和bicycle
-ret=jsonpath.jsonpath(obj,'$.store.*')
-
-#查询store下面所有的price
-ret=jsonpath.jsonpath(obj,'$.store..price')
-
-#查找第三个book节点，返回一个列表
-ret=jsonpath.jsonpath(obj,'$..book[2]')
-
-#查询最后一本book
-ret=jsonpath.jsonpath(obj,'$..book[(@.length-1)]')
-
-#查找前两本book
-# ret=jsonpath.jsonpath(obj,'$..book[0,1]')
-ret=jsonpath.jsonpath(obj,'$..book[:2]')
-
-#过滤出所有的包含isbn的书。
-ret=jsonpath.jsonpath(obj,'$..book[?(@.isbn)]')
-
-#过滤出所有价格低于10的书。
-ret=jsonpath.jsonpath(obj,'$..book[?(@.price&lt;10)]')
-
-#所有元素。
-ret=jsonpath.jsonpath(obj,'$..*')
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件]]></title>
-        <id>/post/20200304d8ee00ceee3ecca7/</id>
-        <link href="/post/20200304d8ee00ceee3ecca7/">
-        </link>
-        <updated>2020-03-04T11:27:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>Adobe Photoshop CC 2020 v21.1 增强版，此版本集成了大量关用的外挂滤镜、插件，由Promise（TEAmo）制作，功能未作任何精简，完整功能仅增强组装而成。</p>
-<p>目前增强版集成了多种增效滤镜，包括Alien Skin 系列滤镜，Camera Raw 11.4滤镜，Topaz Labs 系列滤镜，Flaming Pear 系列滤镜等；其他功能增强包括WebP格式支持，精选优秀字体，解除扩展库限制，支持多国语言界面切换等；还集成了扩展面板，包括Beauty Retouch 3 人像D&amp;B/中性灰磨皮，Coolorus 2.6 色环面板，Blendit 终极修图辅助面板，Double USM2 USM双锐化，美颜润肤等等，可以大幅度提高设计人员的工作效率，欢迎免费下载收藏。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Adobe Photoshop CC 2020 v21.1 增强版，此版本集成了大量关用的外挂滤镜、插件，由Promise（TEAmo）制作，功能未作任何精简，完整功能仅增强组装而成。</p>
-<p>目前增强版集成了多种增效滤镜，包括Alien Skin 系列滤镜，Camera Raw 11.4滤镜，Topaz Labs 系列滤镜，Flaming Pear 系列滤镜等；其他功能增强包括WebP格式支持，精选优秀字体，解除扩展库限制，支持多国语言界面切换等；还集成了扩展面板，包括Beauty Retouch 3 人像D&amp;B/中性灰磨皮，Coolorus 2.6 色环面板，Blendit 终极修图辅助面板，Double USM2 USM双锐化，美颜润肤等等，可以大幅度提高设计人员的工作效率，欢迎免费下载收藏。</p>
-<!-- more -->
-<p>Adobe Photoshop CC 2020 v21.1 增强版 集成大量插件，已经破解激活，并集成了大量插件滤镜，直接安装即可完全免费使用，其详细的安装教程可参考下文。</p>
-<h2 id="集成的外挂滤镜-插件">集成的外挂滤镜、插件</h2>
-<p>by Promise （TEAmo）未作任何精简，完整功能仅增强组装而成。<br>
-<img src="http://images.zyglz.com/blog/uploads/20200304/PCQloFHDnsxp.jpg!watermark" alt="程序界面" loading="lazy"><br>
-<img src="http://images.zyglz.com/blog/uploads/20200304/7uhD5Qk30xsX.jpg!watermark" alt="mark" loading="lazy"><br>
-<img src="http://images.zyglz.com/blog/uploads/20200304/ntS4JlOHBVBg.gif" alt="mark" loading="lazy"></p>
-<h2 id="集成增效滤镜">集成增效滤镜：</h2>
-<p>├—Alien Skin 系列滤镜<br>
-├—Athentech Imaging Perfectly Clear Complete 3.6.3.1401 滤镜<br>
-├—Camera Raw 11.4 滤镜<br>
-├—Flaming Pear 系列滤镜<br>
-├—Frischluft 系列滤镜<br>
-├—Neat Image 7.6 降噪滤镜<br>
-├—Imagenomic 系列滤镜<br>
-├—Redfield 系列滤镜<br>
-├—Richard Rosenman 系列滤镜<br>
-├—Topaz Labs 系列滤镜<br>
-├—Tint 滤镜<br>
-├—Vertus Fluid Mask 3.3.18 抠图滤镜<br>
-├—GreycShop GREYCstoration 手绘滤镜<br>
-├—Knoll Light Factory 3.2 光效滤镜<br>
-├—Nik Collection Software 系列滤镜<br>
-├—Google 系列滤镜</p>
-<h2 id="其他功能增强">其他功能增强：</h2>
-<p>├—ICO&amp;CUR格式支持<br>
-├—WebP格式支持<br>
-├—精选优秀字体<br>
-├—支持多国语言界面切换<br>
-├—想要窗口Dveice Preview 功能需要另外安装Adobe Preview CC安卓版<br>
-├—解除扩展库限制，可自由安装使用第三方插件库。<br>
-├—Required\CEP\CEPHtmlEngine 已解除限制<br>
-├—Required\CEP\extensions 在此添加扩展库即可</p>
-<h2 id="集成扩展面板">集成扩展面板：</h2>
-<p>├—Beauty Retouch 3 人像D&amp;B/中性灰磨皮<br>
-├—Beauty Retouching Kit 影楼皮肤美白磨皮润色降噪<br>
-├—Blendit 终极修图辅助面板<br>
-├—Coolorus 2.6 色环面板<br>
-├—Colors of the Year 年度颜色面板<br>
-├—Creative Retouch 光效叠加合成面板<br>
-├—Delicious Retouch Plus 3 增强版<br>
-├—Double USM2 USM双锐化<br>
-├—Easy Panel 一键亮度遮罩控制面板<br>
-├—Easy Retouch 写真面部调色特效<br>
-├—fonTags 1.3 字体管理器<br>
-├—GuideGuide 参考辅助线面板<br>
-├—ILM 2.1 亮度饱和度蒙版<br>
-├—InstaMask 1.0 全新蒙板生成器<br>
-├—Lumenzia – Luminosity Masking Panel 区域色彩控制<br>
-├—Lumenzia 2.0.8 区域色彩控制<br>
-├—Long Shadow Generator 长阴影生成面板<br>
-├—Magic Retouch Pro 4.0 美白磨皮润色专业版<br>
-├—Overlays Manager Pro 视觉特效叠层纹理管理<br>
-├—Photobacks Cartoon 1.0.5 卡通漫画效<br>
-├—PixelJuggler 人像D&amp;B/中性灰磨皮辅助<br>
-├—Raya Pro 2.0 终极数字混合工作流程<br>
-├—Retouch of Color 颜色修整面板<br>
-├—Retouch Skin 高端商业磨皮美肤<br>
-├—Retouch Tools 终极修图辅助工具<br>
-├—Retouching Panel 高端精修调色风格面板<br>
-├—SMP Pro Workflow 人像精修扩展面版<br>
-├—StarsTail 2017.1 半岛雪人星轨堆栈插件<br>
-├—SuperDetails 超级细节增强<br>
-├—SuperHDR 超级HDR效果<br>
-├—tk_infinity_mask_panel TK辅助面板<br>
-├—TK4V2 亮度蒙版风光利器<br>
-├—TK V5 亮度蒙版风光利器<br>
-├—VSCOcam 扩展面板<br>
-├—Ultimate Retouch 2.0 终极修图<br>
-├—Ultimate Retouch 3.5 终极修图<br>
-├—YYActions 1.0 新疆YY星轨堆栈亮度蒙版<br>
-├—简易抠图<br>
-├—美颜润肤 1.3 标准版<br>
-├—美颜润肤（加强版）</p>
-<h1 id="安装教程">安装教程</h1>
-<p>1、下载解压，得到photoshop2020 64位茶末余香增强直装版，由于是直装版，安装过程中自动激活，无需输入激活码序列号之类的；</p>
-<p>2、双击exe文件安装，点击proceed继续安装；</p>
-<p>3、选择安装目录，默认为【c:\program files\adobe】可以自行更改，再点击install安装；</p>
-<p>4、成功安装后，点击“Finish”完成，软件会强制性重启电脑有配置生效；</p>
-<p>5、以上就是详细的photoshop2020增强版安装教程，希望对用户有帮助。</p>
-<h1 id="特别说明">特别说明</h1>
-<p>1、如果内存低于8G是体验不好的，如果电脑档次不算太低，只是内存容量不到8G，建议你把内存扩充到最低8G（如果主板支持）。</p>
-<p>2、扩展插件：Raya Pro在使用之前要在动作面板里加载相应的动作。</p>
-<p>3、请右键管理员身份允许安装，否则安装过程可能有字体安装错误提示，如果在安装路径页面无法点击安装的，可以直接按回车键进行安装。</p>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9xpdoj" title="提取码: djbi">下载地址一</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[无损图片压缩大师去广告破解版-图片无损压缩10倍以上]]></title>
-        <id>/post/20200304cc69c374d6093804/</id>
-        <link href="/post/20200304cc69c374d6093804/">
-        </link>
-        <updated>2020-03-04T09:22:10.000Z</updated>
-        <summary type="html"><![CDATA[<p>无损图片压缩大师可以压缩市面上大部分图片格式的压缩软件，一个10M的jpg数码照片，可以压缩到100KB左右，压缩后的图片比之前缩小了10倍左右，而且压缩后的图片质量基本没什么变化，实现无损压缩。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>无损图片压缩大师可以压缩市面上大部分图片格式的压缩软件，一个10M的jpg数码照片，可以压缩到100KB左右，压缩后的图片比之前缩小了10倍左右，而且压缩后的图片质量基本没什么变化，实现无损压缩。</p>
-<!-- more -->
-<h1 id="无损图片压缩大师去广告破解版">无损图片压缩大师去广告破解版</h1>
-<h2 id="效果演示">效果演示</h2>
-<p>原图：8236KB(分辨率：5400×3600)<br>
-<img src="https://git.imweb.io/zyglz/my-blog-img/raw/1c07d2ab787b4c3da6e05ee571dd79c484412e98/blog/images/2020/03/37636625b0a97dba4378a121c46c3b46-01.jpg" alt="高清原图" title="高清原图" loading="lazy"></p>
-<p>压缩后：1132KB(分辨率：5400×3600)<br>
-<img src="https://git.imweb.io/zyglz/my-blog-img/raw/b8bdc1629efc784754218239e5a84278719d1b04/blog/images/2020/03/65deb1560cc2abcb0e34dd64dce8a23b-02.jpg" alt="压缩后图片" title="压缩后图片" loading="lazy"></p>
-<p><mark>特别说明：该软件建议只用于压缩jpg的图片，png的压缩后会丢失透明度。</mark></p>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9xpdoj">下载地址一</a><br>
-网盘下载：<a href="https://www.lanzous.com/i9xpdoj">下载地址二</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MPic一款七牛云存储智能上传图片的图床工具]]></title>
-        <id>/post/20200303daedaf5234394507/</id>
-        <link href="/post/20200303daedaf5234394507/">
-        </link>
-        <updated>2020-03-03T14:26:33.000Z</updated>
-        <summary type="html"><![CDATA[<p>MPic是一款针对七牛云存储智能上传图片的图床工具，图片上传,无水印,不压缩图片质量,外链无限制,国内空间绝不会被墙，支持粘贴上传、拖放上传，一键复制 markdown 链接的图床，简单好用，无需注册。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>MPic是一款针对七牛云存储智能上传图片的图床工具，图片上传,无水印,不压缩图片质量,外链无限制,国内空间绝不会被墙，支持粘贴上传、拖放上传，一键复制 markdown 链接的图床，简单好用，无需注册。</p>
-<!-- more -->
-<h1 id="mpic七牛云存储智能上传图片的图床工具">MPic七牛云存储智能上传图片的图床工具</h1>
-<h2 id="mpic简介">Mpic简介</h2>
-<ul>
-<li>MPic是一款针对七牛云存储智能上传图片的图床工具，图片上传,无水印,不压缩图片质量,外链无限制,国内空间绝不会被墙，支持粘贴上传、拖放上传，一键复制 markdown 链接的图床，简单好用，无需注册。</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/rgjuLMWJMDiY.jpg?imageslim" alt="运行界面" loading="lazy"></figure>
-<h2 id="下载地址">下载地址：</h2>
-<p>官网下载：<a href="http://mpic.lzhaofu.cn" title="http://mpic.lzhaofu.cn">下载地址一</a><br>
-网盘下载：<a href="https://www.lanzous.com/i9wxvrc" title="https://www.lanzous.com/i9wxvrc">下载地址一</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Internet Download Manager (IDM下载器v6.32.6)中文注册版]]></title>
-        <id>/post/20200303eba65bbbac0ddc02/</id>
-        <link href="/post/20200303eba65bbbac0ddc02/">
-        </link>
-        <updated>2020-03-03T13:48:31.000Z</updated>
-        <summary type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
-<!-- more -->
-<p>** Internet Download Manager (IDM下载器v6.32.6)中文注册版**</p>
-<h2 id="idm简介">IDM简介</h2>
-<ul>
-<li>Internet Download Manager软件提升你的下载速度最多达5倍，安排下载时程，或续传一半的软件。Internet Download Manager的续传功能可以恢复因为断线、网络问题、计算机宕机甚至无预警的停电导致下传到一半的软件。此程序具有动态档案分割、多重下载点技术，而且它会重复使用现有的联机，而不需再重新联机登入一遍。聪明的in-speed技术会动态地将所有设定应用到某种联机类型，以充分利用下载速度。</li>
-<li>Internet Download Manager支持下载队列、防火墙、代理服务器和映射服务器、重新导向、cookies、需要验证的目录，以及各种不同的服务器平台。此程序紧密地与Internet Explorer和NetscapeCommunicator结合，自动地处理你的下载需求。此程序还具有下载逻辑最佳化功能、检查病毒，以及多种偏好设定。</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/VS6jbBvkr3Tl.jpg!watermark" alt="运行界面" loading="lazy"></figure>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9wvtcd" title="https://www.lanzous.com/i9wvtcd">网盘下载一</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MarkdownPad 2 绿色中文汉化版]]></title>
-        <id>/post/20200303c4af925d1c128406/</id>
-        <link href="/post/20200303c4af925d1c128406/">
-        </link>
-        <updated>2020-03-03T13:36:42.000Z</updated>
-        <summary type="html"><![CDATA[<p>MarkdownPad2 绿色中文汉化版简介<br>
-MarkdownPad是一款免费的将文本转换成HTML/XHTML的网页格式的小软件，操作简单容易，上手很快，可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>MarkdownPad2 绿色中文汉化版简介<br>
-MarkdownPad是一款免费的将文本转换成HTML/XHTML的网页格式的小软件，操作简单容易，上手很快，可让你可以即时预览转换后的样式的同时，又不会加入Office特有的编版码，有需要朋友可以进行尝试。</p>
-<!-- more -->
-<h1 id="markdownpad-2-绿色中文汉化版">MarkdownPad 2 绿色中文汉化版</h1>
-<ul>
-<li>MarkdownPad是一个网络作家的文本到HTML转换工具。</li>
-<li>MarkdownPad允许您编写使用易于阅读，易于编写纯文本格式，然后将其转换为结构有效的XHTML(或HTML)。</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="http://images.zyglz.com/blog/uploads/20200303/4D7nbQYbEeoe.jpg?imageslim" alt="运行界面" title="运行界面" loading="lazy"></figure>
-<h2 id="下载地址">下载地址：</h2>
-<p>网盘下载：<a href="https://www.lanzous.com/i9wusih" title="https://www.lanzous.com/i9wusih">网盘下载一</a></p>
 ]]></content>
     </entry>
 </feed>

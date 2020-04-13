@@ -79,6 +79,7 @@
 
 .sidebar {
   width: 240px;
+  position: relative;
 }
 
 .header ul {
@@ -106,6 +107,11 @@
   border-radius: initial;
   padding: 20px 10px;
   box-sizing: border-box;
+  width: 240px;
+}
+
+.sidebar-body .sidebar-wrapper {
+  width: auto;
 }
 
 .site-author-image {
