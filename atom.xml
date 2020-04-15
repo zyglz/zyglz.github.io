@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id></id>
+    <id>http://zyglz.github.io</id>
     <title>hoochon&apos;s blog</title>
-    <updated>2020-03-28T09:15:03.796Z</updated>
+    <updated>2020-04-15T13:32:32.523Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href=""/>
-    <link rel="self" href="/atom.xml"/>
+    <link rel="alternate" href="http://zyglz.github.io"/>
+    <link rel="self" href="http://zyglz.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>/images/avatar.png</logo>
-    <icon>/favicon.ico</icon>
+    <logo>http://zyglz.github.io/images/avatar.png</logo>
+    <icon>http://zyglz.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, hoochon&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版]]></title>
-        <id>/post/20200316e741fe1698c13339/</id>
-        <link href="/post/20200316e741fe1698c13339/">
+        <id>http://zyglz.github.io/post/20200316e741fe1698c13339/</id>
+        <link href="http://zyglz.github.io/post/20200316e741fe1698c13339/">
         </link>
         <updated>2020-03-16T13:40:56.000Z</updated>
         <summary type="html"><![CDATA[<p>ImagePrinter破解版是一款可以让文档打印成图片的虚拟打印机程序，支持32位/64位电脑系统，完美的将你的文档排版成打印预览的版面。有需要的朋友就来下载吧！</p>
@@ -48,8 +48,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版]]></title>
-        <id>/post/20200316073b17f497d644dc/</id>
-        <link href="/post/20200316073b17f497d644dc/">
+        <id>http://zyglz.github.io/post/20200316073b17f497d644dc/</id>
+        <link href="http://zyglz.github.io/post/20200316073b17f497d644dc/">
         </link>
         <updated>2020-03-16T13:37:37.000Z</updated>
         <summary type="html"><![CDATA[<p>pdffactory pro破解版软件是一款多功能的虚拟打印机，该软件提供的创建 PDF 文件的方法比其他方法更方便和高效，pdffactory pro支持64位操作系统，非常好用，为了方便大家使用，本站提供pdffactory pro注册码、安装与使用方法，欢迎参考。</p>
@@ -84,8 +84,8 @@ pdffactory pro破解版简单易用，安全高效，为用户提供完善的打
     </entry>
     <entry>
         <title type="html"><![CDATA[完美解决Github访问缓慢问题]]></title>
-        <id>/post/20200308bc809981010537e8/</id>
-        <link href="/post/20200308bc809981010537e8/">
+        <id>http://zyglz.github.io/post/20200308bc809981010537e8/</id>
+        <link href="http://zyglz.github.io/post/20200308bc809981010537e8/">
         </link>
         <updated>2020-03-08T14:55:37.000Z</updated>
         <summary type="html"><![CDATA[<p>国内访问github网站非常慢，有时候根本无法连接使用github,如何解决或缓解这个问题呢？</p>
@@ -119,8 +119,8 @@ pdffactory pro破解版简单易用，安全高效，为用户提供完善的打
     </entry>
     <entry>
         <title type="html"><![CDATA[EXCEL VBA工程常用代码收藏]]></title>
-        <id>/post/20200307029ec10fb2ef8f35/</id>
-        <link href="/post/20200307029ec10fb2ef8f35/">
+        <id>http://zyglz.github.io/post/20200307029ec10fb2ef8f35/</id>
+        <link href="http://zyglz.github.io/post/20200307029ec10fb2ef8f35/">
         </link>
         <updated>2020-03-07T03:39:32.000Z</updated>
         <summary type="html"><![CDATA[<p>收集一些自己日常工作中常用的vba代码，持续更新中.....</p>
@@ -198,8 +198,8 @@ End Function
     </entry>
     <entry>
         <title type="html"><![CDATA[python爬虫学习系列之正则、bs4、xpath、jsonpath]]></title>
-        <id>/post/20200307b765f0870beb2f7d/</id>
-        <link href="/post/20200307b765f0870beb2f7d/">
+        <id>http://zyglz.github.io/post/20200307b765f0870beb2f7d/</id>
+        <link href="http://zyglz.github.io/post/20200307b765f0870beb2f7d/">
         </link>
         <updated>2020-03-07T03:25:31.000Z</updated>
         <summary type="html"><![CDATA[<p>python爬虫学习系列之正则、bs4、xpath、jsonpath知识要点与对比</p>

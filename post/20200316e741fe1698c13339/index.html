@@ -8,7 +8,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
 <title>ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版 | hoochon&#39;s blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1585386899996">
+<link rel="shortcut icon" href="/favicon.ico?v=1586957467666">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -89,7 +89,7 @@ var _hmt = _hmt || [];
             <li class="nav-item ">
               
               
-                <a href="/archives" target="_self">
+                <a href="http://zyglz.github.io/archives" target="_self">
                   <i class="fa fa-globe"></i> 文章归档
                 </a>
               
@@ -246,7 +246,7 @@ var _hmt = _hmt || [];
         
           
             <a class="social-img" href="#">
-              <img src="\media\images\custom-array-imgSocials-1585386899746-socialImg.jpg" />
+              <img src="\media\images\custom-array-imgSocials-1586183132205-socialImg.jpg" />
               <i class="fa fa-wechat"></i> 公众号
             </a>
           
@@ -554,7 +554,7 @@ window.addEventListener('load', function() {
             <div class="section bg-color post post-page">
               <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="/post/20200316e741fe1698c13339/">
+    <a class="post-title-link" href="http://zyglz.github.io/post/20200316e741fe1698c13339/">
       ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版
     </a>
   </h1>
@@ -572,13 +572,13 @@ window.addEventListener('load', function() {
         <span class="pc-show">分类于</span>
         
           
-            <a href="/tag/Fj5EAKon6/">
+            <a href="http://zyglz.github.io/tag/Fj5EAKon6/">
               <span>JPG虚拟打印机</span>
             </a>、
           
         
           
-            <a href="/tag/gwNyNeo4To/">
+            <a href="http://zyglz.github.io/tag/gwNyNeo4To/">
               <span>办公软件</span>
             </a>
           
@@ -635,7 +635,7 @@ window.addEventListener('load', function() {
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="/post/20200316e741fe1698c13339/" title="ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版">ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版</a>
+      <a href="http://zyglz.github.io/post/20200316e741fe1698c13339/" title="ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版">ImagePrinter pro(jpg图片虚拟打印机) v6.3 中文免费版</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -644,9 +644,9 @@ window.addEventListener('load', function() {
   </ul>
   <div class="tags">
     
-      <a href="/tag/Fj5EAKon6/"># JPG虚拟打印机</a>
+      <a href="http://zyglz.github.io/tag/Fj5EAKon6/"># JPG虚拟打印机</a>
     
-      <a href="/tag/gwNyNeo4To/"># 办公软件</a>
+      <a href="http://zyglz.github.io/tag/gwNyNeo4To/"># 办公软件</a>
     
   </div>
   <div class="nav">
@@ -655,8 +655,8 @@ window.addEventListener('load', function() {
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版" href="/post/20200316073b17f497d644dc/">PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版</a>
-        <a class="nav-mobile-next" title="PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版" href="/post/20200316073b17f497d644dc/">下一篇</a>
+        <a class="nav-pc-next" title="PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版" href="http://zyglz.github.io/post/20200316073b17f497d644dc/">PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版</a>
+        <a class="nav-mobile-next" title="PDF虚拟打印机pdfFactory Pro 4.5 简体中文破解版" href="http://zyglz.github.io/post/20200316073b17f497d644dc/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
@@ -665,17 +665,22 @@ window.addEventListener('load', function() {
               
   
     
-      <!--PC版-->
-<script language="javascript" type="text/javascript">
-	var sid=(location.pathname).substring(6, 30);
-	document.write('<div id="SOHUCS" sid="'+sid+'"></div>');
-</script>
-<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-window.changyan.api.config({
-appid: 'cyusRC00s',
-conf: 'prod_13cc5d2d1db7afbf1159361267080ecc'
-});
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'c34dcc76e4aef9973e0c',
+    clientSecret: 'bfa5175600d5ee72b68d7833019222cd87c5101e',
+    repo: 'zyglz.github.io',
+    owner: 'zyglz',
+    admin: ['zyglz'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
 </script>
     
     
