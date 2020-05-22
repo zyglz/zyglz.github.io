@@ -105,7 +105,7 @@
 .sidebar-wrapper {
   color: #555;
   border-radius: initial;
-  padding: 20px 10px;
+  padding: 10px 10px 0;
   box-sizing: border-box;
   width: 240px;
 }
@@ -121,11 +121,6 @@
   height: auto;
   background-color: #FFF;
   border: 1px solid #eee;
-}
-
-
-.gemini {
-  
 }
 
 .gemini .post-page {
@@ -183,7 +178,6 @@
   top: 0;
   padding: 0;
   width: 240px;
-  border-radius: initial;
   z-index: 9999;
 }
 
