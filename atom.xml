@@ -1,167 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://blog.zyglz.com</id>
+    <id></id>
     <title>hoochon&apos;s blog</title>
-    <updated>2020-05-22T00:23:17.404Z</updated>
+    <updated>2021-01-01T11:52:47.764Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://blog.zyglz.com"/>
-    <link rel="self" href="http://blog.zyglz.com/atom.xml"/>
+    <link rel="alternate" href=""/>
+    <link rel="self" href="/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://blog.zyglz.com/images/avatar.png</logo>
-    <icon>http://blog.zyglz.com/favicon.ico</icon>
-    <rights>All rights reserved 2020, hoochon&apos;s blog</rights>
+    <logo>/images/avatar.png</logo>
+    <icon>/favicon.ico</icon>
+    <rights>All rights reserved 2021, hoochon&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[电脑设置或取消IE代理服务器bat脚本命令]]></title>
+        <id>/post/20210102444f51123d2fbe93/</id>
+        <link href="/post/20210102444f51123d2fbe93/">
+        </link>
+        <updated>2021-01-02T11:02:51.000Z</updated>
+        <summary type="html"><![CDATA[<p>一键设置或取消IE代理服务器bat脚本命令。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一键设置或取消IE代理服务器bat脚本命令。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CODING添加部署账户SSH公钥]]></title>
+        <id>/post/20210101227fa422bce7262e/</id>
+        <link href="/post/20210101227fa422bce7262e/">
+        </link>
+        <updated>2021-01-01T10:28:52.000Z</updated>
+        <summary type="html"><![CDATA[<p>CODING添加部署账户SSH公钥</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>CODING添加部署账户SSH公钥</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git提交忽略指定不必要的文件和文件夹的方法]]></title>
+        <id>/post/202101013589fdd8baae1f11/</id>
+        <link href="/post/202101013589fdd8baae1f11/">
+        </link>
+        <updated>2021-01-01T00:13:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>在使用Git仓库时，往往有些临时文件(夹)或者配置文件(夹)，我们不希望每次更改都必须得提交到Git仓库中去，虽然这些文件或文件夹不影响我们使用，但是感官上还是比较难受的，因此就想忽略这些文件/文件夹。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在使用Git仓库时，往往有些临时文件(夹)或者配置文件(夹)，我们不希望每次更改都必须得提交到Git仓库中去，虽然这些文件或文件夹不影响我们使用，但是感官上还是比较难受的，因此就想忽略这些文件/文件夹。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[再见2020，你好2021！]]></title>
+        <id>/post/20201231179b741aa08abb52/</id>
+        <link href="/post/20201231179b741aa08abb52/">
+        </link>
+        <updated>2020-12-31T09:51:47.000Z</updated>
+        <summary type="html"><![CDATA[<p>再见2020，你好2021！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>再见2020，你好2021！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea个人博客Valine评论管理和评论提醒]]></title>
+        <id>/post/20200606a63c16885af41fde/</id>
+        <link href="/post/20200606a63c16885af41fde/">
+        </link>
+        <updated>2020-06-06T14:49:49.000Z</updated>
+        <summary type="html"><![CDATA[<p>我的Gridea个人静态博客，搭建了valine评论系统，经常出现别人留言，自己无法及时得到通知，而且查看起来也不方便，不知道那一篇文章有最新留言，无法的及时查看和回复。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我的Gridea个人静态博客，搭建了valine评论系统，经常出现别人留言，自己无法及时得到通知，而且查看起来也不方便，不知道那一篇文章有最新留言，无法的及时查看和回复。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[javascript Math.random()随机数函数]]></title>
+        <id>/post/202006011641df413678e0ef/</id>
+        <link href="/post/202006011641df413678e0ef/">
+        </link>
+        <updated>2020-06-01T14:10:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>在Gridea个人静态博客百度联盟广告推广过程中，要在文章内容中随即段落中间插入广告代码，需要通过JavaScript Math.random()随即产生一个从1到文章中段落数的随即整数，下面介绍一下random的语法和使用方法：</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在Gridea个人静态博客百度联盟广告推广过程中，要在文章内容中随即段落中间插入广告代码，需要通过JavaScript Math.random()随即产生一个从1到文章中段落数的随即整数，下面介绍一下random的语法和使用方法：</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[js判断当前访问设备是电脑PC端还是移动WAP端]]></title>
+        <id>/post/20200531545d39b563150393/</id>
+        <link href="/post/20200531545d39b563150393/">
+        </link>
+        <updated>2020-05-31T14:16:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>在Gridea个人静态博客百度联盟广告推广过程中，要根据当前访问设备的不同，分为电脑PC端和移动设备WAP端，需要通过js判断当前访问设备是电脑还是手机，下面介绍一下我使用的方法。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在Gridea个人静态博客百度联盟广告推广过程中，要根据当前访问设备的不同，分为电脑PC端和移动设备WAP端，需要通过js判断当前访问设备是电脑还是手机，下面介绍一下我使用的方法。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[给你的Gridea博客添加评论框背景图片]]></title>
+        <id>/post/2020053114b37b6166991ca3/</id>
+        <link href="/post/2020053114b37b6166991ca3/">
+        </link>
+        <updated>2020-05-31T05:40:37.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天给我的Gride个人博客进行装扮一下，给评论框添加背景图片和提示语，如网站所示。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天给我的Gride个人博客进行装扮一下，给评论框添加背景图片和提示语，如网站所示。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020新版coding pages搭建gridea个人静态博客]]></title>
+        <id>/post/20200523192e312a5988773e/</id>
+        <link href="/post/20200523192e312a5988773e/">
+        </link>
+        <updated>2020-05-23T13:56:56.000Z</updated>
+        <summary type="html"><![CDATA[<p>coding在2020初进行了改版，使用coding page搭建gridea个人静态博客和以往的方法和步骤不一样了，以下是使用新版Coding pages服务搭建个人博客网站的具体过程。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>coding在2020初进行了改版，使用coding page搭建gridea个人静态博客和以往的方法和步骤不一样了，以下是使用新版Coding pages服务搭建个人博客网站的具体过程。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[个人博客网站美化增加飘樱花效果的JS代码]]></title>
+        <id>/post/202005225faac2ff17f8628b/</id>
+        <link href="/post/202005225faac2ff17f8628b/">
+        </link>
+        <updated>2020-05-22T15:02:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>给个人博客全站增加飘落樱花的效果，效果如本站所示~~~</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>给个人博客全站增加飘落樱花的效果，效果如本站所示~~~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea同步遇到了错误，请查阅 FAQ 或 Issues 来寻找解决方案]]></title>
+        <id>/post/202005223816313a18cfc734/</id>
+        <link href="/post/202005223816313a18cfc734/">
+        </link>
+        <updated>2020-05-21T16:37:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>一直使用Gridea静态博客写作客户端搭建个人博客网站，在使用过程中删除了output文件夹，使用自动同步到coding上时失败，提示“同步遇到了错误，请查阅 FAQ 或 Issues来寻找解决方案”，下面将解决方法分享如下：</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一直使用Gridea静态博客写作客户端搭建个人博客网站，在使用过程中删除了output文件夹，使用自动同步到coding上时失败，提示“同步遇到了错误，请查阅 FAQ 或 Issues来寻找解决方案”，下面将解决方法分享如下：</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GifCam一款非常好用的gif动画录制和剪辑工具]]></title>
+        <id>/post/202005218ea7b305830345fa/</id>
+        <link href="/post/202005218ea7b305830345fa/">
+        </link>
+        <updated>2020-05-21T14:59:24.000Z</updated>
+        <summary type="html"><![CDATA[<p>GifCam是一款集录制与剪辑为一体的屏幕GIF动画制作工具，录制后的动画可以逐帧编辑，具有精确录制、可剪辑等特色，用来录制GIF动画教程是很不错的。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>GifCam是一款集录制与剪辑为一体的屏幕GIF动画制作工具，录制后的动画可以逐帧编辑，具有精确录制、可剪辑等特色，用来录制GIF动画教程是很不错的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[个人博客网站美化增加动态飘入彩色字体]]></title>
+        <id>/post/20200521156f4900957212fa/</id>
+        <link href="/post/20200521156f4900957212fa/">
+        </link>
+        <updated>2020-05-21T14:55:01.000Z</updated>
+        <summary type="html"><![CDATA[<p>搭建Gridea个人静态博客，相对网站底部footer页面进行美化，增加了网站运行时长，看到gridea博客next主题博主动态介绍不错，想在网站底部增加一个动态闪动彩色字体，现将代码分享如下：</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>搭建Gridea个人静态博客，相对网站底部footer页面进行美化，增加了网站运行时长，看到gridea博客next主题博主动态介绍不错，想在网站底部增加一个动态闪动彩色字体，现将代码分享如下：</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea静态博客增加到访人数和浏览次数统计代码]]></title>
-        <id>http://blog.zyglz.com/post/20200520c04d355bb25ad344/</id>
-        <link href="http://blog.zyglz.com/post/20200520c04d355bb25ad344/">
+        <id>/post/20200520c04d355bb25ad344/</id>
+        <link href="/post/20200520c04d355bb25ad344/">
         </link>
         <updated>2020-05-20T14:48:37.000Z</updated>
         <summary type="html"><![CDATA[<p>搭建Gridea个人静态博客，相对网站底部footer页面进行美化，需要增加网站到访人数和浏览次数，有许多网站分析工具，比如百度统计，谷歌分析等工具，这类工具虽然有不错的网站统计功能，但是都不能呈现在自己的网站上，都需要进入相应的后台查看。不过使用不蒜子网站的访客人数，访问量可以呈现在自己网站上,现将代码分享如下：</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>搭建Gridea个人静态博客，相对网站底部footer页面进行美化，需要增加网站到访人数和浏览次数，有许多网站分析工具，比如百度统计，谷歌分析等工具，这类工具虽然有不错的网站统计功能，但是都不能呈现在自己的网站上，都需要进入相应的后台查看。不过使用不蒜子网站的访客人数，访问量可以呈现在自己网站上,现将代码分享如下：</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[网站底部footer网页加入网站运行时长]]></title>
-        <id>http://blog.zyglz.com/post/202005198e28e8d4c01fcfa1/</id>
-        <link href="http://blog.zyglz.com/post/202005198e28e8d4c01fcfa1/">
-        </link>
-        <updated>2020-05-19T03:51:19.000Z</updated>
-        <summary type="html"><![CDATA[<p>搭建Gridea个人静态博客，看到很多个人网站博客喜欢在底部加入网站运行时间统计，显得逼格特别上档次，今天就分享一个在网站底部footer加入网站运行时长的代码，可以将网站运行时间精确到到年天时分秒。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>搭建Gridea个人静态博客，看到很多个人网站博客喜欢在底部加入网站运行时间统计，显得逼格特别上档次，今天就分享一个在网站底部footer加入网站运行时长的代码，可以将网站运行时间精确到到年天时分秒。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PHP字符串截取裁剪substr()方法的使用]]></title>
-        <id>http://blog.zyglz.com/post/20200516b0e9e82ec988d01f/</id>
-        <link href="http://blog.zyglz.com/post/20200516b0e9e82ec988d01f/">
-        </link>
-        <updated>2020-05-16T15:53:04.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天在将Gridea个人静态博客的RSS解析整合到typecho网站时，需要对日期字符串进行裁剪，截取$date字符串的中间5位，使用到了php的substr()方法。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天在将Gridea个人静态博客的RSS解析整合到typecho网站时，需要对日期字符串进行裁剪，截取$date字符串的中间5位，使用到了php的substr()方法。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PHP解析读取gridea静态博客RSS整合到网站首页]]></title>
-        <id>http://blog.zyglz.com/post/202005163d5cc7bd6a567944/</id>
-        <link href="http://blog.zyglz.com/post/202005163d5cc7bd6a567944/">
-        </link>
-        <updated>2020-05-16T15:13:03.000Z</updated>
-        <summary type="html"><![CDATA[<p>最近在更新typecho个人网站和gridea静态博客，需要在网站首页展现博客的动态，因为Gridea静态博客，没有数据库，前期都是手工将博客的标题和链接添加到网站的首页，今天启用了博客的RSS聚合系统，可以通过RSS实现博客同步调用，于是，自己动手使用PHP解析读取博客网站的RSS，实现了博客的文章同步。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>最近在更新typecho个人网站和gridea静态博客，需要在网站首页展现博客的动态，因为Gridea静态博客，没有数据库，前期都是手工将博客的标题和链接添加到网站的首页，今天启用了博客的RSS聚合系统，可以通过RSS实现博客同步调用，于是，自己动手使用PHP解析读取博客网站的RSS，实现了博客的文章同步。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[typecho博客阅读页文章段落之间添加广告代码]]></title>
-        <id>http://blog.zyglz.com/post/202005148002ee68e926c500/</id>
-        <link href="http://blog.zyglz.com/post/202005148002ee68e926c500/">
-        </link>
-        <updated>2020-05-14T00:15:56.000Z</updated>
-        <summary type="html"><![CDATA[<p>近期给网站部署广告，在首页，侧栏、阅读页面部署广告都比较相对来说比较简单，那么如何在typecho文章页文章第几段文字后，添加广告代码呢？</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>近期给网站部署广告，在首页，侧栏、阅读页面部署广告都比较相对来说比较简单，那么如何在typecho文章页文章第几段文字后，添加广告代码呢？</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[百度站长工具链接提交主动推送(实时)PHP推送教程]]></title>
-        <id>http://blog.zyglz.com/post/20200512d509d9aad14443b7/</id>
-        <link href="http://blog.zyglz.com/post/20200512d509d9aad14443b7/">
-        </link>
-        <updated>2020-05-12T09:37:24.000Z</updated>
-        <summary type="html"><![CDATA[<p>百度站长工具的链接提交方式之一，“主动推送(实时)”提交方式可以向百度搜索引擎实时推送网站的最新网址URL。当网站新增新的文章后，我们可以第一时间向百度引擎推送和提交链接，百度可能会马上收录。结合百度官方给的实例，下面是详细“php推送示例”教程：</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>百度站长工具的链接提交方式之一，“主动推送(实时)”提交方式可以向百度搜索引擎实时推送网站的最新网址URL。当网站新增新的文章后，我们可以第一时间向百度引擎推送和提交链接，百度可能会马上收录。结合百度官方给的实例，下面是详细“php推送示例”教程：</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[小白教你给电脑安装双系统(Win7和XP或WIN7和WIN10)]]></title>
-        <id>http://blog.zyglz.com/post/202005116351b471f36ef2f7/</id>
-        <link href="http://blog.zyglz.com/post/202005116351b471f36ef2f7/">
-        </link>
-        <updated>2020-05-11T02:30:27.000Z</updated>
-        <summary type="html"><![CDATA[<p>现在，好多电脑爱好者，都喜欢给自己的电脑安装双系统，一个系统用来玩游戏，而另一个系统就可以用来工作。那么，如何在一个电脑上安装Win7和XP或WIN7和WIN10双系统呢？今天，我把我的安装方法介绍一下：</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>现在，好多电脑爱好者，都喜欢给自己的电脑安装双系统，一个系统用来玩游戏，而另一个系统就可以用来工作。那么，如何在一个电脑上安装Win7和XP或WIN7和WIN10双系统呢？今天，我把我的安装方法介绍一下：</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[老式联想台式电脑BIOS设置U盘启动]]></title>
-        <id>http://blog.zyglz.com/post/2020051084953ee14930debb/</id>
-        <link href="http://blog.zyglz.com/post/2020051084953ee14930debb/">
-        </link>
-        <updated>2020-05-10T02:26:15.000Z</updated>
-        <summary type="html"><![CDATA[<p>这几天电脑系统崩溃，需要重新安装系统，用U盘制作了个安装U盘，重新安装了下系统，因为自己的电脑为老式联想电脑，BIOS设置的方法和现在的电脑不一样，记录一下老式联想台式电脑怎么在BIOS中设置系统从U盘的方法：</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>这几天电脑系统崩溃，需要重新安装系统，用U盘制作了个安装U盘，重新安装了下系统，因为自己的电脑为老式联想电脑，BIOS设置的方法和现在的电脑不一样，记录一下老式联想台式电脑怎么在BIOS中设置系统从U盘的方法：</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Win7电脑开机一直卡正在启动（disk.sys和ahcix64s.sys）]]></title>
-        <id>http://blog.zyglz.com/post/20200510847386607e4c151f/</id>
-        <link href="http://blog.zyglz.com/post/20200510847386607e4c151f/">
-        </link>
-        <updated>2020-05-10T02:23:44.000Z</updated>
-        <summary type="html"><![CDATA[<p>这次在给电脑安装系统中，出现一个问题：Windows7 系统启动时一直卡在“正在启动 Windows”，按F8进入安全模式，系统启动一直卡在disk.sys或者ahcix64s.sys，无法加载ahcix64s.sys。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>这次在给电脑安装系统中，出现一个问题：Windows7 系统启动时一直卡在“正在启动 Windows”，按F8进入安全模式，系统启动一直卡在disk.sys或者ahcix64s.sys，无法加载ahcix64s.sys。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Typecho博客判断在第几篇文章后添加广告]]></title>
-        <id>http://blog.zyglz.com/post/202005032c33e6cf82c11e8c/</id>
-        <link href="http://blog.zyglz.com/post/202005032c33e6cf82c11e8c/">
-        </link>
-        <updated>2020-05-03T10:20:07.000Z</updated>
-        <summary type="html"><![CDATA[<p>在实际使用typecho博客后，需要在首页第一篇文章后插入百度联盟广告代码，那么就需要对typecho的while循环进行判断，当第一篇文章后插入输出广告代码即可。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>在实际使用typecho博客后，需要在首页第一篇文章后插入百度联盟广告代码，那么就需要对typecho的while循环进行判断，当第一篇文章后插入输出广告代码即可。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[typecho博客判断电脑PC和手机WAP端进行广告展示]]></title>
-        <id>http://blog.zyglz.com/post/20200502a6580474a8bcd008/</id>
-        <link href="http://blog.zyglz.com/post/20200502a6580474a8bcd008/">
-        </link>
-        <updated>2020-05-02T12:41:50.000Z</updated>
-        <summary type="html"><![CDATA[<p>上一篇文章详细介绍了<a href="https://www.zyglz.com/index.php/archives/132.html">个人网站typecho博客申请添加投放百度联盟广告的具体步骤</a>https://www.zyglz.com/index.php/archives/132.html,但是typecho个人博客没有对访问设备进行判断，造成手机端浏览网页时展示的是电脑端的广告，造成网页展示出错，页面错位。目前就需要对浏览typecho博客的设备进行判断，如果是电脑访问，就展示pc端的广告；如果是手机wap浏览器访问，那么就展示wap端广告。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>上一篇文章详细介绍了<a href="https://www.zyglz.com/index.php/archives/132.html">个人网站typecho博客申请添加投放百度联盟广告的具体步骤</a>https://www.zyglz.com/index.php/archives/132.html,但是typecho个人博客没有对访问设备进行判断，造成手机端浏览网页时展示的是电脑端的广告，造成网页展示出错，页面错位。目前就需要对浏览typecho博客的设备进行判断，如果是电脑访问，就展示pc端的广告；如果是手机wap浏览器访问，那么就展示wap端广告。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Typecho博客个人网站申请添加和投放百度联盟广告]]></title>
-        <id>http://blog.zyglz.com/post/202005027dea7b6c6291d132/</id>
-        <link href="http://blog.zyglz.com/post/202005027dea7b6c6291d132/">
-        </link>
-        <updated>2020-05-02T12:15:33.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天给大家分享一下，我的typecho博客申请添加和投放百度联盟广告的方法和步骤。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天给大家分享一下，我的typecho博客申请添加和投放百度联盟广告的方法和步骤。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Markdown常用的十几种基本语法]]></title>
-        <id>http://blog.zyglz.com/post/202004288fd3c74c9216e98a/</id>
-        <link href="http://blog.zyglz.com/post/202004288fd3c74c9216e98a/">
-        </link>
-        <updated>2020-04-28T02:37:23.000Z</updated>
-        <summary type="html"><![CDATA[<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JPG-C 图片批量修整压缩减肥工具(V3.2.17.628)]]></title>
-        <id>http://blog.zyglz.com/post/2020042423c8d6d8ce85000e/</id>
-        <link href="http://blog.zyglz.com/post/2020042423c8d6d8ce85000e/">
-        </link>
-        <updated>2020-04-24T03:31:30.000Z</updated>
-        <summary type="html"><![CDATA[<p>JPG-C 图片压缩及调整、剪裁、水印工具是一款非常简单快捷的图片处理工具，界面和使用都非常简单，可有效的将 JPG/JPEG、png、bmp 图片进行压缩减肥， 生成大小和质量可以控制，压缩的同时还可以对图片调正大小、裁剪、及添加水印，并且程序还支持命令方式操作。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>JPG-C 图片压缩及调整、剪裁、水印工具是一款非常简单快捷的图片处理工具，界面和使用都非常简单，可有效的将 JPG/JPEG、png、bmp 图片进行压缩减肥， 生成大小和质量可以控制，压缩的同时还可以对图片调正大小、裁剪、及添加水印，并且程序还支持命令方式操作。</p>
 ]]></content>
     </entry>
 </feed>
