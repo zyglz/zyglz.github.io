@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.zyglz.com</id>
+    <title>hoochon&apos;s blog</title>
+    <updated>2024-04-22T10:31:59.079Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.zyglz.com"/>
+    <link rel="self" href="https://blog.zyglz.com/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://blog.zyglz.com/images/avatar.png</logo>
+    <icon>https://blog.zyglz.com/favicon.ico</icon>
+    <rights>All rights reserved 2024, hoochon&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[PPT分页打印时调整页面最大化的方法]]></title>
+        <id>https://blog.zyglz.com/post/20240422b45a80abc17ca06f/</id>
+        <link href="https://blog.zyglz.com/post/20240422b45a80abc17ca06f/">
+        </link>
+        <updated>2024-04-22T10:04:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>通常我们打印PPT文档时，经常使用PPT自带的分页打印功能，但是每页中每张PPT的大小不能自行调整，自带的格式打印出来页面太小，不能最大化的打印，下面介绍一种打印方法，尽可能的使PPT分页打印时页面最大化。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通常我们打印PPT文档时，经常使用PPT自带的分页打印功能，但是每页中每张PPT的大小不能自行调整，自带的格式打印出来页面太小，不能最大化的打印，下面介绍一种打印方法，尽可能的使PPT分页打印时页面最大化。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Typecho三步完美实现回复可见功能]]></title>
+        <id>https://blog.zyglz.com/post/2021010472dee973e5b18b8a/</id>
+        <link href="https://blog.zyglz.com/post/2021010472dee973e5b18b8a/">
+        </link>
+        <updated>2021-01-04T13:44:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>想在Typecho完美实现回复可见功能，在网上看了下，有很多教程，结合我的主题修改成功了，将我的方法分享给大家，希望对你有所帮助。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>想在Typecho完美实现回复可见功能，在网上看了下，有很多教程，结合我的主题修改成功了，将我的方法分享给大家，希望对你有所帮助。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Internet Download Manager(IDM v6.38.7.2)中文版]]></title>
+        <id>https://blog.zyglz.com/post/202101048fe62f71e7cb820e/</id>
+        <link href="https://blog.zyglz.com/post/202101048fe62f71e7cb820e/">
+        </link>
+        <updated>2021-01-04T02:47:57.000Z</updated>
+        <summary type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[两步搞定Github Pages静态网站绑定自定义域名]]></title>
+        <id>https://blog.zyglz.com/post/202101037da914647d644dbe/</id>
+        <link href="https://blog.zyglz.com/post/202101037da914647d644dbe/">
+        </link>
+        <updated>2021-01-03T02:19:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>Github提供了一个非常好的免费功能：Github Pages，可以把个人的静态博客托管在上面。默认可以通过xxx.github.io进行访问。</p>
+<p>这个域名不方便记忆，如何给这个静态网站设置自定义域名呢？请按照一下两步操作，轻松搞定。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Github提供了一个非常好的免费功能：Github Pages，可以把个人的静态博客托管在上面。默认可以通过xxx.github.io进行访问。</p>
+<p>这个域名不方便记忆，如何给这个静态网站设置自定义域名呢？请按照一下两步操作，轻松搞定。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电脑设置或取消IE代理服务器bat脚本命令]]></title>
+        <id>https://blog.zyglz.com/post/20210102444f51123d2fbe93/</id>
+        <link href="https://blog.zyglz.com/post/20210102444f51123d2fbe93/">
+        </link>
+        <updated>2021-01-02T11:02:51.000Z</updated>
+        <summary type="html"><![CDATA[<p>一键设置或取消IE代理服务器bat脚本命令。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一键设置或取消IE代理服务器bat脚本命令。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CODING添加部署账户SSH公钥]]></title>
+        <id>https://blog.zyglz.com/post/20210101227fa422bce7262e/</id>
+        <link href="https://blog.zyglz.com/post/20210101227fa422bce7262e/">
+        </link>
+        <updated>2021-01-01T10:28:52.000Z</updated>
+        <summary type="html"><![CDATA[<p>CODING添加部署账户SSH公钥</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>CODING添加部署账户SSH公钥</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git提交忽略指定不必要的文件和文件夹的方法]]></title>
+        <id>https://blog.zyglz.com/post/202012203589fdd8baae1f11/</id>
+        <link href="https://blog.zyglz.com/post/202012203589fdd8baae1f11/">
+        </link>
+        <updated>2020-12-20T00:13:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>在使用Git仓库时，往往有些临时文件(夹)或者配置文件(夹)，我们不希望每次更改都必须得提交到Git仓库中去，虽然这些文件或文件夹不影响我们使用，但是每次提交非常难受的，因此就想忽略这些文件/文件夹。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在使用Git仓库时，往往有些临时文件(夹)或者配置文件(夹)，我们不希望每次更改都必须得提交到Git仓库中去，虽然这些文件或文件夹不影响我们使用，但是每次提交非常难受的，因此就想忽略这些文件/文件夹。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea个人博客Valine评论管理和评论提醒]]></title>
+        <id>https://blog.zyglz.com/post/20200606a63c16885af41fde/</id>
+        <link href="https://blog.zyglz.com/post/20200606a63c16885af41fde/">
+        </link>
+        <updated>2020-06-06T14:49:49.000Z</updated>
+        <summary type="html"><![CDATA[<p>我的Gridea个人静态博客，搭建了valine评论系统，经常出现别人留言，自己无法及时得到通知，而且查看起来也不方便，不知道那一篇文章有最新留言，无法的及时查看和回复。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我的Gridea个人静态博客，搭建了valine评论系统，经常出现别人留言，自己无法及时得到通知，而且查看起来也不方便，不知道那一篇文章有最新留言，无法的及时查看和回复。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[javascript Math.random()随机数函数]]></title>
+        <id>https://blog.zyglz.com/post/202006011641df413678e0ef/</id>
+        <link href="https://blog.zyglz.com/post/202006011641df413678e0ef/">
+        </link>
+        <updated>2020-06-01T14:10:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>在Gridea个人静态博客百度联盟广告推广过程中，要在文章内容中随即段落中间插入广告代码，需要通过JavaScript Math.random()随即产生一个从1到文章中段落数的随即整数，下面介绍一下random的语法和使用方法：</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在Gridea个人静态博客百度联盟广告推广过程中，要在文章内容中随即段落中间插入广告代码，需要通过JavaScript Math.random()随即产生一个从1到文章中段落数的随即整数，下面介绍一下random的语法和使用方法：</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[js判断当前访问设备是电脑PC端还是移动WAP端]]></title>
+        <id>https://blog.zyglz.com/post/20200531545d39b563150393/</id>
+        <link href="https://blog.zyglz.com/post/20200531545d39b563150393/">
+        </link>
+        <updated>2020-05-31T14:16:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>在Gridea个人静态博客百度联盟广告推广过程中，要根据当前访问设备的不同，分为电脑PC端和移动设备WAP端，需要通过js判断当前访问设备是电脑还是手机，下面介绍一下我使用的方法。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在Gridea个人静态博客百度联盟广告推广过程中，要根据当前访问设备的不同，分为电脑PC端和移动设备WAP端，需要通过js判断当前访问设备是电脑还是手机，下面介绍一下我使用的方法。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[给你的Gridea博客添加评论框背景图片]]></title>
+        <id>https://blog.zyglz.com/post/2020053114b37b6166991ca3/</id>
+        <link href="https://blog.zyglz.com/post/2020053114b37b6166991ca3/">
+        </link>
+        <updated>2020-05-31T05:40:37.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天给我的Gride个人博客进行装扮一下，给评论框添加背景图片和提示语，如网站所示。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天给我的Gride个人博客进行装扮一下，给评论框添加背景图片和提示语，如网站所示。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020新版coding pages搭建gridea个人静态博客]]></title>
+        <id>https://blog.zyglz.com/post/20200523192e312a5988773e/</id>
+        <link href="https://blog.zyglz.com/post/20200523192e312a5988773e/">
+        </link>
+        <updated>2020-05-23T13:56:56.000Z</updated>
+        <summary type="html"><![CDATA[<p>coding在2020初进行了改版，使用coding page搭建gridea个人静态博客和以往的方法和步骤不一样了，以下是使用新版Coding pages服务搭建个人博客网站的具体过程。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>coding在2020初进行了改版，使用coding page搭建gridea个人静态博客和以往的方法和步骤不一样了，以下是使用新版Coding pages服务搭建个人博客网站的具体过程。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[个人博客网站美化增加飘樱花效果的JS代码]]></title>
+        <id>https://blog.zyglz.com/post/202005225faac2ff17f8628b/</id>
+        <link href="https://blog.zyglz.com/post/202005225faac2ff17f8628b/">
+        </link>
+        <updated>2020-05-22T15:02:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>给个人博客全站增加飘落樱花的效果，效果如本站所示~~~</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>给个人博客全站增加飘落樱花的效果，效果如本站所示~~~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea同步遇到了错误，请查阅 FAQ 或 Issues 来寻找解决方案]]></title>
+        <id>https://blog.zyglz.com/post/202005223816313a18cfc734/</id>
+        <link href="https://blog.zyglz.com/post/202005223816313a18cfc734/">
+        </link>
+        <updated>2020-05-21T16:37:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>一直使用Gridea静态博客写作客户端搭建个人博客网站，在使用过程中删除了output文件夹，使用自动同步到coding上时失败，提示“同步遇到了错误，请查阅 FAQ 或 Issues来寻找解决方案”，下面将解决方法分享如下：</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一直使用Gridea静态博客写作客户端搭建个人博客网站，在使用过程中删除了output文件夹，使用自动同步到coding上时失败，提示“同步遇到了错误，请查阅 FAQ 或 Issues来寻找解决方案”，下面将解决方法分享如下：</p>
+]]></content>
+    </entry>
+</feed>
