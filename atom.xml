@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.zyglz.com</id>
+    <title>hoochon&apos;s blog</title>
+    <updated>2026-01-12T07:35:19.737Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.zyglz.com"/>
+    <link rel="self" href="https://blog.zyglz.com/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://blog.zyglz.com/images/avatar.png</logo>
+    <icon>https://blog.zyglz.com/favicon.ico</icon>
+    <rights>All rights reserved 2026, hoochon&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[在 Cloudflare Pages 上免费部署MapleBlog]]></title>
+        <id>https://blog.zyglz.com/post/zai-cloudflare-pages-shang-mian-fei-bu-shu-mapleblog/</id>
+        <link href="https://blog.zyglz.com/post/zai-cloudflare-pages-shang-mian-fei-bu-shu-mapleblog/">
+        </link>
+        <updated>2026-01-12T03:24:25.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="在-cloudflare-pages-上免费部署mapleblog">在 Cloudflare Pages 上免费部署MapleBlog</h1>
+<p>MapleBlog 是一个基于 Astro 的静态博客生成器，非常适合在 Cloudflare Pages 上免费、快速地进行部署。以下是详细的步骤和配置说明。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="在-cloudflare-pages-上免费部署mapleblog">在 Cloudflare Pages 上免费部署MapleBlog</h1>
+<p>MapleBlog 是一个基于 Astro 的静态博客生成器，非常适合在 Cloudflare Pages 上免费、快速地进行部署。以下是详细的步骤和配置说明。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[浏览器验证码自动打码插件，一款免费好用的验证码识别插件]]></title>
+        <id>https://blog.zyglz.com/post/cd7406533b76c14a8b4906980b18dc0c/</id>
+        <link href="https://blog.zyglz.com/post/cd7406533b76c14a8b4906980b18dc0c/">
+        </link>
+        <updated>2025-11-22T03:03:40.000Z</updated>
+        <summary type="html"><![CDATA[<p>在日常登陆或注册某些网站时，总是需要输入验证码，特别是日常经常使用的网站，每次打开都需要手工输入验证码，特别繁琐，今天给大家分享一款浏览器验证码自动打码插件，有需求的下载使用。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在日常登陆或注册某些网站时，总是需要输入验证码，特别是日常经常使用的网站，每次打开都需要手工输入验证码，特别繁琐，今天给大家分享一款浏览器验证码自动打码插件，有需求的下载使用。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小米路由器有线中继模式更改设置后台IP地址]]></title>
+        <id>https://blog.zyglz.com/post/19e9bdde0e530b5fbb20683df02adb24/</id>
+        <link href="https://blog.zyglz.com/post/19e9bdde0e530b5fbb20683df02adb24/">
+        </link>
+        <updated>2025-01-18T09:00:13.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Typecho网站后台无法登陆，需全站开启HTTPS]]></title>
+        <id>https://blog.zyglz.com/post/aca9225fc72a5bc1ca688a53e4fd6c07/</id>
+        <link href="https://blog.zyglz.com/post/aca9225fc72a5bc1ca688a53e4fd6c07/">
+        </link>
+        <updated>2024-08-19T09:03:15.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天打开自己的网站，发现后台怎么也登陆不进去了，不管输入什么登陆，只调整到登陆页面，始终无法正常访问，那个着急啊，还以为网站出现问题了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天打开自己的网站，发现后台怎么也登陆不进去了，不管输入什么登陆，只调整到登陆页面，始终无法正常访问，那个着急啊，还以为网站出现问题了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PPT分页打印时调整页面最大化的方法]]></title>
+        <id>https://blog.zyglz.com/post/20240422b45a80abc17ca06f/</id>
+        <link href="https://blog.zyglz.com/post/20240422b45a80abc17ca06f/">
+        </link>
+        <updated>2024-04-22T10:04:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>通常我们打印PPT文档时，经常使用PPT自带的分页打印功能，但是每页中每张PPT的大小不能自行调整，自带的格式打印出来页面太小，不能最大化的打印，下面介绍一种打印方法，尽可能的使PPT分页打印时页面最大化。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通常我们打印PPT文档时，经常使用PPT自带的分页打印功能，但是每页中每张PPT的大小不能自行调整，自带的格式打印出来页面太小，不能最大化的打印，下面介绍一种打印方法，尽可能的使PPT分页打印时页面最大化。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[运行VBA程序，运行时错误"3706"]]></title>
+        <id>https://blog.zyglz.com/post/f2b7b6d60e8271a6c3b963afdd142c96/</id>
+        <link href="https://blog.zyglz.com/post/f2b7b6d60e8271a6c3b963afdd142c96/">
+        </link>
+        <updated>2023-11-08T02:54:27.000Z</updated>
+        <summary type="html"><![CDATA[<p>电脑重新安装后，之前运行好好的excel VBA程序突然提示报错，提示“运行时错误,&quot;3706&quot;:未找到提供程序,该程序可能未正确安装。”</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>电脑重新安装后，之前运行好好的excel VBA程序突然提示报错，提示“运行时错误,&quot;3706&quot;:未找到提供程序,该程序可能未正确安装。”</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[typecho微信公众号插件WeChatHelper实现自动回复功能]]></title>
+        <id>https://blog.zyglz.com/post/983ad86ec98441f9684641ed867cd163/</id>
+        <link href="https://blog.zyglz.com/post/983ad86ec98441f9684641ed867cd163/">
+        </link>
+        <updated>2022-10-28T02:59:20.000Z</updated>
+        <summary type="html"><![CDATA[<p>WeChatHelper是一款基于Typecho的微信公众号助手插件，但是由于在开发者中心开启了回调URL和Token，公众号的自动回复设置失效。想要自动回复功能只能从插件入手实现了</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>WeChatHelper是一款基于Typecho的微信公众号助手插件，但是由于在开发者中心开启了回调URL和Token，公众号的自动回复设置失效。想要自动回复功能只能从插件入手实现了</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Typecho三步完美实现回复可见功能]]></title>
+        <id>https://blog.zyglz.com/post/2021010472dee973e5b18b8a/</id>
+        <link href="https://blog.zyglz.com/post/2021010472dee973e5b18b8a/">
+        </link>
+        <updated>2021-01-04T13:44:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>想在Typecho完美实现回复可见功能，在网上看了下，有很多教程，结合我的主题修改成功了，将我的方法分享给大家，希望对你有所帮助。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>想在Typecho完美实现回复可见功能，在网上看了下，有很多教程，结合我的主题修改成功了，将我的方法分享给大家，希望对你有所帮助。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Internet Download Manager(IDM v6.38.7.2)中文版]]></title>
+        <id>https://blog.zyglz.com/post/202101048fe62f71e7cb820e/</id>
+        <link href="https://blog.zyglz.com/post/202101048fe62f71e7cb820e/">
+        </link>
+        <updated>2021-01-04T02:47:57.000Z</updated>
+        <summary type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Internet Download Manager，简称IDM，是国外的一款优秀下载工具，该软件同时是一款共享软件。Internet Download Manager是一款拥有续传功能的下载工具，提升你的下载速度最多达5倍。续传功能可以让因为网络问题、计算机死机甚至无预警的停电导致只下载到一半的软件继续下载的功能。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[两步搞定Github Pages静态网站绑定自定义域名]]></title>
+        <id>https://blog.zyglz.com/post/202101037da914647d644dbe/</id>
+        <link href="https://blog.zyglz.com/post/202101037da914647d644dbe/">
+        </link>
+        <updated>2021-01-03T02:19:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>Github提供了一个非常好的免费功能：Github Pages，可以把个人的静态博客托管在上面。默认可以通过xxx.github.io进行访问。</p>
+<p>这个域名不方便记忆，如何给这个静态网站设置自定义域名呢？请按照一下两步操作，轻松搞定。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Github提供了一个非常好的免费功能：Github Pages，可以把个人的静态博客托管在上面。默认可以通过xxx.github.io进行访问。</p>
+<p>这个域名不方便记忆，如何给这个静态网站设置自定义域名呢？请按照一下两步操作，轻松搞定。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电脑设置或取消IE代理服务器bat脚本命令]]></title>
+        <id>https://blog.zyglz.com/post/20210102444f51123d2fbe93/</id>
+        <link href="https://blog.zyglz.com/post/20210102444f51123d2fbe93/">
+        </link>
+        <updated>2021-01-02T11:02:51.000Z</updated>
+        <summary type="html"><![CDATA[<p>一键设置或取消IE代理服务器bat脚本命令。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一键设置或取消IE代理服务器bat脚本命令。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CODING添加部署账户SSH公钥]]></title>
+        <id>https://blog.zyglz.com/post/20210101227fa422bce7262e/</id>
+        <link href="https://blog.zyglz.com/post/20210101227fa422bce7262e/">
+        </link>
+        <updated>2021-01-01T10:28:52.000Z</updated>
+        <summary type="html"><![CDATA[<p>CODING添加部署账户SSH公钥</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>CODING添加部署账户SSH公钥</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git提交忽略指定不必要的文件和文件夹的方法]]></title>
+        <id>https://blog.zyglz.com/post/202012203589fdd8baae1f11/</id>
+        <link href="https://blog.zyglz.com/post/202012203589fdd8baae1f11/">
+        </link>
+        <updated>2020-12-20T00:13:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>在使用Git仓库时，往往有些临时文件(夹)或者配置文件(夹)，我们不希望每次更改都必须得提交到Git仓库中去，虽然这些文件或文件夹不影响我们使用，但是每次提交非常难受的，因此就想忽略这些文件/文件夹。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在使用Git仓库时，往往有些临时文件(夹)或者配置文件(夹)，我们不希望每次更改都必须得提交到Git仓库中去，虽然这些文件或文件夹不影响我们使用，但是每次提交非常难受的，因此就想忽略这些文件/文件夹。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea个人博客Valine评论管理和评论提醒]]></title>
+        <id>https://blog.zyglz.com/post/20200606a63c16885af41fde/</id>
+        <link href="https://blog.zyglz.com/post/20200606a63c16885af41fde/">
+        </link>
+        <updated>2020-06-06T14:49:49.000Z</updated>
+        <summary type="html"><![CDATA[<p>我的Gridea个人静态博客，搭建了valine评论系统，经常出现别人留言，自己无法及时得到通知，而且查看起来也不方便，不知道那一篇文章有最新留言，无法的及时查看和回复。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我的Gridea个人静态博客，搭建了valine评论系统，经常出现别人留言，自己无法及时得到通知，而且查看起来也不方便，不知道那一篇文章有最新留言，无法的及时查看和回复。</p>
+]]></content>
+    </entry>
+</feed>
